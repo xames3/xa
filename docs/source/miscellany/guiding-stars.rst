@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 24 February, 2025
-.. Last updated on: 08 November, 2025
+.. Last updated on: 26 November, 2025
 
 :og:title: Guiding stars
 :og:description: Expressing heartfelt gratitude to the heros who shaped my
@@ -40,9 +40,9 @@ to strive, share, and inspire.
     :class: unusual-one danger
 
     These reflections aren't exhaustive, nor could they ever be. I've shared
-    some stories or incidents in minor detail, yet every individual named here
-    has contributed equally to my journey. I'm profoundly grateful for your
-    presence, guidance, and support.
+    stories or incidents in very minor detail. But every single person here has
+    contributed to my journey to some extent or another and I'm super grateful
+    for that.
 
 .. _sunita-mestry:
 
@@ -50,31 +50,20 @@ to strive, share, and inspire.
 Sunita Mestry
 -------------------------------------------------------------------------------
 
-At the very heart of my journey stands my mum, **Sunita**. Like `Gaia`_, the
-Earth goddess, my mum has been the unwavering foundation upon which I've built
-my ambitions. Her steadfast support during my highs and lows has shaped my
-character and instilled in me the values of perseverance, resilience, and
-acceptance.
+The most pivotal person in my life is my mum, **Sunita**. I often compare her
+to `Gaia`_, the earth goddess, because of her uncompromising foundation upon
+which I've built my dreams. Again, like Gaia, she supported and still supports
+me during my highs and lows and helped shape my character.
 
 .. figure:: ../assets/media/me-and-mum.jpg
     :alt: Me and Mum celebrating my admission into DePaul University
     :figclass: zoom grayscale
 
-    Mum and I, September 2022, celebrating my admission into DePaul University
-    while in Enfield
+    Mum and I, September 2022, celebrating my admission into DePaul University.
 
-From comforting me in moments of doubt to celebrating my successes (big and
-small), she has always been present, watching me, guiding me, and keeping me
-grounded. I recall those evenings at the kitchen table, surrounded by
-programming books in my early days of Software Engineering, preparing for
-certifications and interviews.
-
-She would appear with a restorative cup of `masala chai`_, reminding me to
-persist, yet also to rest. These simple acts of care are cherished far beyond
-words.
-
-After my father's passing, her love has been the very ground upon which I
-stand. Mum, you're my Gaia, and I'm eternally grateful for your strength.
+My mum's always with me, in my moments of doubt, to celebrating my successes
+(big and small); she has always been present and keeping me grounded. And to
+this strength, I'm and I'll always be eternally grateful!
 
 .. _charlotte-parks:
 
@@ -82,19 +71,18 @@ stand. Mum, you're my Gaia, and I'm eternally grateful for your strength.
 Charlotte Parks
 -------------------------------------------------------------------------------
 
-**Charlotte**, though you're no longer with us, your influence remains woven
-into the very fabric of my life. Much like `Uma`_'s transformative love for
-`Shankar`_, your presence sparked a profound change in me. You encouraged me
-to question deeply and to pursue understanding beyond the surface.
+**Charlotte**, though you're no longer with us, your influence still remains
+pretty strong in my life. I still remember you encouraging me to question
+things deeply and to pursue understanding beyond the surface.
 
-Your patient listening and insightful questions challenged me to think
-critically and to share knowledge generously. Your belief in my ability to
-teach planted the seed for this very platform. If you were to be here today,
-you'd be very proud of me. You always wanted me to teach, and now look where I
-am. Your thoughts now echo in my heart each time I stand before a class or
-mentor someone.
+Now, it doesn't make any sense to say it all, but your belief in my ability to
+teach and explain things planted the seed of this very platform, and
+surprisingly... I still feel like we're chatting.
 
-In every student I guide, I see your spirit reminding me of our last chat...
+I know it's weird, and I totally get it. But if you were to be here today,
+you'd be very proud of me. I know you always wanted me to teach, and now look
+where I am. Every time I get into my *"teaching"* mode, I see your spirit
+reminding me of our last chat...
 
 .. epigraph::
 
@@ -104,53 +92,28 @@ In every student I guide, I see your spirit reminding me of our last chat...
 
     -- Charlotte Parks, *14 Apr 2020*
 
-Charlotte, thank you for being my Uma. :fas:`heart mrl-0 red`
-
-.. _sajith-malayath:
-
--------------------------------------------------------------------------------
-Sajith Malayath
--------------------------------------------------------------------------------
-
-My journey in IT began at `Accenture`_ in 2017, where I had the privilege of
-working under **Sajith**'s mentorship. Saj, you were the first person to
-recognise potential in me beyond the 9 to 5 routine. I vividly remember our
-walks and your advice on "zooming out" and seeing the bigger picture of life
-and career.
-
-You never offered empty reassurances, but instead provided steady encouragement
-to grow and evolve. Your approach was always patient and insightful, guiding me
-to question, to seek understanding, and to learn from every experience.
-
-.. epigraph::
-
-    It is never about doing things perfectly, but about learning and evolving
-    along the way.
-
-    -- Saj
-
-Your words have still stayed with me, shaping my approach to both work and
-life. Saj, you've been more than a mentor; you've been my guide, my `Mimir`_.
-
 .. rubric:: Roll credits, my supporting cast
 .. rubric::
-    I'm a big cinephile and I believe life, much like cinema, is never a solo
-    act, but in the collective effort of those who work behind the scenes.
+    I'm a huge movie nerd, and I believe that life, much like a cinema, is
+    **never** a solo act, but in the collective effort of those who work behind
+    the scenes.
     :class: subtitle-text
 
-My journey has always been shaped by an extraordinary cast of mentors,
-friends, and supporters, each playing a vital role (big and small) in the
-stories I share. Everything you see or read here, whether it be projects,
-ideas, teachings, etc. is the sum of invaluable contributions from those who've
-stood beside me, guiding and encouraging me to step beyond my comfort zone.
-This section is my version of the end credits.
+And so, my life or this journey has always been shaped and tweaked by an
+extraordinary cast of mentors, friends, coworkers, supporters, and even
+strangers, each playing an essential role in the stories I share.
 
-A heartfelt tribute to those whose names may not always be in the spotlight,
-but whose impact resonates in every lesson I pass on. And as with any good
-film, the credits roll long after the story ends.
+Everything you read here, whether it be project ideas or teaching inspiration,
+is the sum of invaluable contributions from these individuals who stood beside
+me and eventually nudged me to step beyond my comfort zone.
 
-Therefore, this list will continue to grow, as I'm certain there are more
-brilliant minds and kind souls yet to cross my path.
+So, this section is my version of the end credits. A heartfelt tribute to those
+whose names may not always be in the spotlight, but whose impact resonates in
+every lesson I pass on. And as with any good film, the credits roll long after
+the story ends.
+
+Thus, this list will continue to grow, as I'm certain there are more brilliant
+minds and kind souls yet to cross my path.
 
 .. note::
 
@@ -163,28 +126,33 @@ brilliant minds and kind souls yet to cross my path.
 Antonio Tovar
 -------------------------------------------------------------------------------
 
-`Dr. Tovar <https://www.linkedin.com/in/antoniotovar>`_, I first met you at NLU
-during the `NASA Open Science <https://science.nasa.gov/open-science/>`_
-workshop in 2024, where you were co-leading and generously offered me the
-opportunity to intern under your guidance at NASA. You've always been kind,
-supportive, a father figure, and a teacher ready with valuable advice and
-encouragement.
+`Dr. Tovar <https://www.linkedin.com/in/antoniotovar>`_, I first met you at
+`National Louis University <https://nl.edu>`_ in 2024, during the
+`NASA Open Science <https://science.nasa.gov/open-science/>`_ workshop. You
+were co-leading that cohort and generously offered me the opportunity to intern
+under your guidance at NASA. You've always been kind, supportive, a father
+figure, and a teacher ready with valuable advice and encouragement.
 
 .. figure:: ../assets/media/dr-tovar-and-my-students.jpg
     :alt: Dr. Tovar with my students at NASA Open Science 2025 Workshop on the
         final day
     :figclass: zoom grayscale
 
-    Dr. Tovar with my students at NASA Open Science 2025 after presentations
+    Dr. Tovar (left) with my students,
+    `Huzaifa Quaid <https://www.linkedin.com/in/huzaifa-quaid-johar>`_
+    (left-centre),
+    `Ishrak Rahman <https://www.linkedin.com/in/ishrakr>`_ (centre),
+    `Orkhan Guliyev <https://www.linkedin.com/in/orkhan-guliyev06>`_
+    (right-centre), and
+    `Sezim Mamatova <https://www.linkedin.com/in/smamatova>`_ (right) at NASA
+    Open Science 2025 after presentations.
 
-You were the one who helped my dream of becoming a professor come true, and for
-that, I'm deeply grateful. Our countless hour-long discussions about teaching
-and life have been a source of inspiration, and your stories (rich with wisdom
-and experience) are ones I absolutely cherish. You've opened doors for me,
-provided opportunities to grow, and have always encouraged me to pursue
-excellence.
+There were a lot of people who helped me on my journey to becoming a teacher,
+but you were perhaps the most important of them all. I can't thank you enough
+for all the opportunities you've given me at NLU and for still believing in
+me, Dr. Tovar.
 
-Thank you for all the opportunities and believing in me, Dr. Tovar.
+And for that, I'm deeply grateful!!
 
 .. _cameron-riddell:
 
@@ -193,20 +161,18 @@ Cameron Riddell
 -------------------------------------------------------------------------------
 
 `Cameron <https://www.linkedin.com/in/cameron-riddell/>`_, you've been a true
-light and a source of inspiration in my open science and data visualisation
-journey. Although our conversations have been entirely virtual, your mentorship
-has bridged timezones. You and your resourceful teachings have offered clarity
-and encouragement precisely when I needed it most.
+mentor and a source of inspiration in my open science journey from the very
+start. Though our chats have been entirely virtual, your mentorship has bridged
+time zones.
 
-Your skills and insights into visualisation, particularly your introduction to
-`Edward Tufte`_'s work, have honestly reshaped my approach to presenting and
-interpreting data. Whenever I see a chart or someone asks me for my opinion on
-how to visualise it, I always think of you and your teachings; often sharing
-your videos and resources with them. You possess a rare ability to make complex
-concepts accessible, and your encouragement has helped me grow both as a
-learner and as a teacher.
+I vividly remember how your resourceful teachings offered clarity and
+encouragement precisely when I needed it most. Your introduction to
+`Edward Tufte`_'s work, has reshaped my approach to presenting and interpreting
+data. Whenever I see a chart or someone asks me for my *"opinion"* on how to
+visualise it, I always think of you and your teachings; often sharing your
+videos and resources with them.
 
-Cheers for being such a "legend", mate.
+Cheers for being such a **"legend"**, mate!!
 
 .. _fatemeh-taghvaei:
 
@@ -215,10 +181,9 @@ Fatemeh Taghvaei
 -------------------------------------------------------------------------------
 
 **Fatemeh**, our paths crossed thanks to :ref:`Dr. Tovar <antonio-tovar>` while
-I was still a student at DePaul and you were teaching at NLU. I was supposed to
-shadow and learn from you in your Machine Learning class, and that experience
-became a turning point in my academic career. To me, you're more than a fellow
-professor; you're a mentor, a friend, and perhaps my greatest well-wisher.
+I was still a student at DePaul and you were already teaching at NLU. To me,
+you're more than a colleague; you're a mentor and perhaps my greatest
+well-wisher.
 
 .. figure:: ../assets/media/young-at-our-graduation-1.jpg
     :alt: Fatemeh attending my graduation ceremony, alongside Young
@@ -226,15 +191,11 @@ professor; you're a mentor, a friend, and perhaps my greatest well-wisher.
 
     Fatemeh attending my graduation ceremony alongside Young, June 2025
 
-I still remember my first day of teaching at the uni. I was nervous and
-anxious. But you were there, guiding me through the process, attending all my
-classes, and reminding me of my duties and responsibilities.
-
-And besides :ref:`Young <young-song>`, you were the only other friend who came
-to my graduation and celebrated till the end. Our conversations about teaching,
-life, and research have been super duper invaluable for me. Most importantly,
-you've always believed and encouraged me to pursue my dream of earning a PhD
-from Stanford and for that, I'm very grateful.
+I still remember my first day of teaching at the uni, I was extremely nervous.
+But you were there, walking me through all the things I had to do and reminding
+me of my responsibilities. Besides :ref:`Young <young-song>`, you were the only
+other friend who came to my graduation and celebrated till the end. For that,
+I'm very grateful.
 
 I know I give you hard time, Fatemeh, but I just have one thing to say...
 Wowwwwwwww
@@ -245,22 +206,18 @@ Wowwwwwwww
 John Komarnicki
 -------------------------------------------------------------------------------
 
-`John <https://www.linkedin.com/in/john-k-819716148/>`_, you're the force
-behind `Chicago Code and Coffee`_, a monthly gathering that has become a
-lifeline for students, job seekers, and professionals in Chicago. I first met
-you at one of these events during a particularly trying time in my life. I was
-searching for a distraction and it turned out to be exactly what I needed.
+`John <https://www.linkedin.com/in/john-k-819716148/>`_ is the *"MC"* of
+`Chicago Code and Coffee`_, a monthly tech-networking event and perhaps the
+largest one of all in Chicago. I first met you at one of these events (June
+2024) during a particularly difficult time in my life.
 
-It wasn't just a meet-up, but an open, supportive community that you and your
-team had fostered with care.
+I was looking for a distraction of sorts, and it turned out to be exactly what
+I needed: a supportive community that you and your team had fostered with care.
+As time passed, the community has grown significantly. I became a volunteer,
+and more people have found opportunities through your work.
 
-As time passed, our community has grown significantly. I became a volunteer,
-and more people have found comfort and opportunity through your work. On behalf
-of everyone who has ever found camaraderie or a new beginning at Chicago Code
-and Coffee, I'd like to thank you, John. Your efforts have created a space
-where people truly belong.
-
-You, my friend, will get no strikes.
+Your efforts have created a space where people truly belong. You, my friend,
+will get no strikes.
 
 .. seealso::
 
@@ -273,23 +230,15 @@ You, my friend, will get no strikes.
 Judy Cazares
 -------------------------------------------------------------------------------
 
-`Judy <https://www.linkedin.com/in/judyc-data>`_, I first met you in 2024 at
-`ChiPy`_, and you were among the very first to welcome me into the fold. Our
-paths crossed yet again at another meet-up, and from there, a genuine
-friendship blossomed. You've always been kind, supportive, and remarkably
-generous with your time and wisdom, whether the topic is life, career, or
-something more personal.
+I first met `Judy <https://www.linkedin.com/in/judyc-data>`_ at `ChiPy`_ in
+2024, and you were among the first to welcome me. Since then, we've been great
+friends. Your kindness and support have always been appreciated. I've always
+valued your willingness to listen and offer thoughtful, grounded advice.
 
-What I appreciate the most is your willingness to truly listen and offer advice
-that is both thoughtful and grounded. I often find myself reflecting on your
-words surprisingly more than I've with anyone else. Our playful banter and
-jokes are a highlight, yet it is amusing how I always end up taking your advice
-(sooner or later) to heart.
-
-You've never questioned my decisions nor tried to steer me forcefully; instead,
-you've been a gentle mentor, guiding me with patience and understanding, and
-that's a reminder that mentorship isn't about following instruction, but about
-encouragement and trust.
+I often find myself reflecting on your words surprisingly more than I've with
+anyone else. Our playful banter and jokes are a highlight, yet it is amusing
+how I always end up taking your advice (sooner or later) to heart. I'll always
+be grateful for your time.
 
 **PS.** I got a new humidifier.
 
@@ -300,17 +249,14 @@ Madhavi Rege
 -------------------------------------------------------------------------------
 
 **Madhavi**, you've been an incredible mentor and a profound influence in my
-life. Of all the people I've worked under, you were perhaps the most critical
-and impactful. Looking back, I realised that it was under your leadership that
-I mastered the art of time and work management.
+life. Of all the people I've worked under in my software engineering journey,
+you were perhaps the most critical and impactful. Looking back, I realised that
+it was under your leadership that I mastered the art of time and work
+management.
 
-Whenever I'm asked how I manage my responsibilities and personal ventures, my
-answer is always the same: it's thanks to someone I had the privilege of
-working with in the past.
-
-You nurtured my ability to think critically, plan with precision, and execute
-tasks with attention. These qualities still remain with me today and into every
-project and professional endeavour.
+You nurtured my ability to think critically and execute tasks with attention to
+detail. These qualities still remain with me today and into every project and
+professional endeavour.
 
 For all your coaching, I'm deeply grateful.
 
@@ -321,10 +267,9 @@ Sameer Gururaj Mathad
 -------------------------------------------------------------------------------
 
 `Sameer <https://www.linkedin.com/in/sameer-gururaj-mathad/>`_, our friendship
-began during my final quarters at DePaul while sharing classes, assignments,
-and academic hurdles. Our friendship has grown into something I truly value. I
-often tease you about your disciplined approach, but beneath the banter lies a
-genuine admiration for your steady commitment to hard work.
+began during my final quarter at DePaul. I often tease you about your
+disciplined approach, but beneath the banter lies a genuine admiration for your
+steady commitment to hard work.
 
 .. figure:: ../assets/media/sameer-and-i-graduated.jpg
     :alt: Sameer and I at our graduation ceremony
@@ -333,11 +278,12 @@ genuine admiration for your steady commitment to hard work.
     Sameer and I, June 2025 at our graduation ceremony
 
 What I don't usually say, and perhaps I should more often, is how much I admire
-your steady, no-bullshit approach to hard work and study. While I often pride
-myself on being a mentor or a bit of a teacher now and then, there have been
-moments where I've felt more like a student, learning a lesson or two from you.
+your steady, **no-bullshit** approach to hard work and study. While I often
+pride myself on being a mentor or a bit of a teacher now and then, there have
+been moments where I've felt more like a student, learning a lesson or two from
+you.
 
-And I for sure, look forward to many more meaningful conversations and moments
+And I, for sure, look forward to many more meaningful conversations and moments
 of learning together.
 
 .. _shailesh-kewat:
@@ -346,17 +292,17 @@ of learning together.
 Shailesh Kewat
 -------------------------------------------------------------------------------
 
-**Shailesh**, you're a true gentleman and a steadfast pillar of support. I
-still remember our friendship began during a challenging phase in our lives,
-filled with late nights revising for tests. Though the results didn't always
-reflect our efforts, I gained and scored something far more valuable; a
-lifelong friend and cherished memories.
+**Shailesh**, you're a true gentleman and, much like
+:ref:`Mum <sunita-mestry>`, a firm pillar of support. I still remember... our
+friendship began during challenging phases in our lives. Though the results
+didn't always reflect our efforts, I gained and scored something far more
+valuable: a lifelong friend and cherished memories.
 
-You've stood by me through both triumphs and trials, especially after I lost
-my :ref:`Charlotte <charlotte-parks>`. You encouraged me to return to teaching
-and ensured I had everything I needed to overcome self-doubt. Your wisdom on
-public speaking and community engagement gave me the courage to build this
-platform and the confidence I carry today.
+You've stood by me through both triumphs and trials, especially after I lost my
+:ref:`Charlotte <charlotte-parks>`. You encouraged me to return to teaching and
+ensured I had everything I needed to overcome self-doubt. Your wisdom on public
+speaking and community engagement gave me the courage to build this platform
+and the confidence I carry today.
 
 Here's 🍷 to our friendship.
 
@@ -366,18 +312,17 @@ Here's 🍷 to our friendship.
 Shilpa Musale
 -------------------------------------------------------------------------------
 
-`Shilpa <https://www.linkedin.com/in/shilpamusale/>`_, you've been my anchor
-and source of wisdom since my first year at the uni. At a time when I felt
-isolated and overwhelmed, you made me feel safe and welcomed. Our conversations
-and your stories have been more than memories; they've been life lessons, each
-filled with quiet wisdom.
+`Shilpa <https://www.linkedin.com/in/shilpamusale/>`_, you've been my source of
+wisdom since my first year at the uni. At times when I felt isolated and
+overwhelmed, you made me feel safe and welcomed. Our conversations and your
+stories have been more than memories; they've been life lessons, each filled
+with quiet wisdom.
 
 You've guided me through career decisions and supported me during difficult
-times. Your presence has been reassuring, whether through a phone call, a
-message, or a spontaneous invitation for a walk.
+times. Your presence was always reassuring, whether through a message or a
+spontaneous invitation for a walk. I'd never forget that.
 
-I'm truly grateful to have found a mentor in you, and I know our bond will only
-grow stronger.
+I'm genuinely grateful to have found a mentor in you!
 
 .. _young-song:
 
@@ -386,7 +331,7 @@ Young Song
 -------------------------------------------------------------------------------
 
 `Young <https://www.linkedin.com/in/youngsong-us/>`_, our friendship began in
-my second quarter at DePaul, where we both took on the challenge of Discrete
+my second quarter at the uni, where we both took a class on Discrete
 Structures. From the outset, your curiosity and support stood out, and I'm
 truly grateful for the friendship we've built since then.
 
@@ -397,21 +342,16 @@ truly grateful for the friendship we've built since then.
     Young attending and celebrating our graduation ceremony, June 2025
 
 One memory that remains vivid is my graduation day. My mum wasn't able to
-attend nor anyone else, and it could've been a lonely milestone. Yet you were
-there for me and :ref:`Sameer <sameer-g-mathad>`, arriving early (as
-usual) and staying through the entire ceremony, from the first moments at seven
-in the morning until the celebrations ended late in the afternoon. You brought
-us gifts and, more importantly, your unwavering presence. In a moment that
-could've felt empty, you filled it with warmth and celebration.
+attend, nor anyone else, and it could've been a lonely milestone. Yet you were
+there for :ref:`Sameer <sameer-g-mathad>` and me, arriving early (as usual) and
+staying through the entire ceremony, from the first moments at seven in the
+morning until the celebrations ended late in the afternoon. You brought us
+gifts and, more importantly, your unwavering presence.
 
-And for that I'm very thankful, Young.
+In a moment that could've felt empty, you filled it with warmth and
+celebration; for that, I'm very thankful, Young.
 
 .. _Gaia: https://en.wikipedia.org/wiki/Gaia
-.. _masala chai: https://en.wikipedia.org/wiki/Masala_chai
-.. _Uma: https://en.wikipedia.org/wiki/Parvati
-.. _Shankar: https://en.wikipedia.org/wiki/Shiva
-.. _Accenture: https://www.accenture.com/us-en
-.. _Mimir: https://en.wikipedia.org/wiki/Mímir
 .. _Edward Tufte: https://www.edwardtufte.com
 .. _Chicago Code and Coffee: https://www.meetup.com/code-and-coffee-chicago/
 .. _Discord: https://discord.gg/NNYtWNFByN
