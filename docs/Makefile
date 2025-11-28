@@ -3,7 +3,7 @@
 # 
 # Author: Akshay Mestry <xa@mes3.dev>
 # Created on: 22 February, 2025
-# Last updated on: 02 November, 2025
+# Last updated on: 27 November, 2025
 # 
 # This Makefile provides a comprehensive set of commands (targets) for building
 # and testing my website.
@@ -30,7 +30,7 @@ SOURCE_DIR      := source
 OUTPUT_DIR      := build
 
 PROTOCOL        := http
-HOST            := localhost
+HOST            := 0.0.0.0
 PORT            := 5500
 
 # === TOOLS ===================================================================
