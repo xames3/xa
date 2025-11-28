@@ -1563,6 +1563,10 @@ table.docutils caption {
     margin-bottom: 2rem;
 }
 
+figcaption a {
+    color: hsl(var(--foreground)) !important;
+}
+
 a.headerlink {
     text-decoration: none !important;
 }
@@ -2811,8 +2815,7 @@ a[data-tooltip].show-tooltip::after {
 
 /* FAQ Container */
 .site-faq {
-    border: none;
-    background-color: transparent;
+    margin: 2rem 0 !important;
 }
 
 .site-faq .sd-summary-text {
@@ -2842,6 +2845,11 @@ a[data-tooltip].show-tooltip::after {
         font-weight: 600 !important;
         line-height: 1.5rem !important;
     }
+
+    .site-faq {
+        margin: 1.25rem 0 !important;
+    }
+
 }
 
 /* Utility helpers */
