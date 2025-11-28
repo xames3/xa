@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 August, 2025
-.. Last updated on: 08 November, 2025
+.. Last updated on: 27 November, 2025
 
 :og:title: A week into Docker
 :og:description: Begineer's guide to Docker and containerisation
@@ -29,7 +29,7 @@
     :timestamp: 30 August, 2025
 
 This is my story from September 2020, roughly five years ago as of writing this
-article. It is amidst the pandemic while I was switching jobs. I knew I would
+article. It was amidst the pandemic, while I was switching jobs. I knew I would
 get a new machine from my next employer, but I had no idea when.
 
 The pandemic was still at its peak, and I had to make the most of what I had.
@@ -52,10 +52,10 @@ So, I decided to give it a try.
 .. rubric:: Think of this as the start of a journey we can take together.
     :class: subtitle-text
 
-In this first chapter, I want to walk you through my initial experience into
+In this first chapter, I want to walk you through my initial experience with
 this whole containerisation business and explain the basic ideas that finally
 made sense to me. In future articles, I'll dive into the practical side of
-things like how to write a Dockerfile, manage containers, and use it in your
+things, like how to write a Dockerfile, manage containers, and use it in your
 own projects.
 
 .. _docker-enters-the-chat:
@@ -76,8 +76,9 @@ Docker is a **platform** that allows you to develop, ship, and run code inside
 .. note::
 
     Docker is not the only containerisation platform, but it's perhaps the most
-    popular one and that's why people synonymously use the term Docker to refer
-    to containers in general. But in reality, they are not the same thing.
+    popular one, and that's why people synonymously use the term Docker to
+    refer to containers in general. But in reality, they are not the same
+    thing.
 
 Simply put, it's basically a service that allows you to ship your application
 or code in a container that has all the things it needs to run. This means your
@@ -113,31 +114,31 @@ two for now.
 Magic of Docker Engine
 -------------------------------------------------------------------------------
 
-This is my personal take on the Docker Engine but it helps to explain what it
+This is my personal take on the Docker Engine, but it helps to explain what it
 is. Being a huge cinephile, I like to think of it as a movie production crew.
 You don't see them on screen, but without them, nothing would work. They're the
 ones who are setting up the lights, managing the cameras, and making sure
 everything runs smoothly behind the scenes.
 
-In that same way, the docker engine runs everything behind the scenes.
+In that same way, the Docker engine runs everything behind the scenes.
 
 When I first started using Docker, I'll be honest, I really didn't understand
-what was going on. Almost every tutorial I watched started with using
-:console:`$ docker run` command and I knew that I could type it out and
+what was going on. Almost every tutorial I watched started with using the
+:console:`$ docker run` command, and I knew that I could type it out and
 auto-magically, I'm dropped in an isolated environment where I can run my code
 or do whatever I want without messing up my local machine.
 
-It was like having a personal sandbox to play in, and I was immeditately sold.
+It was like having a personal sandbox to play in, and I was immediately sold.
 
 But as I started using it more, I realised that there's a lot more to it, and
 Docker Engine is doing some really fancy stuff behind the scenes. Remember how
 I mentioned my machine was getting messy with all the different versions of
 Python and other dependencies?
 
-Well, when I ran :console:`$ docker run` command, it was Docker Engine that
+Well, when I ran the :console:`$ docker run` command, it was Docker Engine that
 was creating an isolated environment to run my experiments within it.
 
-These environments are what we call as **containers**.
+These environments are what we call **containers**.
 
 .. _idea-behind-containers:
 
@@ -145,8 +146,8 @@ These environments are what we call as **containers**.
 Idea behind Containers
 -------------------------------------------------------------------------------
 
-In 1950s, `Malcolm McLean`_ came up with the concept of "containerisation" by
-inventing and standardising the modern shipping containers, but his idea was
+In the 1950s, `Malcolm McLean`_ came up with the concept of "containerisation"
+by inventing and standardising the modern shipping containers, but his idea was
 to make shipping goods easier and more efficient.
 
 Essentially, what it all meant was that instead of loading and unloading goods
@@ -154,14 +155,14 @@ every time they were transferred from one mode of transport to another, they
 could be packed into a standardised container that could be easily moved
 around.
 
-Docker, the company took this idea and applied it to software development. The
+Docker, the company, took this idea and applied it to software development. The
 name "Docker" itself is inspired by the idea of shipping containers. A
 container is essentially a lightweight, standalone package that includes
 everything needed to run your application code, runtime, system tools,
 libraries, and settings.
 
 It's like having a perfectly sealed but fully equipped sandbox that you can
-play in without worrying about the mess spilling over to your actual backyward.
+play in without worrying about the mess spilling over to your actual backyard.
 Each container is isolated from the others and from the host system, which
 means you can run multiple containers on the same machine without them
 interfering with each other.
@@ -177,10 +178,10 @@ containers and sandboxing. I mean, how is it any different from a GUI-less
 `Virtual machine`_? It's essentially acting the same way, right? Well, not
 exactly.
 
-Virtual machine (VMs) and containers are both used to create isolated
+Virtual machines (VMs) and containers are both used to create isolated
 environments, but they do it in different ways. VMs run a full copy of an
-operating system (guest) inside your local machine (host), while containers
-shares your host OS kernel.
+operating system (guest) inside your local machine (host). At the same time,
+containers share your host OS kernel.
 
 .. admonition:: :fas:`sparkles` Quick analogy
     :class: unusual-one hint
@@ -190,15 +191,15 @@ shares your host OS kernel.
     shared apartment where you share some common facilities like the kitchen
     and bathroom.
 
-    The latter is much more fast, efficient, and cost-effective.
+    The latter is much faster and cost-effective.
 
-To expand a bit more, a VM creates a complete separate copy of an operating
-system on top of your existing OS using something called as a `Hypervisor`_.
+To expand a bit more, a VM creates a separate copy of an operating system on
+top of your existing OS using something called a `Hypervisor`_.
 
 .. note::
 
-    This is **not** dual-booting where you have two OSs installed on your
-    machine and you choose which one to boot into.
+    This is **not** dual-booting, where you have two OSs installed on your
+    machine, and you choose which one to boot into.
 
 In a VM, you have your main OS (host) running, and inside it, you have another
 OS (guest) running as a separate entity. VMs run like a regular application on
@@ -212,10 +213,10 @@ thorough, but it's also heavy.
 Very heavy... I mean, you're running multiple bloody OSs at the same time!
 
 Containers, on the other hand, share the host OS's resources (kernel) and run
-as isolated processes (not technically) in user space on the host OS. In simple
-terms, they are much more lightweight and efficient compared to VMs. They start
-up quickly and use fewer resources because they don't need to boot up a full
-OS.
+as isolated processes (not technically) in the user space on the host OS. In
+simple terms, they are much more lightweight and efficient compared to VMs.
+They start up quickly and use fewer resources because they don't need to boot
+up a whole OS.
 
 You can run many more containers on the same hardware compared to VMs. This
 makes containers ideal for deploying applications in a microservices
@@ -329,9 +330,10 @@ understanding of what Docker and containerisation are and roughly how the whole
 ecosystem works. I was excited to explore and experiment even more.
 
 Sure, I was confused in the beginning, but I slowly started to get the hang of
-it. First, it was between containers and virtual machines, then with containers
-and images. I think the biggest culprits were the terminologies themselves.
-They are so similar that it can get really confusing for a beginner.
+it. First, it was between containers and virtual machines, then between
+containers and images. I think the biggest culprits were the terminologies
+themselves. They are so similar that it can get really confusing for a
+beginner.
 
 But once I got the hang of it, I realised how powerful the whole concept of
 containerisation is and how it can make my life easier. After a few weeks, I

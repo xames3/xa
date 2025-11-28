@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 05 September, 2025
-.. Last updated on: 06 November, 2025
+.. Last updated on: 27 November, 2025
 
 :og:title: The best YouTube has to Offer
 :og:description: A curated list of my favourite YouTube videos that I've found
@@ -28,7 +28,7 @@
     :linkedin: https://linkedin.com/in/xames3
     :timestamp: 05 September, 2025
 
-Recently, out of nowhere, I was looking at my phone's screen time stats and I
+Recently, out of nowhere, I was looking at my phone's screen time stats, and I
 realised that I spend a significant amount of time on YouTube. As I got into
 software engineering back in 2017, it has been my go-to platform for learning
 new things, staying updated with tech trends, and unwinding with some
@@ -42,11 +42,9 @@ either taught me something valuable or simply made my day better.
 
 This page is a collection of those gems. Think of it as my personal watchlist,
 shared with you, so you don't have to sift through the endless noise of the
-algorithm. These videos span a range of topics, from tutorials and programming
-stuff to motivational talks and fun skits.
-
-Whether you're a fellow developer, a student, or just someone looking for
-quality content, I hope you find something here that resonates with you.
+algorithm. Whether you're a fellow developer, a student, or just someone
+looking for quality content, I hope you find something here that resonates with
+you.
 
 .. note::
 
@@ -61,10 +59,13 @@ quality content, I hope you find something here that resonates with you.
 Technology
 -------------------------------------------------------------------------------
 
-This section features some of my go-to videos and channels related to
-programming, science, and technology. Here, the videos are related to
-programming tutorials, tips and tricks, tech talks, education, concepts of
-computer science, and more.
+.. rubric::
+    This section features some of my go-to videos and channels related to
+    **programming**, **science**, and **technology**.
+    :class: subtitle-text
+
+Here, the videos are related to programming tutorials, tips and tricks, tech
+talks, education, concepts of computer science, and more.
 
 .. dropdown:: These are some videos that I often watch whenever I want to
     learn something new or just want to refresh my knowledge on a particular
@@ -671,8 +672,10 @@ computer science, and more.
 Comic Relief
 -------------------------------------------------------------------------------
 
-Sometimes, we all need a break from the serious stuff. Because let's be honest,
-after hours of staring at code, sometimes all you need is a good, hearty laugh.
+.. rubric:: Because sometimes, we all need a break from the serious stuff.
+    :class: subtitle-text
+
+After hours of staring at code, sometimes all you need is a good, hearty laugh.
 I'm not saying these are the funniest videos out there, but they sure do the
 trick for me. Some are downright silly, some are clever, and some are just
 plain weird and cringe.
@@ -919,10 +922,14 @@ plain weird and cringe.
 Scene-by-Scene
 -------------------------------------------------------------------------------
 
-I've always been fascinated by the art of storytelling, whether it's in a block
-of code or on the silver screen. This section is for the fellow film lovers out
-there. For me, understanding how a story is built visually makes the experience
-of watching it all the more magical.
+.. rubric::
+    I've always been fascinated by the art of **storytelling**, whether it's in
+    a block of code or on the silver screen.
+    :class: subtitle-text
+
+This section is for the fellow film lovers out there. For me, understanding how
+a story is built visually makes the experience of watching it all the more
+magical.
 
 .. dropdown:: Collection of videos that peel back the curtain on filmmaking,
     from breathtaking behind-the-scenes moments to meticulous scene breakdowns
@@ -973,11 +980,15 @@ of watching it all the more magical.
 3AM Rabbit Hole
 -------------------------------------------------------------------------------
 
-We've all been there. It's late, you should be sleeping, but you've stumbled
-upon a video that leads to another, and another. This section is a tribute to
-those late-night YouTube journeys. It's a random, eclectic mix of fascinating
-documentaries, unsolved mysteries, and thought-provoking explorations, and
-VSauce that are perfect for when your curiosity gets the better of your sleep
+.. rubric::
+    We've all been there. It's late, you should be sleeping, but you've
+    stumbled upon a video that leads to another, and another.
+    :class: subtitle-text
+
+This section is a tribute to those late-night YouTube journeys. It's a random,
+eclectic mix of fascinating documentaries, unsolved mysteries, and
+thought-provoking explorations, and `VSauce <https://www.youtube.com/Vsauce>`_
+that are perfect for when your curiosity gets the better of your sleep
 schedule.
 
 .. dropdown:: Some of my favourite late-night bored out of your mind videos

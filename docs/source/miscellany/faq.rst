@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 October, 2025
-.. Last updated on: 06 November, 2025
+.. Last updated on: 27 November, 2025
 
 :og:title: FAQs
 :og:description: Frequently Asked Questions about me and this website
@@ -8,6 +8,7 @@
 :prompt: Do you've any question for me?
 :promptdesc: Feel free to ask me about things that you're curious about.
 :submitbtn: Send in your question
+:hiderightsidebar: true
 
 .. _miscellany-faq:
 
@@ -24,40 +25,32 @@
     :linkedin: https://linkedin.com/in/xames3
     :timestamp: 30 October, 2025
 
-One of the best parts of sharing and writing these articles is the
-conversations that follow. I've had loads of interesting chats in person and a
-few over email, and I've noticed a pattern. A lot of the same questions pop up,
-some are esoteric about a topic while others are simply "why?".
+One of the best parts of sharing and writing these articles is the chats that
+follow. I've had loads of interesting chats in person and a few over email, and
+I think I've noticed a pattern.
 
-But all of them are great questions.
+A lot of the same questions pop up; some are esoteric about a topic, while
+others are simple *"why?"* questions. Ever since I transitioned into teaching,
+some of you've also questioned that, too.
 
-.. _reasons-behind-faq-page:
-
--------------------------------------------------------------------------------
-Reasons behind FAQ page
--------------------------------------------------------------------------------
-
-Ever since I transitioned into teaching, some of you have asked about that.
 While many have asked about my thoughts on the late 2025 job situation. Some
-have even questioned why even I built projects like
+have even asked why even I built projects like
 :doc:`xsNumPy <../projects/xsnumpy>` and
-:doc:`SlowTorch <../projects/slowtorch>` which seems like reinventing the
-wheel. And then there are the questions about what my favourite films are and
-what I am currently watching, all of which are, again, great questions.
+:doc:`SlowTorch <../projects/slowtorch>`, which seem like reinventing the
+wheel.
 
-Ever since I met Charlotte, and I've mentioned this several times, I've
-realised that you only need to be curious to learn something. Now, on this
-page, there's nothing **practical** to learn, but I'd like to honour your
-curiosity nonetheless.
+By the way, all of them are great questions!! Then there are the questions
+about what my favourite films are and what I'm currently watching. So to make
+this easier for everyone, I've put together my answers to your most frequent
+questions.
 
-To make it easier for everyone, I've put together my answers to your most
-frequent questions. This isn't just a list, but it's an extension of my story.
-Think of it as some Easter eggs.
+This isn't just a list, but it's an extension of my story. Some easter eggs, so
+to speak...
 
 .. rubric:: Frequently Asked Questions
     :class: centered mb-24
 
-.. dropdown:: What does XAMES3 mean, and why you use it everywhere?
+.. dropdown:: What the f*ck XAMES3 mean, and why you use it everywhere?
     :class-container: site-faq
 
     So, *XAMES3* is my alias and username for online profiles. The first part,

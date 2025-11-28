@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 22 February, 2025
-.. Last updated on: 08 November, 2025
+.. Last updated on: 09 November, 2025
 
 :orphan:
 :og:title: Akshay's Corner
@@ -26,39 +26,44 @@ Akshay's Corner
     :linkedin: https://linkedin.com/in/xames3
     :timestamp: 08 August, 2025
 
-Hello hello!
+Hello hello, I'm **Akshay**!
 
-I'm **Akshay**, an Adjunct Professor, AI Engineer, and passionate open-source
-contributor. This corner on the internet is my space to explore the fascinating
-intersection of technology, learning, and storytelling, and I hope it can be a
-useful place for you too.
+I currently work as an Adjunct at National Louis University. Before getting
+into academia, I worked as an AI Engineering Lead. This small corner on the
+internet is my space to explore and share my experiences in software
+development through means of storytelling.
 
-Here, I intend to share my work, my "aha!" moments, and my journey through the
-worlds of AI, Software Development, and Open Source. I've a special interest
-in natural language processing and reinforcement learning.
+Here, I want to share my work (current and previous), my "aha!" moments, my
+moments of struggles, failures, gratitude, and my journey through the worlds
+of AI, Open Source, and Software Development.
+
+I also have a special interest in natural language processing and reinforcement
+learning, so there's that to share too.
 
 .. _open-source:
 
 -------------------------------------------------------------------------------
-Open source
+Open Source
 -------------------------------------------------------------------------------
 
-I :fas:`heart mrl-0 red` Open Source.
+I :fas:`heart mrl-0 red` Open Source!
 
-For me, it is more than a philosophy. It is my personal reminder to make my
-learnings, experiences, and knowledge free and accessible, breaking down
-cultural and digital barriers and inviting collaboration across disciplines and
-borders.
+Funny enough, I accidentally got started into it and I don't know why; I bloody
+loved it. It was, and still is, a personal reminder to share my struggles and
+achievements with everyone, breaking down cultural and digital barriers and
+inviting collaboration across disciplines and borders.
 
-My belief in open collaboration has led me to contribute and work at some
-amazing research labs.
+My belief in this "open-ness" has led me to contribute to and work at some
+amazing research labs and projects under the guidance of some super-duper
+talented people in the industry.
 
 .. raw:: html
     :file: ./assets/html/contributed.html
 
-I've worked on a diverse range of projects, from building performant machine
-learning models to crafting numerical computing libraries. My projects reflect
-both technical depth and a passion for education.
+In these labs, I worked on a diverse range of projects, from building
+performant machine learning models to eventually crafting numerical computing
+libraries. These projects (big and small) helped me reflect on both my
+technical depth and my knowledge gaps.
 
 .. grid:: 2
 
@@ -74,9 +79,12 @@ both technical depth and a passion for education.
 
         An experimental re-implementation of a few NumPy features in Python.
 
-Beyond these, I've had the opportunity to speak at tech meetups and
-conferences, sharing insights on my projects, AI, Open Science, and the inner
-workings of numerical computing frameworks.
+Beyond these, I've had the opportunity to speak at a few tech meetups and
+conferences, sharing insights on my projects, my thoughts on AI, Open Source,
+and the inner workings of some frameworks.
+
+It wouldn't be possible if I hadn't explored this; in doing so, I realised I
+had a passion for teaching and sharing this.
 
 .. _teaching-philosophy:
 
@@ -84,12 +92,13 @@ workings of numerical computing frameworks.
 Teaching philosophy
 -------------------------------------------------------------------------------
 
-I wholeheartedly believe that true mastery comes from sharing knowledge.
-Whether it is breaking down complex machine learning algorithms or explaining
-the nuances of software design, I find joy in making technical concepts
-relatable and easy to grasp.
+Personally, I believe that "true" mastery of something comes from sharing
+knowledge and learning from mistakes and past experiences. Whether it is
+breaking down complex machine learning algorithms or explaining the nuances of
+software design patterns, I find joy in making these technical ideas relatable
+and easy to grasp.
 
-Early in my software engineering career, I heard a quote:
+Early in my software engineering career, I came across a quote:
 
 .. epigraph::
 
@@ -97,20 +106,21 @@ Early in my software engineering career, I heard a quote:
 
     -- Dr. Richard Feynman
 
-And I absolutely fell in love with this idea. Soon I realised you really can't
-call yourself an SME (`Subject-matter expert`_) until you can teach it to
-those who likely know nothing about it (or very little), and are willing to
-entertain questions from people learning at that initial frame of reference.
+And I absolutely fell in love with this idea. Soon, I realised you really
+can't really call yourself an SME (`Subject-matter expert`_) until you can
+teach a concept to those who barely know anything about it (or very little),
+and are willing to entertain questions at that initial frame of reference.
 
 Thus began my journey into teaching.
 
-Although my approach of mentoring has evolved over the past few years, adapting
-to the needs of my environment, students/mentees, and time which is why I've
-this website. This website is more than my portfolio; it's a living project
-where I'd like the technology and education to grow together.
+Although my approach to mentoring has changed and evolved over the past few
+years, adapting to the needs of my environment, my students/mentees, the time,
+and my position, when asked for any help, I created this website. This website
+is more than my portfolio; it's a living project where I'd like the technology
+and education to grow together.
 
-Ultimately, my goal is to use this corner to bridge the gap between
-collaboration and education, building tools, and sharing ideas.
+Ultimately, my goal is to use this corner to bridge the gap between education,
+collaboration, building tools, and sharing ideas.
 
 .. _lets-connect:
 
@@ -119,10 +129,10 @@ Let's connect
 -------------------------------------------------------------------------------
 
 I'm not on social media, but I'm always open to conversations about AI,
-teaching, open source, or just a casual chat about life. I'd love to hear from
+Teaching, Open Source, or just a casual chat about life. I'd love to hear from
 you. It doesn't need to be just about the tech either.
 
-Also, I'm a huge film nerd and I enjoy memes.
+Also, I'm a huge film nerd and I enjoy memes!
 
 .. _Subject-matter expert: https://en.wikipedia.org/wiki/Subject-matter_expert
 
