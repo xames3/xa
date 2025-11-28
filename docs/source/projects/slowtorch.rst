@@ -642,7 +642,7 @@ path is the fastest way to learn.
 .. _Autodiff: https://pytorch.org/blog/overview-of-pytorch-autograd-engine/
 .. _autograd: https://docs.pytorch.org/tutorials/beginner/introyt/
     autogradyt_tutorial.html
-.. _the chain rule: https://www.mathcentre.ac.uk/resources/uploaded/
+.. _chain rule: https://www.mathcentre.ac.uk/resources/uploaded/
     mc-ty-chain-2009-1.pdf
 .. _Module: https://github.com/xames3/slowtorch/tree/main/slowtorch/nn/modules/
     module.py
