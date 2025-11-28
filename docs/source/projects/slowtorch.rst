@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 18 April, 2025
-.. Last updated on: 08 November, 2025
+.. Last updated on: 28 November, 2025
 
 :og:title: PyTorch... but much slower
 :og:description: PyTorch taught me how to build while SlowTorch taught me how
@@ -28,11 +28,11 @@
     :linkedin: https://linkedin.com/in/xames3
     :timestamp: 15 August, 2025
 
-There's some weird joy in those quiet moments after finishing a project. That
-was exactly me in January of 2025, reflecting on xsNumPy. I had spent weeks
-understanding the mysteries of arrays, memory buffers, and `broadcasting`_.
-Like I mentioned in :doc:`that story <./xsnumpy>`, it felt like baking a cake
-from scratch, where every ingredient and step mattered.
+You know, you get this kick after finishing a project? That was exactly me in
+January of 2025, reflecting on `xsNumPy <https://github.com/xames3/xsnumpy>`_.
+I had spent weeks understanding and learning arrays, memory buffers, and
+`broadcasting`_. As mentioned in :doc:`that story <./xsnumpy>`, it was indeed a
+trip for me.
 
 .. card:: :fas:`flask far` Why write xsNumPy?
     :link: xsnumpy
@@ -49,11 +49,11 @@ since 2018, `PyTorch`_?
 
 It was time to show some love to it. I wondered if I could build my own version
 of a simple `autograd`_ (automatic gradient) engine or an `automatic
-differentiation`_ (autodiff, for short) library, slowly to truly grasp its
+differentiation`_ (autodiff, for short) library, slowly, to truly grasp its
 inner workings.
 
 I mean, I've used PyTorch for years, but I had never really understood how it
-worked under the hood, so why not? Thus, it all began
+worked under the hood, so why not? Thus, it all began.
 
 .. _lessons-from-xsnumpy:
 
@@ -67,7 +67,7 @@ insights came from the process of building it and not the results. Sure, the
 results were important, but this reminded me that sometimes, the journey is
 more important than the destination.
 
-xsNumPy taught me that **slowness can be a gift**.
+xsNumPy taught me that **slowness can be a gift**!!
 
 Much like my approach to xsNumPy, I wanted to take my time with SlowTorch too.
 I wanted to build it slowly, understanding each component and appreciating the
@@ -75,12 +75,13 @@ complexity of the system. I had the same three rules.
 
 .. admonition:: Rules of engagement
 
-    - No LLMs or AI assistance. Every line of code and every solution had to
-      come from my own understanding and experimentation.
+    - No use of LLMs or any AI usage of anything.
+    - Every line of code and every solution had to come from my own
+      understanding and experimentation.
     - Pure Python only. No external dependencies, just the standard library.
-    - Clean, statically typed, and well-documented code that mirrored PyTorch's
-      public APIs (mostly used ones), aiming to be a drop-in replacement where
-      sensible.
+    - It should be clean, maintainable, statically typed, and well-documented
+      code that mirrors PyTorch's public APIs, aiming to be a drop-in
+      replacement where sensible.
 
 .. _from-arrays-to-tensors:
 
@@ -88,7 +89,7 @@ complexity of the system. I had the same three rules.
 From arrays to tensors
 -------------------------------------------------------------------------------
 
-So, I started off with building SlowTorch. The first step was to understand the
+So, I started off by building SlowTorch. The first step was to understand the
 core data structure of PyTorch, the :py:class:`tensor <torch.Tensor>` class.
 It's basically the :class:`ndarray <numpy.ndarray>` equivalent of PyTorch. Much
 of the initial work in building the tensor class was similar to what I had done
@@ -117,8 +118,8 @@ operations, gradients, and compute them efficiently.
 
     Checkout docs
 
-I started off with creating various :py:class:`dtypes <torch.dtype>` like
-``float64``, ``float32``, ``int64``, etc. alongside a simple
+I started off by creating various :py:class:`dtypes <torch.dtype>` like
+``float64``, ``float32``, ``int64``, etc., alongside a simple
 :py:attr:`device <torch.Tensor.device>`.
 
 But my devices were just strings, like "cpu" or "gpu", with no actual hardware
@@ -145,8 +146,8 @@ the most important feature of PyTorch. It allows you to compute the gradients
 of tensors with respect to a loss function, which is basically the backbone of
 training a neural network.
 
-In more simple terms, it's a glorified version of calculating `the chain
-rule`_ from calculus.
+In more simple terms, it's a glorified version of calculating the
+`chain rule`_ from calculus.
 
 In PyTorch, calling :py:meth:`.backward() <torch.Tensor.backward>` on a tensor
 magically tells every parameter (tensor) how it should change. But how? What
@@ -156,29 +157,29 @@ know the appropriate path when asked to reverse its operations?
 To be super duper honest, my initial attempts were a complete mess. I attempted
 to meticulously track every operation, parent, and child tensor, resulting in a
 code resembling a family tree. But Andrej's video made me realise that I was
-overcomplicating things and I reworked on my implementation slowly.
+overcomplicating things, and I reworked my implementation slowly.
 
 .. admonition:: :fas:`sparkles` Inspiration
     :class: unusual-one danger
 
-    `Andrej Karpathy <https://karpathy.ai>`_, had explained this concept in
-    much detail in his video where he builds
+    `Andrej Karpathy <https://karpathy.ai>`_ had explained this concept in
+    much detail in his video, where he builds
     `micrograd <https://github.com/karpathy/micrograd>`_, a simple autograd
     engine, from scratch. This video is perhaps the best introduction and
-    explanation and the only thing you need to know about how autograd works,
+    explanation, and the only thing you need to know about how autograd works,
     and it helped me a ton in understanding the core concepts.
 
 .. youtube:: https://www.youtube.com/watch?v=VMj-3S1tku0
 
-As I rewatched the video again and again, I realised that each operation could
-be represented as a node, and each node could carry a little function, a recipe
-for how to compute its own gradient. The real breakthrough came when I stopped
-thinking of the graph as a static structure and started seeing it as a living,
-breathing thing, growing with every operation.
+By rewatching the video multiple times, I realised that each operation could be
+represented as a node, and each node could carry a cheeky function which would
+know how to compute its own gradient. The *"real"* breakthrough happened when I
+stopped thinking of the graph as a static structure and started seeing it as a
+living, breathing thing, growing with every operation.
 
-Thus, I created a ``Node`` class that represented each operation, and each
-tensor would have a reference to its parent nodes. This way, I could traverse
-the graph and compute gradients in a more structured way.
+So, I created a ``Node`` class that represented each operation, and each tensor
+would have a reference to its parent nodes. This way, I could traverse the
+graph and compute gradients in a more structured way.
 
 .. code-block:: python
     :caption: :fas:`file-code far` `slowtorch/internal/tensor.py`_
@@ -216,18 +217,16 @@ lineage, visiting every ancestor, and calls their gradient functions in reverse
 order. It is a wee bit like walking back through your own footsteps after a
 long hike, pausing at each fork to remember which way you came.
 
-Long story short, I had built a simple autograd engine that could handle basic
-operations like addition, multiplication, and even more complex ones like
-matrix multiplication and broadcasting. I was able to compute gradients for
-tensors with respect to a loss function, and it felt like I had finally
-understood the magic behind PyTorch's autodiff and my small autograd engine was
-working.
+Long story short, I had built a primitive but working autograd engine which was
+capable of handling basic arithmetic operations alongside complex matrix
+multiplication and broadcasting. I was able to calculate gradients for tensors
+with respect to a loss function.
 
 .. admonition:: :fas:`heart red mrl-0` Special shoutout
     :class: unusual-one danger
 
     I want to give a special shoutout to my colleague,
-    :ref:`Fatemeh Taghvaei <fatemeh-taghvaei>` for her patience and late night
+    :ref:`Fatemeh Taghvaei <fatemeh-taghvaei>`, for her patience and late-night
     meetings. She helped me fix my broadcasting logic and brought a fresh
     perspective to my understanding and implementation of broadcasting in
     SlowTorch.
@@ -241,8 +240,7 @@ working.
 Building the building blocks
 -------------------------------------------------------------------------------
 
-Once my tensor with autodiff support was in place, I turned my attention to
-the neural networks. PyTorch's :py:mod:`torch.nn` module is a marvel of
+Once my tensor with autodiff support was in place, I started on the neural networks. PyTorch's :py:mod:`torch.nn` module is a marvel of
 abstractions, and I wanted to recreate it from scratch. I began by defining
 `Module`_, a base class that could hold parameters and submodules.
 
@@ -546,15 +544,15 @@ wrapped around classes much like PyTorch.
     :class: unusual-one danger
 
     I want to thank my friends, :ref:`Sameer <sameer-g-mathad>` and
-    `Lucas Yong <https://www.linkedin.com/in/lucas-yong>`_ for their invaluable
+    `Lucas Yong <https://www.linkedin.com/in/lucas-yong>`_, for their amazing
     insights while implementing the `Softmax function`_'s backward pass.
 
     Lucas derived the gradients for Softmax and
     :download:`shared <../assets/docs/softmax_jacobian_lucas.pdf>` them via
-    email, while Sameer helped me implement a crude version of second-order
-    derivatives. Both were game-changers for me, helping me understand the core
-    concepts of autodiff in a way that no documentation or blog post ever
-    could.
+    email. At the same time, Sameer helped me implement a crude version of
+    second-order derivatives. Both were game-changers for me, helping me
+    understand the core concepts of autodiff in a way that no documentation or
+    blog post ever could.
 
 Recreating neural networks from first principles reminded me of learning to
 ride a bicycle without training wheels. I fell off a ton. But each time I
@@ -573,7 +571,7 @@ and efficient, but I wanted to understand their mechanics. I implemented a
 simple optimiser, manually updating its parameters step by step.
 
 Once I was happy with my optimiser, I wrote a basic |storch.optim.Optimiser|
-class that took a list of parameters and a learning rate, and it had an
+class that took a list of parameters and a learning rate, and it had a
 :python:`.step()` method that updated the parameters based on their gradients.
 
 .. code-block:: python
@@ -616,28 +614,25 @@ Embracing slowness as a virtue
 As more time passed while building SlowTorch, I realised the hardest part
 wasn't the code or maths, but the mindset. I knew I couldn't compete with
 PyTorch's raw speed, so I had to let go of my desire for speed, elegance, and
-perfection I always strived for as a Software Engineer.
+perfection, which I had always strived for as a Software Engineer.
 
 Instead, I embraced the slowness, curiosity, and experimentation of a child.
 Every bug I encountered was a lesson, and every unexpected result was an
 opportunity to recuperate and learn. I quite often found myself talking to my
 code, asking it questions, coaxing it to reveal its secrets.
 
-While SlowTorch isn't a replacement for PyTorch, it's a learning tool for those
-interested in understanding the inner workings of deep learning. It can perform
-basic tasks like training a simple neural network, but it's not intended for
-production use if that's not obvious already.
-
 .. figure:: ../assets/media/slowtorch-meme.jpg
     :alt: SlowTorch, embrace the journey, not the race meme
-    :figclass: grayscale
+    :figclass: grayscale zoom
 
     By the end, this was me realising the true meaning of "slow" in SlowTorch
     and began embracing the slowness for understanding, over speed.
 
-For me, personally, SlowTorch serves as a reminder that true understanding and
-mastery come not from speed but from experience, attention, and care. It taught
-me that sometimes, the slowest path is the fastest way to learn.
+While SlowTorch isn't a replacement for PyTorch (obviously), it's a learning
+tool for those interested in understanding the inner workings of deep learning.
+It can perform basic tasks like training a simple neural network, but it's not
+intended for production, but to teach the fact that sometimes, the slowest
+path is the fastest way to learn.
 
 .. _PyTorch: https://pytorch.org/
 .. _broadcasting: https://numpy.org/doc/stable/user/basics.broadcasting.html
