@@ -51,5 +51,5 @@ sphinxcontrib-serializinghtml==2.0.0
 sphinxext-opengraph==0.9.1
 tox==4.24.1
 typing_extensions==4.12.2
-urllib3==2.5.0
+urllib3==2.6.0
 virtualenv==20.29.2
