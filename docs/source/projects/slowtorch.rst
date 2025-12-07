@@ -1,10 +1,10 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 18 April, 2025
-.. Last updated on: 28 November, 2025
+.. Last updated on: 07 December, 2025
 
 :og:title: PyTorch... but much slower
 :og:description: PyTorch taught me how to build while SlowTorch taught me how
-    it's built!
+    it's built!!
 :og:type: article
 :og:image: https://raw.githubusercontent.com/xames3/xa/main/docs/source/
     assets/media/slowtorch-meme.jpg
@@ -29,18 +29,17 @@
     :timestamp: 15 August, 2025
 
 You know, you get this kick after finishing a project? That was exactly me in
-January of 2025, reflecting on `xsNumPy <https://github.com/xames3/xsnumpy>`_.
-I had spent weeks understanding and learning arrays, memory buffers, and
-`broadcasting`_. As mentioned in :doc:`that story <./xsnumpy>`, it was indeed a
-trip for me.
+January of 2025, reflecting on `xsNumPy`_. I had spent weeks understanding and
+learning arrays, memory buffers, and `broadcasting`_. As mentioned in
+:doc:`that story <./xsnumpy>`, it was indeed a trip for me.
 
 .. card:: :fas:`flask far` Why write xsNumPy?
     :link: xsnumpy
     :link-type: doc
     :link-alt: Read story
 
-    An experimental re-implementation of a few NumPy features in pure
-    Python.
+    An experimental re-implementation of few of the core NumPy features in pure
+    Python. No external libraries needed.
 
 And yet, as I sat back gloating over my freshly baked xsNumPy, I found myself
 hungry for something more. I wanted to feel that high again and explore
@@ -107,7 +106,7 @@ PyTorch's. I needed to implement a way to save the node and operation history
 for autodiff, which was a new concept for me. I also had to learn how to track
 operations, gradients, and compute them efficiently.
 
-.. rubric:: Read the f*cking docs!
+.. rubric:: Read the f*cking docs!!
 .. rubric::
     PyTorch documentation were super duper helpful in understanding the various
     implementation details of the :py:class:`tensor <torch.Tensor>` class.
@@ -122,10 +121,10 @@ I started off by creating various :py:class:`dtypes <torch.dtype>` like
 ``float64``, ``float32``, ``int64``, etc., alongside a simple
 :py:attr:`device <torch.Tensor.device>`.
 
-But my devices were just strings, like "cpu" or "gpu", with no actual hardware
-acceleration. The :meth:`__repr__ <object.__repr__>` method was pretty similar
-to what I had in xsNumPy, but I had to add a few more details to reflect the
-tensor's properties like :py:attr:`shape <torch.Tensor.shape>`,
+But my devices were just strings, like *"cpu"* or *"gpu"*, with no actual
+hardware acceleration. The :meth:`__repr__ <object.__repr__>` method was pretty
+similar to what I had in xsNumPy, but I had to add a few more details to
+reflect the tensor's properties like :py:attr:`shape <torch.Tensor.shape>`,
 :py:attr:`device <torch.Tensor.device>`, :py:class:`dtype <torch.dtype>`, and
 whether it :py:attr:`requires gradients <torch.Tensor.requires_grad>` or not.
 
@@ -162,12 +161,11 @@ overcomplicating things, and I reworked my implementation slowly.
 .. admonition:: :fas:`sparkles` Inspiration
     :class: unusual-one danger
 
-    `Andrej Karpathy <https://karpathy.ai>`_ had explained this concept in
-    much detail in his video, where he builds
-    `micrograd <https://github.com/karpathy/micrograd>`_, a simple autograd
-    engine, from scratch. This video is perhaps the best introduction and
-    explanation, and the only thing you need to know about how autograd works,
-    and it helped me a ton in understanding the core concepts.
+    `Andrej Karpathy`_ had explained this concept in much detail in his video,
+    where he builds `micrograd`_, a simple autograd engine, from scratch. This
+    video is perhaps the best introduction and explanation, and the only thing
+    you need to know about how autograd works, and it helped me a ton in
+    understanding the core concepts.
 
 .. youtube:: https://www.youtube.com/watch?v=VMj-3S1tku0
 
@@ -544,8 +542,8 @@ wrapped around classes much like PyTorch.
     :class: unusual-one danger
 
     I want to thank my friends, :ref:`Sameer <sameer-g-mathad>` and
-    `Lucas Yong <https://www.linkedin.com/in/lucas-yong>`_, for their amazing
-    insights while implementing the `Softmax function`_'s backward pass.
+    `Lucas Yong`_, for their amazing insights while implementing the
+    `Softmax function`_'s backward pass.
 
     Lucas derived the gradients for Softmax and
     :download:`shared <../assets/docs/softmax_jacobian_lucas.pdf>` them via
@@ -596,9 +594,9 @@ I had to understand how each parameter was updated, how the learning rate
 smooth out the learning process.
 
 With time, I learnt techniques that improved the training process. Finally, I
-implemented my own version of the `SGD <https://stackoverflow.com/a/
-48597579>`_ (Stochastic Gradient Descent) optimiser, which was a simple yet
-effective way to update parameters based on their gradients.
+implemented my own version of the `SGD`_ (Stochastic Gradient Descent)
+optimiser, which was a simple yet effective way to update parameters based on
+their gradients.
 
 .. seealso::
 
@@ -625,7 +623,7 @@ code, asking it questions, coaxing it to reveal its secrets.
     :alt: SlowTorch, embrace the journey, not the race meme
     :figclass: grayscale zoom
 
-    By the end, this was me realising the true meaning of "slow" in SlowTorch
+    By the end, this was me realising the true meaning of *"slow"* in SlowTorch
     and began embracing the slowness for understanding, over speed.
 
 While SlowTorch isn't a replacement for PyTorch (obviously), it's a learning
@@ -634,7 +632,12 @@ It can perform basic tasks like training a simple neural network, but it's not
 intended for production, but to teach the fact that sometimes, the slowest
 path is the fastest way to learn.
 
-.. _PyTorch: https://pytorch.org/
+.. _xsNumPy: https://github.com/xames3/xsnumpy
+.. _Andrej Karpathy: https://karpathy.ai
+.. _micrograd: https://github.com/karpathy/micrograd
+.. _PyTorch: https://pytorch.org
+.. _Lucas Yong: https://www.linkedin.com/in/lucas-yong
+.. _SGD: https://stackoverflow.com/a/48597579
 .. _broadcasting: https://numpy.org/doc/stable/user/basics.broadcasting.html
 .. _automatic differentiation: https://www.reddit.com/r/learnprogramming/
    comments/u5nl1q/comment/i5333ru/?utm_source=share&utm_medium=web3x&
@@ -665,7 +668,7 @@ path is the fastest way to learn.
 .. _Sigmoid: https://ml-cheatsheet.readthedocs.io/en/latest/
     activation_functions.html#sigmoid
 .. _Softmax: https://eli.thegreenplace.net/2016/the-softmax-function-and-its
-    -derivative/
+    -derivative
 .. _Mean Squared Error (MSE): https://docs.pytorch.org/docs/stable/
     generated/torch.nn.MSELoss.html
 .. _Cross Entropy: https://docs.pytorch.org/docs/stable/generated/
@@ -674,8 +677,8 @@ path is the fastest way to learn.
     generated/torch.nn.NLLLoss.html
 .. _L1 Loss: https://docs.pytorch.org/docs/stable/generated/
     torch.nn.L1Loss.html
-.. _PyTorch's docs: https://docs.pytorch.org/docs/stable/
-.. _community boards: https://discuss.pytorch.org/
+.. _PyTorch's docs: https://docs.pytorch.org/docs/stable
+.. _community boards: https://discuss.pytorch.org
 .. _Softmax function: https://medium.com/@sue_nlp/
     what-is-the-softmax-function-used-in-deep-learning-illustrated-in-an-easy
     -to-understand-way-8b937fe13d49

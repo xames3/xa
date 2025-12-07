@@ -1,10 +1,10 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 05 September, 2025
-.. Last updated on: 27 November, 2025
+.. Last updated on: 07 December, 2025
 
 :og:title: The best YouTube has to Offer
 :og:description: A curated list of my favourite YouTube videos that I've found
-    over the years, good, bad, and weird!
+    over the years, good, bad, and weird!!
 :og:type: article
 :og:image: https://raw.githubusercontent.com/xames3/xa/main/docs/source/
     assets/opengraph/best-of-youtube.jpg
@@ -818,8 +818,8 @@ plain weird and cringe.
 
             And there's this side of YouTube that I absolutely love the
             absolutely weird, the delightfully strange, the content that makes
-            you tilt your head and think, "how did I even get here?". This is
-            a collection of those "gems".
+            you tilt your head and think, *"how did I even get here?"*. This is
+            a collection of those *"gems"*.
 
             These videos are a mix of surreal comedy, absurdist sketches, and
             just plain weird stuff. They never fail to cease to amuse.
@@ -987,9 +987,8 @@ magical.
 
 This section is a tribute to those late-night YouTube journeys. It's a random,
 eclectic mix of fascinating documentaries, unsolved mysteries, and
-thought-provoking explorations, and `VSauce <https://www.youtube.com/Vsauce>`_
-that are perfect for when your curiosity gets the better of your sleep
-schedule.
+thought-provoking explorations, and `VSauce`_ that are perfect for when your
+curiosity gets the better of your sleep schedule.
 
 .. dropdown:: Some of my favourite late-night bored out of your mind videos
 
@@ -1178,3 +1177,6 @@ schedule.
         .. grid-item::
 
             .. thumbnail:: https://www.youtube.com/watch?v=zR3Igc3Rhfg
+
+
+.. _VSauce: https://www.youtube.com/Vsauce

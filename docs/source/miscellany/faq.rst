@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 October, 2025
-.. Last updated on: 27 November, 2025
+.. Last updated on: 07 December, 2025
 
 :og:title: FAQs
 :og:description: Frequently Asked Questions about me and this website
@@ -50,7 +50,7 @@ to speak...
 .. rubric:: Frequently Asked Questions
     :class: centered mb-24
 
-.. dropdown:: What the f*ck XAMES3 mean, and why you use it everywhere?
+.. dropdown:: What the f*ck is XAMES3, and why you use it everywhere?
     :class-container: site-faq
 
     So, *XAMES3* is my alias and username for online profiles. The first part,
@@ -75,9 +75,55 @@ to speak...
 
     It's literally pronounced as "X-A" or "X-A-Mes-three".
 
+.. dropdown:: Why did you transitioned into teaching?
+    :class-container: site-faq
+
+    I promised :ref:`Charlotte <charlotte-parks>` that I'd teach someday to
+    students or be in academia. Honestly speaking, I meant it as a joke, in
+    that moment, but now that I'm teaching, I understand what she meant.
+
 .. dropdown:: What is your role at National Louis University?
     :class-container: site-faq
 
-    I'm an Adjunct Faculty at National Louis University in CSIS Department.
+    I'm an Adjunct at `National Louis University`_'s Undergraduate college in
+    Computer Science & Information Systems (CSIS) Department.
+
+.. dropdown:: What are your primary interests as IT professional?
+    :class-container: site-faq
+
+    Looking back, I'd say I've transitioned from a Software Engineer to AI. So,
+    I still love to build or brainstorm about solutions or ideas that solve a
+    particular problem. I enjoy AI too, don't get me wrong. But, software
+    engineering, in particular:
+
+    - understanding user or customer requirements
+    - working with tools or accesses available at my disposal
+    - reading and experimenting with documentations
+    - debugging logs, and spending time on terminal
+    - collaborating with other teams and fellow developers
+    - building APIs
+    - deployments (not on Fridays, those are f*cking horrible!!)
+    - maintaining documentations
+
+    brings me joy!!
+
+.. dropdown:: What is your favourite movie/TV show?
+    :class-container: site-faq
+
+    I'm a huge `Christopher Nolan`_ fan, and I :fas:`heart mrl-0 red` his
+    films. I tend to watch a lot of films, so it is difficult to say, what's my
+    favourite. But, my go-to movie is `Interstellar`_. I absolutely love the
+    music compositions by `Hans Zimmer`_. It is truly a masterpiece!!
+
+    As far as my favourite TV show, I've a few. My go-to would be obviously,
+    `Family Guy`_. But, if I were to recommend a TV show to anyone, I'd
+    probably say, `Dark`_.
 
 .. _gramogram: https://en.wikipedia.org/wiki/Gramogram
+.. _National Louis University: https://nl.edu/undergraduate-college
+.. _Christopher Nolan: https://www.imdb.com/name/nm0634240
+.. _Interstellar: https://en.wikipedia.org/wiki/Interstellar_(film)
+.. _Hans Zimmer: https://en.wikipedia.org/wiki/Hans_Zimmer
+.. _Family Guy: https://www.hulu.com/series/3c3c0f8b-7366-4d15-88ab
+    -18050285978e
+.. _Dark: https://www.netflix.com/title/80100172

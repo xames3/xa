@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 01 March, 2025
-.. Last updated on: 10 November, 2025
+.. Last updated on: 07 December, 2025
 
 :og:title: Why write xsNumPy?
 :og:description: Journey of building a lightweight, pure-python implementation
@@ -31,10 +31,10 @@
 I'm a wee bit fuzzy on the exact timelines, but it all started around
 mid-November of 2024. I was still at the uni and in my second-to-last quarter.
 I was working on an assignment that required me to use
-`NumPy <https://numpy.org>`_.
+`NumPy`_.
 
 I multiplied some matrices; NumPy did its thing, as it always does, and made
-all the computations look super easy. But, under this "simplicity", a few
+all the computations look super easy. But, under this *"simplicity"*, a few
 questions began to gnaw at me.
 
 So, I thought of experimenting with a simple code, nothing fancy:
@@ -123,7 +123,7 @@ It felt like opening Pandora's box; I wasn't ready. After a few days of
 head-scratching, I managed to create a primitive, albeit minimal, working
 version using Python's built-in :py:mod:`ctypes` module.
 
-It worked poorly. But it worked!
+It worked poorly. But it worked!!
 
 .. code-block:: python
     :caption: :fas:`file-code far` `xsnumpy/_core.py`_
@@ -187,11 +187,11 @@ It worked poorly. But it worked!
 
     See full implementation
 
-.. _making-sense-of-shapes:
-
--------------------------------------------------------------------------------
-Making sense of shapes
--------------------------------------------------------------------------------
+.. rubric:: Making sense of shapes
+.. rubric::
+    A shape of an array is a tuple of integers that represents the number of
+    elements along **each dimension** (axis) of the array.
+    :class: subtitle-text
 
 I started by checking if the provided shape can be
 :py:class:`iterated <collections.abc.Iterable>`. If it wasn't, I wrapped it in
@@ -360,7 +360,7 @@ failed almost immediately for higher-dimensional vectors.
 
 What if I added a scalar to a matrix, or a ``(3,)`` array to a ``(3, 3)``
 matrix? Could I add a :py:class:`float` to an :py:class:`int`? Each of those
-experiments brought new challenges, and I was absolutely frustrated!
+experiments brought new challenges, and I was absolutely frustrated!!
 
 That's when I realised I wasn't just adding or multiplying numbers, but
 learning and simultaneously recreating NumPy's broadcasting rules.
@@ -378,25 +378,24 @@ columns, but about correctly handling batch dimensions for higher-order
 tensors.
 
 I found myself diving into NVIDIA's documentation, reading about the
-`Generalised Matrix Multiplication (GEMM) <https://docs.nvidia.com/
-deeplearning/performance/dl-performance-matrix-multiplication/index.html>`_
-routines and how broadcasting affects the output shapes.
+`Generalised Matrix Multiplication (GEMM)`_ routines and how broadcasting
+affects the output shapes.
 
 .. seealso::
 
     Complete implementation of `arithmetic operations
     <https://github.com/xames3/xsnumpy/blob/main/xsnumpy/_core.py>`_ on GitHub.
 
-.. _small-victories-big-lessons:
+.. rubric:: Small victories, big lessons
+.. rubric::
+    Here comes December. By now, I wasn't just rebuilding a scrappy numerical
+    computing **doppelganger** like I thought I was.
+    :class: subtitle-text
 
--------------------------------------------------------------------------------
-Small victories, big lessons
--------------------------------------------------------------------------------
-
-Here comes December. I was on my winter break. I was fully committed to this
-project because I didn't have to attend uni or work on any assignments. After
-days of debugging, I realised that my vector operations weren't just about
-getting the "maths" right.
+I was on my winter break. I was fully committed to this project because I
+didn't have to attend uni or work on any assignments. After days of debugging,
+I realised that my vector operations weren't just about getting the "maths"
+right.
 
 They were about thinking like NumPy:
 
@@ -404,11 +403,9 @@ They were about thinking like NumPy:
 - How can I broadcast arrays?
 - How can I minimise unnecessary data duplication?
 
-At this stage, I wasn't just rebuilding a scrappy numerical computing
-doppelganger like I thought I was. I was creating a flexible and extensible
-system that could handle both intuitive and weird edge cases. With each
-iteration, every commit I made, I explored even more ways to optimise it,
-reducing redundant calculations.
+I was creating a flexible and extensible system that could handle both
+intuitive and weird edge cases. With each iteration, every commit I made, I
+explored even more ways to optimise it, reducing redundant calculations.
 
 Every bug, every unexpected result, every failure, every new piece of answer
 and advice that I received on Stack Overflow, and every small achievement
@@ -710,15 +707,12 @@ does quite well.
               >>> b.any(axis=1)
               array([True, True])
 
-.. _sharing-notes-with-the-community:
 
--------------------------------------------------------------------------------
-Sharing notes with the community
--------------------------------------------------------------------------------
-
-As of March 2025, many things have changed since I started xsNumPy. I gave a
-talk at `ChiPy`_ titled **"xsNumPy: Curiosity to Code"**, walking through the
-decisions, the missteps, and the insights that stayed with me.
+.. rubric:: Sharing notes with the community
+.. rubric::
+    I gave a talk at `ChiPy`_ titled **"xsNumPy: Curiosity to Code"**, walking
+    through the decisions, the missteps, and the insights that stayed with me.
+    :class: subtitle-text
 
 .. youtube:: https://www.youtube.com/watch?v=QIhyix3oEns
     :caption: The presentation covered the technical challenges, mathematical
@@ -744,6 +738,9 @@ I intend to work on this project in small, respectful steps whenever I get
 time. However, the larger work is already done. I re-learnt the essentials by
 making them, and that learning will travel with me far beyond this code.
 
+.. _NumPy: https://numpy.org
+.. _Generalised Matrix Multiplication (GEMM): https://docs.nvidia.com/
+    deeplearning/performance/dl-performance-matrix-multiplication/index.html
 .. _multiplying matrices: https://www.mathsisfun.com/algebra/
     matrix-multiplying.html
 .. _memory allocation: https://numpy.org/doc/stable/reference/

@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 22 February, 2025
-.. Last updated on: 09 November, 2025
+.. Last updated on: 07 December, 2025
 
 :orphan:
 :og:title: Akshay's Corner
@@ -8,7 +8,7 @@
 :og:type: website
 :prompt: What do you think?
 :promptdesc: I'd genuinely love to hear your suggestions and takes, or even a
-    recommendation for a great film!
+    recommendation for a great film!!
 :submitbtn: Share your thoughts
 
 .. _home-page:
@@ -33,7 +33,7 @@ into academia, I worked as an AI Engineering Lead. This small corner on the
 internet is my space to explore and share my experiences in software
 development through means of storytelling.
 
-Here, I want to share my work (current and previous), my "aha!" moments, my
+Here, I want to share my work (current and previous), my *"aha!!"* moments, my
 moments of struggles, failures, gratitude, and my journey through the worlds
 of AI, Open Source, and Software Development.
 
@@ -46,14 +46,14 @@ learning, so there's that to share too.
 Open Source
 -------------------------------------------------------------------------------
 
-I :fas:`heart mrl-0 red` Open Source!
+I :fas:`heart mrl-0 red` Open Source!!
 
 Funny enough, I accidentally got started into it and I don't know why; I bloody
 loved it. It was, and still is, a personal reminder to share my struggles and
 achievements with everyone, breaking down cultural and digital barriers and
 inviting collaboration across disciplines and borders.
 
-My belief in this "open-ness" has led me to contribute to and work at some
+My belief in this *"open-ness"* has led me to contribute to and work at some
 amazing research labs and projects under the guidance of some super-duper
 talented people in the industry.
 
@@ -92,7 +92,7 @@ had a passion for teaching and sharing this.
 Teaching philosophy
 -------------------------------------------------------------------------------
 
-Personally, I believe that "true" mastery of something comes from sharing
+Personally, I believe that *"true"* mastery of something comes from sharing
 knowledge and learning from mistakes and past experiences. Whether it is
 breaking down complex machine learning algorithms or explaining the nuances of
 software design patterns, I find joy in making these technical ideas relatable
@@ -132,7 +132,7 @@ I'm not on social media, but I'm always open to conversations about AI,
 Teaching, Open Source, or just a casual chat about life. I'd love to hear from
 you. It doesn't need to be just about the tech either.
 
-Also, I'm a huge film nerd and I enjoy memes!
+Also, I'm a huge film nerd and I enjoy memes!!
 
 .. _Subject-matter expert: https://en.wikipedia.org/wiki/Subject-matter_expert
 
