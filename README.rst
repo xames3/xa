@@ -6,7 +6,7 @@ Akshay's Corner (Website + Sphinx Theme)
 ===============================================================================
 
 This repository holds the code (custom
-`Sphinx https://www.sphinx-doc.org/en/master/index.html`_ Theme) and content
+`Sphinx <https://www.sphinx-doc.org/en/master/index.html>`_ Theme) and content
 for my personal portfolio website, `Akshay's Corner <https://xa.mes3.dev>`_,
 which I intend to use as my primary source of teaching and sharing thoughts and
 experiments.
