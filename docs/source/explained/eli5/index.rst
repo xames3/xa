@@ -1,8 +1,8 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 07 November, 2025
-.. Last updated on: 28 November, 2025
+.. Last updated on: 07 December, 2025
 
-:og:title: Explain Like I'm 5!
+:og:title: Explain Like I'm 5
 :og:description: Not exactly short, but simple answers to tricky technical
     concepts and questions
 :og:type: article
@@ -15,7 +15,7 @@
 .. _explained-explain-like-im-five:
 
 ===============================================================================
-:fas:`child-reaching far` Explain Like I'm 5!
+:fas:`child-reaching far` Explain Like I'm 5
 ===============================================================================
 
 .. author::
@@ -45,7 +45,7 @@ I'm starting this new series as an experiment for myself, to see how much I've
 learned over the years by relating theoretical or invisible concepts to our
 practical, tangible world.
 
-.. rubric:: Making it click!
+.. rubric:: Making it click!!
 .. rubric::
     In my experience as an engineer and a professor, the biggest hurdle isn't
     the code itself, it's the **need to imagine** a complex, invisible process.
@@ -65,7 +65,7 @@ Plus, I also want to give everyone the chance to understand and share their own
 examples or their ways of understanding the same concepts.
 
 You never know what simple example or idea might be the one that finally
-clicks!
+clicks!!
 
 .. rubric:: The big idea
 
@@ -77,6 +77,6 @@ It is always lovely when someone has a prerequisite for a topic, but I feel
 that won't be necessary here, as I intend to keep these articles completely
 independent. So feel free to jump in and explore whichever topic you fancy.
 
-These pages are designed to give you that **aha!** moment. They are short\*,
+These pages are designed to give you that **aha!!** moment. They are short\*,
 sharp bits of knowledge with relatable examples to make technical understanding
 click instantly.

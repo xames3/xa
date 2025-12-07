@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 August, 2025
-.. Last updated on: 27 November, 2025
+.. Last updated on: 07 December, 2025
 
 :og:title: A week into Docker
 :og:description: Begineer's guide to Docker and containerisation
@@ -146,9 +146,9 @@ These environments are what we call **containers**.
 Idea behind Containers
 -------------------------------------------------------------------------------
 
-In the 1950s, `Malcolm McLean`_ came up with the concept of "containerisation"
-by inventing and standardising the modern shipping containers, but his idea was
-to make shipping goods easier and more efficient.
+In the 1950s, `Malcolm McLean`_ came up with the concept of
+*"containerisation"* by inventing and standardising the modern shipping
+containers, but his idea was to make shipping goods easier and more efficient.
 
 Essentially, what it all meant was that instead of loading and unloading goods
 every time they were transferred from one mode of transport to another, they
@@ -210,7 +210,7 @@ Since a VM runs just like a regular application, it needs its own set of
 dedicated resources like CPU, memory, storage, and processing power. It's
 thorough, but it's also heavy.
 
-Very heavy... I mean, you're running multiple bloody OSs at the same time!
+Very heavy... I mean, you're running multiple bloody OSs at the same time!!
 
 Containers, on the other hand, share the host OS's resources (kernel) and run
 as isolated processes (not technically) in the user space on the host OS. In

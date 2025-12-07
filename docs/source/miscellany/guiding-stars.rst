@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 24 February, 2025
-.. Last updated on: 26 November, 2025
+.. Last updated on: 07 December, 2025
 
 :og:title: Guiding stars
 :og:description: Expressing heartfelt gratitude to the heros who shaped my
@@ -63,7 +63,7 @@ me during my highs and lows and helped shape my character.
 
 My mum's always with me, in my moments of doubt, to celebrating my successes
 (big and small); she has always been present and keeping me grounded. And to
-this strength, I'm and I'll always be eternally grateful!
+this strength, I'm and I'll always be eternally grateful!!
 
 .. _charlotte-parks:
 
@@ -94,9 +94,8 @@ reminding me of our last chat...
 
 .. rubric:: Roll credits, my supporting cast
 .. rubric::
-    I'm a huge movie nerd, and I believe that life, much like a cinema, is
-    **never** a solo act, but in the collective effort of those who work behind
-    the scenes.
+    I believe that life, much like a cinema, is **never** a solo act, but in
+    the collective effort of those who work behind the scenes.
     :class: subtitle-text
 
 And so, my life or this journey has always been shaped and tweaked by an
@@ -126,26 +125,20 @@ minds and kind souls yet to cross my path.
 Antonio Tovar
 -------------------------------------------------------------------------------
 
-`Dr. Tovar <https://www.linkedin.com/in/antoniotovar>`_, I first met you at
-`National Louis University <https://nl.edu>`_ in 2024, during the
-`NASA Open Science <https://science.nasa.gov/open-science/>`_ workshop. You
-were co-leading that cohort and generously offered me the opportunity to intern
-under your guidance at NASA. You've always been kind, supportive, a father
-figure, and a teacher ready with valuable advice and encouragement.
+`Dr. Tovar`_, I first met you at `National Louis University <https://nl.edu>`_
+in 2024, during the `NASA Open Science`_ workshop. You were co-leading that
+cohort and generously offered me the opportunity to intern under your guidance
+at NASA. You've always been kind, supportive, a father figure, and a teacher
+ready with valuable advice and encouragement.
 
 .. figure:: ../assets/media/dr-tovar-and-my-students.jpg
     :alt: Dr. Tovar with my students at NASA Open Science 2025 Workshop on the
         final day
     :figclass: zoom grayscale
 
-    Dr. Tovar (left) with my students,
-    `Huzaifa Quaid <https://www.linkedin.com/in/huzaifa-quaid-johar>`_
-    (left-centre),
-    `Ishrak Rahman <https://www.linkedin.com/in/ishrakr>`_ (centre),
-    `Orkhan Guliyev <https://www.linkedin.com/in/orkhan-guliyev06>`_
-    (right-centre), and
-    `Sezim Mamatova <https://www.linkedin.com/in/smamatova>`_ (right) at NASA
-    Open Science 2025 after presentations.
+    Dr. Tovar (left) with my students, `Huzaifa Quaid`_ (left-centre),
+    `Ishrak Rahman`_ (centre), `Orkhan Guliyev`_ (right-centre), and
+    `Sezim Mamatova`_ (right) at NASA Open Science 2025 after presentations.
 
 There were a lot of people who helped me on my journey to becoming a teacher,
 but you were perhaps the most important of them all. I can't thank you enough
@@ -160,10 +153,9 @@ And for that, I'm deeply grateful!!
 Cameron Riddell
 -------------------------------------------------------------------------------
 
-`Cameron <https://www.linkedin.com/in/cameron-riddell/>`_, you've been a true
-mentor and a source of inspiration in my open science journey from the very
-start. Though our chats have been entirely virtual, your mentorship has bridged
-time zones.
+`Cameron`_, you've been a true mentor and a source of inspiration in my open
+science journey from the very start. Though our chats have been entirely
+virtual, your mentorship has bridged time zones.
 
 I vividly remember how your resourceful teachings offered clarity and
 encouragement precisely when I needed it most. Your introduction to
@@ -206,10 +198,9 @@ Wowwwwwwww
 John Komarnicki
 -------------------------------------------------------------------------------
 
-`John <https://www.linkedin.com/in/john-k-819716148/>`_ is the *"MC"* of
-`Chicago Code and Coffee`_, a monthly tech-networking event and perhaps the
-largest one of all in Chicago. I first met you at one of these events (June
-2024) during a particularly difficult time in my life.
+`John`_ is the *"MC"* of `Chicago Code and Coffee`_, a monthly tech-networking
+event and perhaps the largest one of all in Chicago. I first met you at one of
+these events (June 2024) during a particularly difficult time in my life.
 
 I was looking for a distraction of sorts, and it turned out to be exactly what
 I needed: a supportive community that you and your team had fostered with care.
@@ -230,10 +221,10 @@ will get no strikes.
 Judy Cazares
 -------------------------------------------------------------------------------
 
-I first met `Judy <https://www.linkedin.com/in/judyc-data>`_ at `ChiPy`_ in
-2024, and you were among the first to welcome me. Since then, we've been great
-friends. Your kindness and support have always been appreciated. I've always
-valued your willingness to listen and offer thoughtful, grounded advice.
+I first met `Judy`_ at `ChiPy`_ in 2024, and you were among the first to
+welcome me. Since then, we've been great friends. Your kindness and support
+have always been appreciated. I've always valued your willingness to listen and
+offer thoughtful, grounded advice.
 
 I often find myself reflecting on your words surprisingly more than I've with
 anyone else. Our playful banter and jokes are a highlight, yet it is amusing
@@ -266,10 +257,9 @@ For all your coaching, I'm deeply grateful.
 Sameer Gururaj Mathad
 -------------------------------------------------------------------------------
 
-`Sameer <https://www.linkedin.com/in/sameer-gururaj-mathad/>`_, our friendship
-began during my final quarter at DePaul. I often tease you about your
-disciplined approach, but beneath the banter lies a genuine admiration for your
-steady commitment to hard work.
+`Sameer`_, our friendship began during my final quarter at DePaul. I often
+tease you about your disciplined approach, but beneath the banter lies a
+genuine admiration for your steady commitment to hard work.
 
 .. figure:: ../assets/media/sameer-and-i-graduated.jpg
     :alt: Sameer and I at our graduation ceremony
@@ -312,17 +302,16 @@ Here's 🍷 to our friendship.
 Shilpa Musale
 -------------------------------------------------------------------------------
 
-`Shilpa <https://www.linkedin.com/in/shilpamusale/>`_, you've been my source of
-wisdom since my first year at the uni. At times when I felt isolated and
-overwhelmed, you made me feel safe and welcomed. Our conversations and your
-stories have been more than memories; they've been life lessons, each filled
-with quiet wisdom.
+`Shilpa`_, you've been my source of wisdom since my first year at the uni. At
+times when I felt isolated and overwhelmed, you made me feel safe and welcomed.
+Our conversations and your stories have been more than memories; they've been
+life lessons, each filled with quiet wisdom.
 
 You've guided me through career decisions and supported me during difficult
 times. Your presence was always reassuring, whether through a message or a
 spontaneous invitation for a walk. I'd never forget that.
 
-I'm genuinely grateful to have found a mentor in you!
+I'm genuinely grateful to have found a mentor in you!!
 
 .. _young-song:
 
@@ -330,10 +319,10 @@ I'm genuinely grateful to have found a mentor in you!
 Young Song
 -------------------------------------------------------------------------------
 
-`Young <https://www.linkedin.com/in/youngsong-us/>`_, our friendship began in
-my second quarter at the uni, where we both took a class on Discrete
-Structures. From the outset, your curiosity and support stood out, and I'm
-truly grateful for the friendship we've built since then.
+`Young`_, our friendship began in my second quarter at the uni, where we both
+took a class on Discrete Structures. From the outset, your curiosity and
+support stood out, and I'm truly grateful for the friendship we've built since
+then.
 
 .. figure:: ../assets/media/young-at-our-graduation-2.jpg
     :alt: Young attending our graduation ceremony in June 2025
@@ -353,7 +342,19 @@ celebration; for that, I'm very thankful, Young.
 
 .. _Gaia: https://en.wikipedia.org/wiki/Gaia
 .. _Edward Tufte: https://www.edwardtufte.com
-.. _Chicago Code and Coffee: https://www.meetup.com/code-and-coffee-chicago/
+.. _Chicago Code and Coffee: https://www.meetup.com/code-and-coffee-chicago
 .. _Discord: https://discord.gg/NNYtWNFByN
 .. _ChiPy: https://www.chipy.org/
-.. _Meetup: https://www.meetup.com/code-and-coffee-chicago/
+.. _Meetup: https://www.meetup.com/code-and-coffee-chicago
+.. _Dr. Tovar: https://www.linkedin.com/in/antoniotovar
+.. _NASA Open Science: https://science.nasa.gov/open-science
+.. _Huzaifa Quaid: https://www.linkedin.com/in/huzaifa-quaid-johar
+.. _Ishrak Rahman: https://www.linkedin.com/in/ishrakr
+.. _Orkhan Guliyev: https://www.linkedin.com/in/orkhan-guliyev06
+.. _Sezim Mamatova: https://www.linkedin.com/in/smamatova
+.. _Cameron: https://www.linkedin.com/in/cameron-riddell
+.. _John: https://www.linkedin.com/in/john-k-819716148
+.. _Judy: https://www.linkedin.com/in/judyc-data
+.. _Sameer: https://www.linkedin.com/in/sameer-gururaj-mathad
+.. _Shilpa: https://www.linkedin.com/in/shilpamusale
+.. _Young: https://www.linkedin.com/in/youngsong-us
