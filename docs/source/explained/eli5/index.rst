@@ -30,7 +30,7 @@
 Over the last few years, as I've slowly come to believe that if you really
 understand a concept, now it could be anything from maths to science to even
 programming, you should be able to explain it simply to anyone, **even a
-five-year old**. I've said it before, I live by the old quote by Dr. Richard
+five-year old**. I've said it before, I live by the old quote by Dr Richard
 Feynman:
 
 .. epigraph::
@@ -42,7 +42,7 @@ have a bit of a laugh sometimes. And this corner is where I'll be sharing my
 take on some of those concepts that can sometimes seem a bit daunting.
 
 I'm starting this new series as an experiment for myself, to see how much I've
-learned over the years by relating theoretical or invisible concepts to our
+learnt over the years by relating theoretical or invisible concepts to our
 practical, tangible world.
 
 .. rubric:: Making it click!!
