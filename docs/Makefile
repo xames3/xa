@@ -1,9 +1,9 @@
 # =============================================================================
-# Custom Makefile
+# Makefile for testing Akshay's Corner
 # 
 # Author: Akshay Mestry <xa@mes3.dev>
 # Created on: 22 February, 2025
-# Last updated on: 27 November, 2025
+# Last updated on: 19 December, 2025
 # 
 # This Makefile provides a comprehensive set of commands (targets) for building
 # and testing my website.
@@ -30,7 +30,7 @@ SOURCE_DIR      := source
 OUTPUT_DIR      := build
 
 PROTOCOL        := http
-HOST            := 0.0.0.0
+LOCALHOST		:= localhost
 PORT            := 5500
 
 # === TOOLS ===================================================================
@@ -54,7 +54,6 @@ SPHINX_LINT_FLAGS := \
 
 HTTP_SERVER_FLAGS := \
 	$(PORT) \
-	--bind $(HOST) \
 	--directory $(OUTPUT_DIR)
 
 # === TARGETS =================================================================
@@ -97,8 +96,8 @@ rebuild: ## Rebuild HTML files after cleaning the build directory.
 	@$(MAKE) html --no-print-directory
 
 serve: ## Start a development web server, if not running already and serve.
-	@if ps -ef | grep "$(HTTP-SERVER)" | grep $(PORT) | grep -v grep | grep -v xargs | grep -v awk | grep -v make > /dev/null; then \
-		printf "$(COLOUR_GREEN)[EXIST]$(COLOUR_RESET) Development server already running at $(PROTOCOL)://$(HOST):$(PORT)... $(COLOUR_CYAN)SKIPPED!$(COLOUR_RESET)\n"; \
+	@if ps -ef | grep "$(HTTP_SERVER)" | grep $(PORT) | grep -v grep | grep -v xargs | grep -v awk | grep -v make > /dev/null; then \
+		printf "$(COLOUR_GREEN)[EXIST]$(COLOUR_RESET) Development server already running at $(PROTOCOL)://$(LOCALHOST):$(PORT)... $(COLOUR_CYAN)SKIPPED!$(COLOUR_RESET)\n"; \
 	else \
 		$(MAKE) devserver --no-print-directory; \
 	fi
@@ -109,17 +108,17 @@ start: ## Rebuild HTML files, start a development web server and serve.
 
 stop: ## Stop the development web server.
 	@printf "$(COLOUR_RED)[CLOSE]$(COLOUR_RESET) Stopping development server... "
-	@ps -ef | grep "$(HTTP-SERVER)" | grep $(PORT) | grep -v grep | grep -v xargs | grep -v awk | grep -v make | awk '{print $$2}' | xargs -r kill && \
+	@ps -ef | grep "$(HTTP_SERVER)" | grep $(PORT) | grep -v grep | grep -v xargs | grep -v awk | grep -v make | awk '{print $$2}' | xargs -r kill && \
 		printf "$(COLOUR_GREEN)OK!$(COLOUR_RESET)\n" || \
 		(printf "$(COLOUR_RED)FAILED!$(COLOUR_RESET)\n" && exit 1)
 
 devserver:
-	@printf "$(COLOUR_OLIVE)[START]$(COLOUR_RESET) Starting development server at $(PROTOCOL)://$(HOST):$(PORT)... "
+	@printf "$(COLOUR_OLIVE)[START]$(COLOUR_RESET) Starting development server at $(PROTOCOL)://$(LOCALHOST):$(PORT)... "
 	@($(HTTP_SERVER) $(HTTP_SERVER_FLAGS) &) >/dev/null && \
 		sleep 1 && \
-		(open "$(PROTOCOL)://$(HOST):$(PORT)" 2>/dev/null || \
-		xdg-open "$(PROTOCOL)://$(HOST):$(PORT)" 2>/dev/null || \
-		echo "Open $(PROTOCOL)://$(HOST):$(PORT) in your browser.") && \
+		(open "$(PROTOCOL)://$(LOCALHOST):$(PORT)" 2>/dev/null || \
+		xdg-open "$(PROTOCOL)://$(LOCALHOST):$(PORT)" 2>/dev/null || \
+		echo "Open $(PROTOCOL)://$(LOCALHOST):$(PORT) in your browser.") && \
 		printf "$(COLOUR_GREEN)OK!$(COLOUR_RESET)\n" || \
 		(printf "$(COLOUR_RED)FAILED!$(COLOUR_RESET)\n" && exit 1)
 
@@ -129,3 +128,4 @@ loadenv:
 		(printf "$(COLOUR_RED)FAILED!$(COLOUR_RESET)\n" && exit 1)
   -include ../env.bak
   export
+
