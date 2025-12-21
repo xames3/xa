@@ -104,7 +104,7 @@ Early in my software engineering career, I came across a quote:
 
     If you want to master something, teach it.
 
-    -- Dr. Richard Feynman
+    -- Dr Richard Feynman
 
 And I absolutely fell in love with this idea. Soon, I realised you really
 can't really call yourself an SME (`Subject-matter expert`_) until you can

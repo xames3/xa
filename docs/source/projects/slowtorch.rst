@@ -61,7 +61,7 @@ Lessons from xsNumPy
 -------------------------------------------------------------------------------
 
 Before starting off with SlowTorch, I took a moment to reflect on the lessons I
-learned while writing xsNumPy. It became super clear that the most valuable
+learnt while writing xsNumPy. It became super clear that the most valuable
 insights came from the process of building it and not the results. Sure, the
 results were important, but this reminded me that sometimes, the journey is
 more important than the destination.

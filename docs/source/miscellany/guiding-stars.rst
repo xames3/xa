@@ -125,25 +125,25 @@ minds and kind souls yet to cross my path.
 Antonio Tovar
 -------------------------------------------------------------------------------
 
-`Dr. Tovar`_, I first met you at `National Louis University <https://nl.edu>`_
+`Dr Tovar`_, I first met you at `National Louis University <https://nl.edu>`_
 in 2024, during the `NASA Open Science`_ workshop. You were co-leading that
 cohort and generously offered me the opportunity to intern under your guidance
 at NASA. You've always been kind, supportive, a father figure, and a teacher
 ready with valuable advice and encouragement.
 
 .. figure:: ../assets/media/dr-tovar-and-my-students.jpg
-    :alt: Dr. Tovar with my students at NASA Open Science 2025 Workshop on the
+    :alt: Dr Tovar with my students at NASA Open Science 2025 Workshop on the
         final day
     :figclass: zoom grayscale
 
-    Dr. Tovar (left) with my students, `Huzaifa Quaid`_ (left-centre),
+    Dr Tovar (left) with my students, `Huzaifa Quaid`_ (left-centre),
     `Ishrak Rahman`_ (centre), `Orkhan Guliyev`_ (right-centre), and
     `Sezim Mamatova`_ (right) at NASA Open Science 2025 after presentations.
 
 There were a lot of people who helped me on my journey to becoming a teacher,
 but you were perhaps the most important of them all. I can't thank you enough
 for all the opportunities you've given me at NLU and for still believing in
-me, Dr. Tovar.
+me, Dr Tovar.
 
 And for that, I'm deeply grateful!!
 
@@ -172,7 +172,7 @@ Cheers for being such a **"legend"**, mate!!
 Fatemeh Taghvaei
 -------------------------------------------------------------------------------
 
-**Fatemeh**, our paths crossed thanks to :ref:`Dr. Tovar <antonio-tovar>` while
+**Fatemeh**, our paths crossed thanks to :ref:`Dr Tovar <antonio-tovar>` while
 I was still a student at DePaul and you were already teaching at NLU. To me,
 you're more than a colleague; you're a mentor and perhaps my greatest
 well-wisher.
@@ -346,7 +346,7 @@ celebration; for that, I'm very thankful, Young.
 .. _Discord: https://discord.gg/NNYtWNFByN
 .. _ChiPy: https://www.chipy.org/
 .. _Meetup: https://www.meetup.com/code-and-coffee-chicago
-.. _Dr. Tovar: https://www.linkedin.com/in/antoniotovar
+.. _Dr Tovar: https://www.linkedin.com/in/antoniotovar
 .. _NASA Open Science: https://science.nasa.gov/open-science
 .. _Huzaifa Quaid: https://www.linkedin.com/in/huzaifa-quaid-johar
 .. _Ishrak Rahman: https://www.linkedin.com/in/ishrakr
