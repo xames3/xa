@@ -2876,6 +2876,15 @@ a[data-tooltip].show-tooltip::after {
     width: 90%;
 }
 
+.date-text {
+    color: hsla(var(--muted-foreground)/ 0.5);
+    font-size: 0.95rem !important;
+    font-weight: 400 !important;
+    margin: 0.5rem auto 2rem !important;
+    line-height: 1.5rem !important;
+    letter-spacing: initial !important;
+}
+
 .pt-64 {
     padding-top: 4rem;
 }
