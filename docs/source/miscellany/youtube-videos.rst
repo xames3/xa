@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 05 September, 2025
-.. Last updated on: 07 December, 2025
+.. Last updated on: 20 December, 2025
 
 :og:title: The best YouTube has to Offer
 :og:description: A curated list of my favourite YouTube videos that I've found
@@ -404,7 +404,59 @@ talks, education, concepts of computer science, and more.
 
                 .. grid-item::
 
-                    .. thumbnail:: https://www.youtube.com/watch?v=xFkqOdAluJ0
+                    .. thumbnail:: https://www.youtube.com/watch?v=1ZhIWonhTGM
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=XRIhRhDj3_c
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=RWPyXdrLm-w
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=3Kvv7VEM3uc
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=RNF0FvRjGZk
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=pF70DVY4zKQ
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=e9OXqEPF-5M
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=c32zXYAK7CI
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=gVaXLlGqQ-c
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=uL7KvRskeog
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=rwb-IhPdX6I
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=ED9AUfFrak8
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=Ic-8swynoHU
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=Lakz2MoHy6o
 
         .. tab-item:: Talks & Interviews
 
@@ -522,6 +574,34 @@ talks, education, concepts of computer science, and more.
                 .. grid-item::
 
                     .. thumbnail:: https://www.youtube.com/watch?v=d40tBcqopAI
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=1fZTOjd_bOQ
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=XA2WjJbmmoM
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=giT0ytynSqg
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=jrK3PsD3APk
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=EBFJSCkPnlU
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=xvzo_nV9PjU
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=MYP56QJpDr4
 
         .. tab-item:: Science & Education
 
@@ -661,6 +741,50 @@ talks, education, concepts of computer science, and more.
                 .. grid-item::
 
                     .. thumbnail:: https://www.youtube.com/watch?v=QUGmwPwtbpg
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=Wim9WJeDTHQ
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=0e_eQHhQFi8
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=OUQVhnuTMVU
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=IQofiPqhJ_s
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=w-I6XTVZXww
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=cGEKU0BXtgg
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=ZMkIiFs35HQ
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=fHPs0TsSXd0
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=k9Re5otW-v0
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=mCfjSc8A9Qo
+
+                .. grid-item::
+
+                    .. thumbnail:: https://www.youtube.com/watch?v=UAT-eOzeY4M
 
                 .. grid-item::
 
@@ -992,7 +1116,7 @@ curiosity gets the better of your sleep schedule.
 
 .. dropdown:: Some of my favourite late-night bored out of your mind videos
 
-    .. grid:: 2
+    .. grid:: 3
 
         .. grid-item::
 
@@ -1013,6 +1137,167 @@ curiosity gets the better of your sleep schedule.
         .. grid-item::
 
             .. thumbnail:: https://www.youtube.com/watch?v=d4xzmMuJTWs
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=PPdGhZHT7JU
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=OCLf1xhdiWQ
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=ZdRdUF4qoJE
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=3oYAAM3J-9I
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=_xgn0niHD-E
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=6er5oSPUGOI
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=llzPppfId3Q
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=njstvj2M0WA
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=ysK65MLXvDo
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=zVu-XvULZNg
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=YD9QLw5vBZQ
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=9Kl-wO_j5GM
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=mCfjSc8A9Qo
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=xjJnWuA7-ps
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=va1oiojnGrA
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=gbAsIuL_lR8
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=zIswVGTKqys
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=jx0llzSntd8
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=vq4eRtwFjIc
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=JY-Cw2tLPOE
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=-YV9GYSrJZs
+
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=18QGRoIHX6s
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=ecZztlQnDis
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=sgwxQyZFdjI
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=zC7IIJCz8Dw
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=5Zc5AtwQ35k
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=B4pW6Xt83jk
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=xHd4zsIbXJ0
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=YueUgCTMjMY
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=pDUUT2Y_9qk
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=SvOsaPVwzxI
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=u8SZ2ER1oH4
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=7kH8zD4z9bE
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=zryfjSaxXLo
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=hN5X4kGhAtU
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=GiAMY2qKztI
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=CpkiFhqfZnM
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=9O17tiwp2cc
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=QpzHgBPxaag
+
+        .. grid-item::
+
+            .. thumbnail:: https://www.youtube.com/watch?v=A-pqjLgFCqw
 
         .. grid-item::
 
