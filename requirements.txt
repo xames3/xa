@@ -34,7 +34,7 @@ requests==2.32.3
 roman-numerals-py==4.1.0
 six==1.17.0
 snowballstemmer==2.2.0
-soupsieve==2.6
+soupsieve==2.8.1
 Sphinx==8.2.1
 sphinx-carousel==1.2.0
 sphinx-copybutton==0.5.2
