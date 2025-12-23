@@ -11,10 +11,10 @@ cycler==0.12.1
 distlib==0.3.9
 docutils==0.21.2
 filelock==3.20.1
-fonttools==4.61.0
+fonttools==4.61.1
 idna==3.10
 imagesize==1.4.1
-Jinja2==3.1.5
+Jinja2==3.1.6
 kiwisolver==1.4.8
 MarkupSafe==3.0.2
 matplotlib==3.10.0
@@ -31,7 +31,7 @@ python-dateutil==2.9.0.post0
 pytube==15.0.0
 regex==2024.11.6
 requests==2.32.3
-roman-numerals-py==3.1.0
+roman-numerals-py==4.1.0
 six==1.17.0
 snowballstemmer==2.2.0
 soupsieve==2.6
