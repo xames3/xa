@@ -4,7 +4,7 @@ Author Directive
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 22 February, 2025
-Last updated on: 02 November, 2025
+Last updated on: 23 December, 2025
 
 This module defines a custom `author` directive for this sphinx theme.
 The directive allows embedding details directly within the document.
@@ -44,6 +44,7 @@ from __future__ import annotations
 
 import os.path as p
 import typing as t
+from xml.dom import minidom
 
 import docutils.nodes as nodes
 import docutils.parsers.rst as rst
@@ -159,7 +160,11 @@ def visit(self: HTMLTranslator, node: node) -> None:
         if (dom := node.document)
         else ["Article"]
     )
-    node.attributes["subject"] = title[0].firstChild.nodeValue
+    child = title[0].firstChild
+    while child and child.nodeType != minidom.Node.TEXT_NODE:
+        child = child.nextSibling
+    if child:
+        node.attributes["subject"] = child.data.strip()
     self.body.append(template.render(**node.attributes))
 
 

@@ -84,10 +84,15 @@ details.sd-dropdown:not([open])>.sd-card-header {
     background-color: transparent;
 }
 
+details.sd-dropdown summary.sd-summary-title {
+    flex-direction: row-reverse;
+    gap: 1.5rem;
+}
+
 details.sd-dropdown .sd-summary-chevron-right::before {
     color: hsl(var(--foreground)) !important;
     opacity: 1 !important;
-    content: "\f078";
+    content: "\2b";
     display: inline-block;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -95,7 +100,7 @@ details.sd-dropdown .sd-summary-chevron-right::before {
     font: var(--fa-font-regular);
     margin-right: 0;
     margin-left: 8px;
-    transform: rotateX(0deg) !important;
+    transform: rotateZ(0deg) !important;
     transition: transform var(--duration-normal) var(--ease-in-out);
     will-change: transform;
 }
@@ -106,7 +111,7 @@ details .sd-tab-content .sd-card-text {
 }
 
 details.sd-dropdown[open] .sd-summary-chevron-right::before {
-    transform: rotateX(180deg) !important;
+    transform: rotateZ(45deg) !important;
 }
 
 details.sd-dropdown[open]>.sd-summary-title .sd-summary-chevron-down,
@@ -319,3 +324,4 @@ nav a svg .sd-material-icon {
     color: hsl(var(--foreground)) !important;
     border: 1px solid hsl(var(--border)) !important;
 }
+

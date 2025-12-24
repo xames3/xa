@@ -770,3 +770,4 @@ Cal.ns["quick-chat"]("ui",
         "hideEventTypeDetails": false,
         "layout": "month_view"
     });
+

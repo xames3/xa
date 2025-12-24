@@ -8,7 +8,7 @@
     --docsearch-modal-background: hsl(var(--popover));
     --docsearch-footer-background: hsl(var(--popover));
     --docsearch-searchbox-focus-background: hsl(var(--popover));
-    --docsearch-container-background: hsl(var(--background)/0.8);
+    --docsearch-container-background: hsl(var(--background), 0.8);
     --docsearch-spacing: 0.5rem;
     --docsearch-hit-active-color: hsl(var(--accent-foreground));
     --docsearch-hit-background: transparent;
@@ -88,10 +88,11 @@
 }
 
 .DocSearch-Button-Placeholder {
+    display: none;
     color: hsl(var(--foreground));
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-family: "Geist Mono", monospace;
-    padding-left: 0.5rem;
+    padding: 0 0 0 0.5rem;
 }
 
 .DocSearch-Input {
@@ -126,7 +127,7 @@
 
 .DocSearch-Container {
     position: fixed;
-    background-color: transparent;
+    background-color: hsl(var(--docsearch-container-background));
     --tw-backdrop-blur: blur(8px);
     backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
@@ -250,3 +251,4 @@
     box-shadow: none;
     border: none;
 }
+
