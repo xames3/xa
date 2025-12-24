@@ -30,11 +30,8 @@ submit a pull request on GitHub.
 License
 -------------------------------------------------------------------------------
 
-The website and it's companion theme is licensed under the MIT License. See the
-`LICENSE`_ file for more details.
-
-The source code of this project (website) is licensed under the `MIT License`_.
-The educational content and blog posts are licensed under `CC BY 4.0`_.
+The source code of this project (website) is licensed under the `MIT`_ and the
+educational content and blog posts are licensed under `CC BY 4.0`_.
 
 .. _MIT License: https://github.com/xames3/xa/blob/main/LICENSE-CODE
 .. _CC BY 4.0: https://github.com/xames3/xa/blob/main/LICENSE
