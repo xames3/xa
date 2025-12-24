@@ -41,8 +41,8 @@
     --ease-in-out-expo: cubic-bezier(1, 0, 0, 1);
     --ease-in-out-quint: cubic-bezier(0.86, 0, 0.07, 1);
     --ease-out-back: cubic-bezier(0.34, 1.56, 0.64, 1);
-    --duration-fast: 150ms;
-    --duration-normal: 500ms;
+    --duration-fast: 250ms;
+    --duration-normal: 750ms;
     --duration-slow: 1000ms;
     --sidebar-width: 250px;
     --header-offset: 2.5rem;
@@ -54,6 +54,7 @@
     --red-color: 357.87, 68.98%, 51.96%;
     --yellow-color: 38.9, 100%, 57.06%;
     --green-color: 131.25, 41.03%, 45.88%;
+    --blue-color: 205.88, 100%, 50%;
 }
 
 /* Dark theme overrides */
@@ -1591,6 +1592,17 @@ a.headerlink {
     text-decoration-line: none !important;
 }
 
+.caption-text {
+    align-items: center;
+    display: flex;
+}
+
+.caption-text img {
+    width: 1.25rem;
+    height: 1.25rem;
+    margin: 0;
+}
+
 /* Headerlink icon on hover */
 h2:hover>a.headerlink:before,
 h3:hover>a.headerlink:before,
@@ -1980,7 +1992,7 @@ pre span.linenos {
 }
 
 .literal-block-wrapper .code-block-caption {
-    padding: 0 12px 0 16px;
+    padding: 0 1rem;
     display: flex;
     height: 48px;
     align-items: center;
@@ -2125,7 +2137,7 @@ i {
 
 /* Admonitions */
 .admonition {
-    background-color: hsl(var(--light-accent), 0.2);
+    background-color: hsl(var(--light-accent), 0.5);
     border-radius: var(--radius);
     border: 1px solid hsl(var(--muted-foreground) / 0.2);
     color: hsl(var(--accent-foreground));
@@ -2429,6 +2441,7 @@ i {
 
 #left-sidebar ul ul {
     padding: 0 0 0 .75rem !important;
+    transition: all var(--duration-normal) var(--ease-in-out-quint);
 }
 
 .site-sidebar--primary li.has-children {
@@ -2500,7 +2513,7 @@ i {
 .site-sidebar--primary li.has-children.current>button.nav-toggle::before,
 .site-sidebar--primary li.has-children[aria-expanded="true"]>button.nav-toggle::before {
     color: hsl(var(--bold));
-    transition: color var(--duration-slow) var(--ease-out);
+    transition: color var(--duration-slow) var(--ease-out), transform var(--duration-normal) var(--ease-out);
 }
 
 /* Badges */
@@ -2919,6 +2932,30 @@ a[data-tooltip].show-tooltip::after {
     margin-inline: 0 !important;
 }
 
+.mr-xxs {
+    margin-right: 0.05rem !important;
+}
+
+.ml-xxs {
+    margin-left: 0.05rem !important;
+}
+
+.mr-sm {
+    margin-right: 0.25rem !important;
+}
+
+.ml-sm {
+    margin-left: 0.25rem !important;
+}
+
+.mr-md {
+    margin-right: 0.5rem !important;
+}
+
+.ml-md {
+    margin-left: 0.5rem !important;
+}
+
 .far {
     font: var(--fa-font-regular);
 }
@@ -2960,6 +2997,11 @@ a[data-tooltip].show-tooltip::after {
     gap: 0.5rem;
 }
 
+.blue,
+.blue>p {
+    color: hsl(var(--blue-color));
+}
+
 .green,
 .green>p {
     color: hsl(var(--green-color));
@@ -2974,21 +3016,3 @@ a[data-tooltip].show-tooltip::after {
 .red>p {
     color: hsl(var(--red-color));
 }
-
-.fade-in {
-    opacity: 1;
-    animation-name: fadeInOpacity;
-    animation-iteration-count: 1;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-}
-
-@keyframes fadeInOpacity {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-

@@ -33,6 +33,6 @@ License
 The source code of this project (website) is licensed under the `MIT`_ and the
 educational content and blog posts are licensed under `CC BY 4.0`_.
 
-.. _MIT License: https://github.com/xames3/xa/blob/main/LICENSE-CODE
+.. _MIT: https://github.com/xames3/xa/blob/main/LICENSE-CODE
 .. _CC BY 4.0: https://github.com/xames3/xa/blob/main/LICENSE
 
