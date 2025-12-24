@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 August, 2025
-.. Last updated on: 07 December, 2025
+.. Last updated on: 22 December, 2025
 
 :og:title: A week into Docker
 :og:description: Begineer's guide to Docker and containerisation
@@ -18,6 +18,11 @@
 ===============================================================================
 :fas:`box-isometric-tape far` A week into Docker
 ===============================================================================
+
+.. rst-class:: lead
+
+    How a week of using Docker transformed the way I manage my local
+    development environments and why should you care.
 
 .. author::
     :name: Akshay Mestry
@@ -108,11 +113,7 @@ two for now.
    your local machine, or you can push your own images to Docker Hub to share
    them with others.
 
-.. _magic-of-docker-engine:
-
--------------------------------------------------------------------------------
-Magic of Docker Engine
--------------------------------------------------------------------------------
+.. rubric:: Magic of Docker Engine
 
 This is my personal take on the Docker Engine, but it helps to explain what it
 is. Being a huge cinephile, I like to think of it as a movie production crew.
@@ -272,8 +273,8 @@ Python versions. I realised I needed to clean up and manage my containers
 better, or follow some best practices. In doing so, I wondered where I had been
 getting all these bloody containers from in the first place.
 
-I knew I was pulling these containers\* from the internet, but I had no idea
-from where.
+I knew I was pulling these **containers\*** from the internet, but I had no
+idea from where.
 
 .. rubric:: That's when I discovered Docker Hub
 .. rubric::
@@ -357,3 +358,4 @@ and how it changed the way I started working on my local machine.
 .. _VirtualBox: https://www.virtualbox.org/
 .. _LXC: https://linuxcontainers.org/
 .. _OpenVZ: https://openvz.org/
+

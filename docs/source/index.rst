@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 22 February, 2025
-.. Last updated on: 07 December, 2025
+.. Last updated on: 24 December, 2025
 
 :orphan:
 :og:title: Akshay's Corner
@@ -160,3 +160,4 @@ Also, I'm a huge film nerd and I enjoy memes!!
     miscellany/guiding-stars
     miscellany/youtube-videos
     miscellany/faq
+

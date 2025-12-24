@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 18 April, 2025
-.. Last updated on: 07 December, 2025
+.. Last updated on: 24 December, 2025
 
 :og:title: PyTorch... but much slower
 :og:description: PyTorch taught me how to build while SlowTorch taught me how
@@ -13,11 +13,16 @@
     PyTorch. Have you done anything similar?
 :submitbtn: Tell me your story
 
-.. _project-slow-burning-torch:
+.. _project-pytorch-but-much-slower:
 
 ===============================================================================
 :fas:`fire-flame-curved far` PyTorch... but much slower
 ===============================================================================
+
+.. rst-class:: lead
+
+    Exploring automatic differentiation and tensor mechanics by hand-crafting a
+    slow but pure-Python reimplementation.
 
 .. author::
     :name: Akshay Mestry
@@ -33,13 +38,13 @@ January of 2025, reflecting on `xsNumPy`_. I had spent weeks understanding and
 learning arrays, memory buffers, and `broadcasting`_. As mentioned in
 :doc:`that story <./xsnumpy>`, it was indeed a trip for me.
 
-.. card:: :fas:`flask far` Why write xsNumPy?
+.. card:: :fas:`at far` Why write xsNumPy?
     :link: xsnumpy
     :link-type: doc
     :link-alt: Read story
 
     An experimental re-implementation of few of the core NumPy features in pure
-    Python. No external libraries needed.
+    Python.
 
 And yet, as I sat back gloating over my freshly baked xsNumPy, I found myself
 hungry for something more. I wanted to feel that high again and explore
@@ -54,17 +59,15 @@ inner workings.
 I mean, I've used PyTorch for years, but I had never really understood how it
 worked under the hood, so why not? Thus, it all began.
 
-.. _lessons-from-xsnumpy:
+.. rubric:: Lessons from xsNumPy
+.. rubric::
+    Before starting off with SlowTorch, I took a moment to reflect on the
+    lessons I learnt while writing **xsNumPy**.
+    :class: subtitle-text
 
--------------------------------------------------------------------------------
-Lessons from xsNumPy
--------------------------------------------------------------------------------
-
-Before starting off with SlowTorch, I took a moment to reflect on the lessons I
-learnt while writing xsNumPy. It became super clear that the most valuable
-insights came from the process of building it and not the results. Sure, the
-results were important, but this reminded me that sometimes, the journey is
-more important than the destination.
+It became super clear that the most valuable insights came from the process of
+building it and not the results. Sure, the results were important, but this
+reminded me that sometimes, the journey is more important than the destination.
 
 xsNumPy taught me that **slowness can be a gift**!!
 
@@ -72,7 +75,7 @@ Much like my approach to xsNumPy, I wanted to take my time with SlowTorch too.
 I wanted to build it slowly, understanding each component and appreciating the
 complexity of the system. I had the same three rules.
 
-.. admonition:: Rules of engagement
+.. admonition:: :fas:`badge-check green` Rules of engagement
 
     - No use of LLMs or any AI usage of anything.
     - Every line of code and every solution had to come from my own
@@ -180,7 +183,7 @@ would have a reference to its parent nodes. This way, I could traverse the
 graph and compute gradients in a more structured way.
 
 .. code-block:: python
-    :caption: :fas:`file-code far` `slowtorch/internal/tensor.py`_
+    :caption: |py| `slowtorch/internal/tensor.py`_
     :emphasize-lines: 19-21
     :linenos:
 
@@ -220,7 +223,7 @@ capable of handling basic arithmetic operations alongside complex matrix
 multiplication and broadcasting. I was able to calculate gradients for tensors
 with respect to a loss function.
 
-.. admonition:: :fas:`heart red mrl-0` Special shoutout
+.. admonition:: :fas:`heart red` Special shoutout
     :class: unusual-one danger
 
     I want to give a special shoutout to my colleague,
@@ -238,9 +241,10 @@ with respect to a loss function.
 Building the building blocks
 -------------------------------------------------------------------------------
 
-Once my tensor with autodiff support was in place, I started on the neural networks. PyTorch's :py:mod:`torch.nn` module is a marvel of
-abstractions, and I wanted to recreate it from scratch. I began by defining
-`Module`_, a base class that could hold parameters and submodules.
+Once my tensor with autodiff support was in place, I started on the neural
+networks. PyTorch's :py:mod:`torch.nn` module is a marvel of abstractions, and
+I wanted to recreate it from scratch. I began by defining `Module`_, a base
+class that could hold parameters and submodules.
 
 This class was responsible for managing the state of the model, including
 saving and loading weights, switching between training and evaluation modes,
@@ -282,7 +286,7 @@ wrapped around classes much like PyTorch.
         its functional form with its backward pass.
 
         .. code-block:: python
-            :caption: :fas:`file-code far` `slowtorch/nn/functional/layer.py`_
+            :caption: |py| `slowtorch/nn/functional/layer.py`_
             :emphasize-lines: 2,9-10
             :linenos:
 
@@ -350,8 +354,7 @@ wrapped around classes much like PyTorch.
         with its backward pass.
 
         .. code-block:: python
-            :caption: :fas:`file-code far`
-                `slowtorch/nn/functional/pointwise.py`_
+            :caption: |py| `slowtorch/nn/functional/pointwise.py`_
             :emphasize-lines: 10,13,19
             :linenos:
 
@@ -422,7 +425,7 @@ wrapped around classes much like PyTorch.
         error (MSE) loss function with its backward pass.
 
         .. code-block:: python
-            :caption: :fas:`file-code far` `slowtorch/nn/functional/loss.py`_
+            :caption: |py| `slowtorch/nn/functional/loss.py`_
             :emphasize-lines: 2,14-16
             :linenos:
 
@@ -487,8 +490,7 @@ wrapped around classes much like PyTorch.
         function with its backward pass.
 
         .. code-block:: python
-            :caption: :fas:`file-code far`
-                `slowtorch/nn/functional/mutation.py`_
+            :caption: |py| `slowtorch/nn/functional/mutation.py`_
             :emphasize-lines: 3,7
             :linenos:
 
@@ -511,7 +513,7 @@ wrapped around classes much like PyTorch.
         SlowTorch parameter.
 
         .. code-block:: python
-            :caption: :fas:`file-code far` `slowtorch/nn/modules/parameter.py`_
+            :caption: |py| `slowtorch/nn/modules/parameter.py`_
             :linenos:
 
             class Parameter(Tensor):
@@ -538,7 +540,7 @@ wrapped around classes much like PyTorch.
                         raise TypeError("Parameter data must be a tensor")
                     self.storage[:] = value.storage
 
-.. admonition:: :fas:`heart red mrl-0` Massive thanks
+.. admonition:: :fas:`heart red` Massive thanks
     :class: unusual-one danger
 
     I want to thank my friends, :ref:`Sameer <sameer-g-mathad>` and
@@ -557,23 +559,22 @@ ride a bicycle without training wheels. I fell off a ton. But each time I
 got back on, I understood a little more. I was, in a way, backpropagating my
 mistakes, learning from them, and adjusting my gradients.
 
-.. _joy-of-manual-optimisation:
-
--------------------------------------------------------------------------------
-Joy of manual optimisation
--------------------------------------------------------------------------------
+.. rubric:: Joy of manual optimisation
+.. rubric::
+    PyTorch's optimisers are **elegant** and **efficient**, but wanted to
+    understand their mechanics.
+    :class: subtitle-text
 
 With some of my neural network modules in place, I moved on to building my
-optimiser, which presented another challenge. PyTorch's optimisers are elegant
-and efficient, but I wanted to understand their mechanics. I implemented a
-simple optimiser, manually updating its parameters step by step.
+optimiser, which presented another challenge. I implemented a simple optimiser,
+manually updating its parameters step by step.
 
 Once I was happy with my optimiser, I wrote a basic |storch.optim.Optimiser|
 class that took a list of parameters and a learning rate, and it had a
 :python:`.step()` method that updated the parameters based on their gradients.
 
 .. code-block:: python
-    :caption: :fas:`file-code far` `slowtorch/optim/optimiser.py`_
+    :caption: |py| `slowtorch/optim/optimiser.py`_
     :linenos:
 
     class Optimiser:
@@ -710,3 +711,4 @@ path is the fastest way to learn.
 .. |storch.optim.SGD| replace:: ``SGD``
 .. _storch.optim.SGD: https://github.com/xames3/slowtorch/blob/main/
     slowtorch/optim/optimiser.py
+

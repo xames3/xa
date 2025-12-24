@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 24 February, 2025
-.. Last updated on: 07 December, 2025
+.. Last updated on: 21 December, 2025
 
 :og:title: Guiding stars
 :og:description: Expressing heartfelt gratitude to the heros who shaped my
@@ -254,7 +254,7 @@ For all your coaching, I'm deeply grateful.
 .. _sameer-g-mathad:
 
 -------------------------------------------------------------------------------
-Sameer Gururaj Mathad
+Sameer  Mathad
 -------------------------------------------------------------------------------
 
 `Sameer`_, our friendship began during my final quarter at DePaul. I often
@@ -358,3 +358,4 @@ celebration; for that, I'm very thankful, Young.
 .. _Sameer: https://www.linkedin.com/in/sameer-gururaj-mathad
 .. _Shilpa: https://www.linkedin.com/in/shilpamusale
 .. _Young: https://www.linkedin.com/in/youngsong-us
+
