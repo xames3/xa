@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 07 November, 2025
-.. Last updated on: 07 December, 2025
+.. Last updated on: 24 December, 2025
 
 :og:title: Explain Like I'm 5
 :og:description: Not exactly short, but simple answers to tricky technical
@@ -15,7 +15,7 @@
 .. _explained-explain-like-im-five:
 
 ===============================================================================
-:fas:`child-reaching far` Explain Like I'm 5
+:fas:`lightbulb far` Explain Like I'm 5
 ===============================================================================
 
 .. author::
@@ -30,12 +30,13 @@
 Over the last few years, as I've slowly come to believe that if you really
 understand a concept, now it could be anything from maths to science to even
 programming, you should be able to explain it simply to anyone, **even a
-five-year old**. I've said it before, I live by the old quote by Dr Richard
-Feynman:
+five-year old**. I've said it before, I live by this old quote:
 
 .. epigraph::
 
     If you want to master something, teach it.
+
+    -- Dr Richard Feynman
 
 But for me, that teaching needs to be practical, relatable, and, honestly, to
 have a bit of a laugh sometimes. And this corner is where I'll be sharing my
@@ -80,3 +81,4 @@ independent. So feel free to jump in and explore whichever topic you fancy.
 These pages are designed to give you that **aha!!** moment. They are short\*,
 sharp bits of knowledge with relatable examples to make technical understanding
 click instantly.
+

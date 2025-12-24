@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 01 March, 2025
-.. Last updated on: 07 December, 2025
+.. Last updated on: 24 December, 2025
 
 :og:title: Why write xsNumPy?
 :og:description: Journey of building a lightweight, pure-python implementation
@@ -16,8 +16,13 @@
 .. _project-building-xsnumpy:
 
 ===============================================================================
-:fas:`flask far` Why write xsNumPy?
+:fas:`at far` Why write xsNumPy?
 ===============================================================================
+
+.. rst-class:: lead
+
+    How writing a simplified NumPy in pure-Python taught me more about
+    numerical computing than using the real thing.
 
 .. author::
     :name: Akshay Mestry
@@ -78,7 +83,7 @@ Could I build a dinky version of NumPy from scratch? Because if I'm going to
 teach these concepts one day, I have to go **deeper**. If I were going to learn
 this properly, I needed discipline and some rules to follow.
 
-.. admonition:: Rules of engagement
+.. admonition:: :fas:`badge-check green` Rules of engagement
 
     - No use of LLMs or any AI usage of anything.
     - Every line of code and every solution had to come from my own
@@ -126,7 +131,7 @@ version using Python's built-in :py:mod:`ctypes` module.
 It worked poorly. But it worked!!
 
 .. code-block:: python
-    :caption: :fas:`file-code far` `xsnumpy/_core.py`_
+    :caption: |py| `xsnumpy/_core.py`_
     :linenos:
 
     class ndarray:
@@ -270,9 +275,15 @@ Illusion of simplicity
 -------------------------------------------------------------------------------
 
 After all that hard work, I thought of giving myself a break. I remembered
-telling myself, *"Let's start with something dead easy... perhaps just display
-the array. That couldn't be hard, right? All I've to do is print the content
-of my array in a readable format, just like NumPy does".*
+telling myself
+
+.. epigraph::
+
+    Let's start with something dead easy... perhaps just display
+    the array. That couldn't be hard, right? All I've to do is print the
+    content of my array in a readable format, just like NumPy does
+
+    -- silly me 😭, *2025*
 
 Little did I know, I was shooting myself in the foot. At its core, a
 :meth:`__repr__ <object.__repr__>` is an object's internal data representation.
@@ -318,11 +329,7 @@ And so, I realised, printing a NumPy array from scratch was a rabbit hole.
 
     Complete implementation of |xp.ndarray.repr|_ with helper functions.
 
-.. _more-than-meets-the-eye:
-
--------------------------------------------------------------------------------
-More than meets the eye
--------------------------------------------------------------------------------
+.. rubric:: More than meets the eye
 
 After wrestling with the *simple* things, I naively believed the hardest part
 was behind me. I was excited for the fun stuff: element-wise arithmetic,
@@ -399,9 +406,9 @@ right.
 
 They were about thinking like NumPy:
 
-- How can I infer the correct output shape?
-- How can I broadcast arrays?
-- How can I minimise unnecessary data duplication?
+- :fas:`layer-minus red far` How can I minimise unnecessary data duplication?
+- :fas:`object-intersect yellow far` How can I broadcast arrays?
+- :fas:`shapes green far` How can I infer the correct output shape?
 
 I was creating a flexible and extensible system that could handle both
 intuitive and weird edge cases. With each iteration, every commit I made, I
@@ -800,3 +807,4 @@ making them, and that learning will travel with me far beyond this code.
 .. |xp.any| replace:: ``any``
 .. _xp.any: https://github.com/xames3/xsnumpy/blob/
     69c302ccdd594f1d8f0c51dbe16346232c39047f/xsnumpy/_numeric.py
+
