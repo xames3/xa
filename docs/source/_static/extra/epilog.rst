@@ -18,3 +18,7 @@
 .. |new| replace:: :html:`<span class="badge new">New</span>`
 
 .. |>| replace:: :html:`<i class="fa-solid fa-chevron-right fa-2xs"></i>`
+
+.. |py| replace:: :html:`<img src="https://img.icons8.com/?id=13441" alt-text="Python" />`
+.. |bash| replace:: :html:`<img src="https://img.icons8.com/?id=9MJf0ngDwS8z" alt-text="Bash" />`
+
