@@ -4,7 +4,7 @@ Akshay's Corner Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 22 February, 2025
-Last updated on: 06 November, 2025
+Last updated on: 23 December, 2025
 
 This file contains the configuration settings for building my static
 website using Sphinx, a popular Python documentation tool. Sphinx is a
@@ -194,3 +194,4 @@ copybutton_selector: str = "div:not(.no-copybutton) > div.highlight > pre"
 linkcheck_ignore: list[str] = [r"https://localhost:\d+/"]
 linkcheck_timeout: int = 10
 linkcheck_retries: int = 2
+
