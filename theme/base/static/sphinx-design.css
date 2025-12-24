@@ -84,11 +84,6 @@ details.sd-dropdown:not([open])>.sd-card-header {
     background-color: transparent;
 }
 
-details.sd-dropdown summary.sd-summary-title {
-    flex-direction: row-reverse;
-    gap: 1.5rem;
-}
-
 details.sd-dropdown .sd-summary-chevron-right::before {
     color: hsl(var(--foreground)) !important;
     opacity: 1 !important;
@@ -101,7 +96,7 @@ details.sd-dropdown .sd-summary-chevron-right::before {
     margin-right: 0;
     margin-left: 8px;
     transform: rotateZ(0deg) !important;
-    transition: transform var(--duration-normal) var(--ease-in-out);
+    transition: transform var(--duration-fast) var(--ease-in-out);
     will-change: transform;
 }
 
@@ -174,7 +169,13 @@ nav a svg .sd-material-icon {
 .admonition-title .fas {
     vertical-align: baseline;
     margin-inline: 0 !important;
-    margin-right: 0.25rem !important;
+    margin-right: 0.4rem !important;
+}
+
+@media (max-width: 768px) {
+    .admonition-title .fas {
+        margin-right: 0.6rem !important;
+    }
 }
 
 .caption-text .fas,
