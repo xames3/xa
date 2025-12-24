@@ -4,7 +4,7 @@ YouTube Directive
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 22 February, 2025
-Last updated on: 02 November, 2025
+Last updated on: 22 December, 2025
 
 This module defines a custom `youtube` directive for this sphinx theme.
 The directive allows embedding a YouTube video directly within the
@@ -34,7 +34,6 @@ import urllib.parse as urlparse
 import docutils.nodes as nodes
 import docutils.parsers.rst as rst
 import jinja2
-import pytube
 
 
 if t.TYPE_CHECKING:
@@ -70,7 +69,6 @@ class directive(rst.Directive):
 
         - `autoplay`: Boolean flag to either autoplay the video on load.
         - `showcaptions`: Flag to either enable closed captions.
-        - `showtitle`: Flag to either display video title.
         - `caption`: Video caption.
         - `startfrom`: Start playing the video from certain point.
     """
@@ -79,7 +77,6 @@ class directive(rst.Directive):
     option_spec = {  # noqa: RUF012
         "autoplay": rst.directives.flag,
         "showcaptions": rst.directives.flag,
-        "showtitle": rst.directives.flag,
         "caption": rst.directives.unchanged,
         "startfrom": rst.directives.positive_int,
         "privacy": rst.directives.flag,
@@ -126,8 +123,6 @@ class directive(rst.Directive):
             params["controls"] = int(self.options["controls"])
         url = f"{domain}/embed/{vid}?{urlparse.urlencode(params)}"
         self.options["url"] = url
-        if "showtitle" in self.options:
-            self.options["caption"] = pytube.YouTube(src).title
         attributes: dict[str, str] = {}
         attributes["text"] = template.render(**self.options)
         attributes["format"] = "html"
@@ -161,3 +156,4 @@ def depart(self: HTMLTranslator, node: node) -> None:
     :param self: The HTML translator instance.
     :param node: The `youtube` node being processed.
     """
+

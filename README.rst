@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 21 February, 2025
-.. Last updated on: 07 December, 2025
+.. Last updated on: 24 December, 2025
 
 Akshay's Corner (Website + Sphinx Theme)
 ===============================================================================
@@ -30,7 +30,9 @@ submit a pull request on GitHub.
 License
 -------------------------------------------------------------------------------
 
-The website and it's companion theme is licensed under the MIT License. See the
-`LICENSE`_ file for more details.
+The source code of this project (website) is licensed under the `MIT`_ and the
+educational content and blog posts are licensed under `CC BY 4.0`_.
 
-.. _LICENSE: https://github.com/xames3/xa/blob/main/LICENSE
+.. _MIT License: https://github.com/xames3/xa/blob/main/LICENSE-CODE
+.. _CC BY 4.0: https://github.com/xames3/xa/blob/main/LICENSE
+
