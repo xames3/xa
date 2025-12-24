@@ -1,10 +1,10 @@
 # =============================================================================
 # Makefile for testing Akshay's Corner
-# 
+#
 # Author: Akshay Mestry <xa@mes3.dev>
 # Created on: 22 February, 2025
-# Last updated on: 19 December, 2025
-# 
+# Last updated on: 21 December, 2025
+#
 # This Makefile provides a comprehensive set of commands (targets) for building
 # and testing my website.
 # =============================================================================
@@ -30,7 +30,7 @@ SOURCE_DIR      := source
 OUTPUT_DIR      := build
 
 PROTOCOL        := http
-LOCALHOST		:= localhost
+LOCALHOST       := localhost
 PORT            := 5500
 
 # === TOOLS ===================================================================
