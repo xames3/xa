@@ -771,3 +771,50 @@ Cal.ns["quick-chat"]("ui",
         "layout": "month_view"
     });
 
+// Based on this tutorial: https://www.youtube.com/watch?v=W5oawMJaXbU
+const SUPPORTED = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ,.";
+/**
+ * Scramble text effect for elements
+ * @param {string | NodeList | HTMLElement[]} target
+ * @param {number} speed
+ */
+function scrambleText(target, speed = 30) {
+    let elements;
+    if (typeof target === "string") {
+        elements = document.querySelectorAll(target);
+    } else if (target instanceof NodeList || Array.isArray(target)) {
+        elements = target;
+    } else {
+        elements = [target];
+    }
+
+    elements.forEach(element => {
+        const originalText = element.innerText;
+        let iteration = 0;
+
+        const interval = setInterval(() => {
+            element.innerText = originalText
+                .split("")
+                .map((char, index) => {
+                    if (index < iteration) return originalText[index];
+                    if (!SUPPORTED.includes(char)) return char;
+
+                    return SUPPORTED[
+                        Math.floor(Math.random() * SUPPORTED.length)
+                    ];
+                })
+                .join("");
+
+            if (iteration >= originalText.length) {
+                clearInterval(interval);
+                element.innerText = originalText;
+            }
+
+            iteration += 1 / 3;
+        }, speed);
+    });
+}
+// To use this effect:
+// scrambleText(".scramble");
+// scrambleText(document.querySelector("h1"), 20);
+// scrambleText(document.querySelectorAll(".scramble"), 40);

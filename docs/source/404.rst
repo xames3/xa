@@ -1,29 +1,19 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 21 August, 2025
-.. Last updated on: 07 December, 2025
+.. Last updated on: 24 December, 2025
 
 :orphan:
 :og:title: Oops!! Page Not Found
-:og:description: Not found? No problem, maybe?!
-:og:type: website
+:og:description: Not found? No problem, maybe?! 👀
+:og:type: article
+:hiderightsidebar: true
 
 .. _404:
 
 ===============================================================================
-Oops!! Page Not Found
+:fas:`lightbulb far` Oops!! Page Not Found
 ===============================================================================
 
-.. raw:: html
-
-    <style>
-        nav .mr-1,
-        nav span,
-        #left-sidebar nav,
-        #right-sidebar p,
-        .site-layout__meta {
-            display: none
-        }
-    </style>
 
 .. container:: text-center
 

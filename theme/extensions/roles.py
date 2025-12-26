@@ -131,4 +131,3 @@ def email(
         subject = titles[0].children[-1].astext().strip()
     refuri = f"mailto:{rest.rstrip('>').strip()}?subject={subject}"
     return [nodes.reference(rawtext, href, refuri=refuri, line=lineno)], []
-
