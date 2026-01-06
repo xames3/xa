@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 August, 2025
-.. Last updated on: 22 December, 2025
+.. Last updated on: 29 December, 2025
 
 :og:title: A week into Docker
 :og:description: Begineer's guide to Docker and containerisation
@@ -33,9 +33,9 @@
     :linkedin: https://linkedin.com/in/xames3
     :timestamp: 30 August, 2025
 
-This is my story from September 2020, roughly five years ago as of writing this
-article. It was amidst the pandemic, while I was switching jobs. I knew I would
-get a new machine from my next employer, but I had no idea when.
+This is my story from September 2020, roughly five years ago, as of writing
+this article. It was in the middle of the pandemic. I was switching jobs. I
+knew I would get a new machine from my next employer, but I had no idea when.
 
 The pandemic was still at its peak, and I had to make the most of what I had.
 With how things were going, I knew I wouldn't get a new machine anytime soon,
@@ -45,7 +45,7 @@ As some of you know, I love writing code. It's what I do for the most part, and
 during lockdown, I wrote a lot. I tried to keep myself busy with work and other
 side projects, and while doing that, I got my machine messy really quick. I had
 multiple versions of Python, Rust, various dependencies, configs, tools, and
-frameworks that I won't be using after my *"experimentation"* phase.
+frameworks that I won't be using after my "experimentation" phase.
 
 I knew `Docker`_ was a thing, but I never really got around to using it. I
 personally thought it was too much of a hassle to set up until I had no other
@@ -69,11 +69,10 @@ own projects.
 Docker enters the chat
 -------------------------------------------------------------------------------
 
-Honestly, learning and exploring Docker wasn't initially on my bingo list, but
-I'm glad I did. Since then, it has made my hacky projects super duper
-manageable, and my local machine still thanks me for it. I don't want to get
-too technical or nerdy right now, but I want to make sure we're on the same
-page.
+Learning and exploring Docker wasn't initially on my bingo list, but I'm glad I
+did. Since then, it has made my "dodgy" projects super-duper manageable, and my
+local machine still thanks me for it. I don't want to get too technical or
+nerdy right now, but I want to make are we're on the same page.
 
 Docker is a **platform** that allows you to develop, ship, and run code inside
 :ref:`containers <idea-behind-containers>`.
@@ -94,12 +93,12 @@ server in the cloud.
 .. rubric:: But what did Docker do?
 .. rubric::
     Docker was introduced in 2013 and has evolved since then. It solved the
-    classic **"it works on my machine"** problem.
+    classic *"it works on my machine"* problem.
     :class: subtitle-text
 
-In the spirit of keeping things simple, I'd say there are two main components
-to Docker: `Docker Engine`_ and `Docker Hub`_, and let's just stick with these
-two for now.
+In the spirit of keeping things simple, I'd say there are two main ideas around
+Docker: `Docker Engine`_ and `Docker Hub`_, and let's just stick with these two
+for now.
 
 1. **Docker Engine.** This is the core part of Docker that runs on your
    machine. It creates and manages containers. In a nutshell, it's the main
@@ -115,21 +114,11 @@ two for now.
 
 .. rubric:: Magic of Docker Engine
 
-This is my personal take on the Docker Engine, but it helps to explain what it
-is. Being a huge cinephile, I like to think of it as a movie production crew.
-You don't see them on screen, but without them, nothing would work. They're the
-ones who are setting up the lights, managing the cameras, and making sure
-everything runs smoothly behind the scenes.
-
-In that same way, the Docker engine runs everything behind the scenes.
-
 When I first started using Docker, I'll be honest, I really didn't understand
 what was going on. Almost every tutorial I watched started with using the
-:console:`$ docker run` command, and I knew that I could type it out and
+:console:`$ docker run` command. I knew that I could type it out, and
 auto-magically, I'm dropped in an isolated environment where I can run my code
 or do whatever I want without messing up my local machine.
-
-It was like having a personal sandbox to play in, and I was immediately sold.
 
 But as I started using it more, I realised that there's a lot more to it, and
 Docker Engine is doing some really fancy stuff behind the scenes. Remember how
@@ -147,26 +136,22 @@ These environments are what we call **containers**.
 Idea behind Containers
 -------------------------------------------------------------------------------
 
-In the 1950s, `Malcolm McLean`_ came up with the concept of
-*"containerisation"* by inventing and standardising the modern shipping
-containers, but his idea was to make shipping goods easier and more efficient.
+In the 1950s, `Malcolm McLean`_ came up with the concept of "containerisation"
+by inventing and standardising the modern shipping containers, but his idea was
+to make shipping goods easier and more efficient.
 
-Essentially, what it all meant was that instead of loading and unloading goods
-every time they were transferred from one mode of transport to another, they
-could be packed into a standardised container that could be easily moved
-around.
+What it all meant was that instead of loading and unloading goods every time
+they were transferred from one mode of transport to another, they could be
+packed into a standardised container that could be easily moved around.
 
 Docker, the company, took this idea and applied it to software development. The
 name "Docker" itself is inspired by the idea of shipping containers. A
-container is essentially a lightweight, standalone package that includes
-everything needed to run your application code, runtime, system tools,
-libraries, and settings.
+container is a lightweight, standalone package that includes everything needed
+to run your application code.
 
-It's like having a perfectly sealed but fully equipped sandbox that you can
-play in without worrying about the mess spilling over to your actual backyard.
-Each container is isolated from the others and from the host system, which
-means you can run multiple containers on the same machine without them
-interfering with each other.
+Each container is isolated from the others and from the host system. So, you
+can run multiple containers on the same machine without them interfering with
+each other.
 
 .. _containers-are-not-vms:
 
@@ -175,22 +160,24 @@ Containers ≠ VMs
 -------------------------------------------------------------------------------
 
 Initially, it was quite hard for me to wrap my head around the concept of
-containers and sandboxing. I mean, how is it any different from a GUI-less
-`Virtual machine`_? It's essentially acting the same way, right? Well, not
-exactly.
+containers and sandboxing. I mean, how is it any different from a
+:abbr:`GUI (Graphical User Interface)`-less `Virtual machine`_? It's acting the
+same way, innit?
 
-Virtual machines (VMs) and containers are both used to create isolated
-environments, but they do it in different ways. VMs run a full copy of an
-operating system (guest) inside your local machine (host). At the same time,
+Well, not exactly.
+
+You see, both :abbr:`VMs (Virtual Machines)` and containers are used to create
+isolated environments, but they both do it differently. VMs run a full copy of
+an operating system (guest) inside your local machine (host). At the same time,
 containers share your host OS kernel.
 
 .. admonition:: :fas:`sparkles` Quick analogy
     :class: unusual-one hint
 
-    Think of it this way, having a VM is like renting an entire apartment when
-    you just need a room, while using a container is like renting a room in a
-    shared apartment where you share some common facilities like the kitchen
-    and bathroom.
+    Think of it this way, having a VM is like renting an entire flat/apartment
+    when you just need a room. Whereas using a container is like renting a room
+    in a shared flat/apartment where you share some common facilities like the
+    kitchen and bathroom.
 
     The latter is much faster and cost-effective.
 
@@ -202,22 +189,20 @@ top of your existing OS using something called a `Hypervisor`_.
     This is **not** dual-booting, where you have two OSs installed on your
     machine, and you choose which one to boot into.
 
-In a VM, you have your main OS (host) running, and inside it, you have another
-OS (guest) running as a separate entity. VMs run like a regular application on
-your local machine. It's like running Windows on your Mac using `Parallels`_
-or like running Linux on your Windows using `VirtualBox`_.
+In a VM, you have your actual OS (host) running, and inside it, you have
+another OS (guest) running as a separate entity. VMs run like a regular
+application on your local machine. It's like running Windows on your Mac
+using `Parallels`_ or running Linux on your Windows using `VirtualBox`_.
 
-Since a VM runs just like a regular application, it needs its own set of
-dedicated resources like CPU, memory, storage, and processing power. It's
-thorough, but it's also heavy.
+Since a VM runs just like a regular application, it needs its resources like
+CPU, memory, storage, and processing power. It's thorough, but it's also heavy.
 
 Very heavy... I mean, you're running multiple bloody OSs at the same time!!
 
-Containers, on the other hand, share the host OS's resources (kernel) and run
-as isolated processes (not technically) in the user space on the host OS. In
-simple terms, they are much more lightweight and efficient compared to VMs.
-They start up quickly and use fewer resources because they don't need to boot
-up a whole OS.
+Containers, on the other hand, share the host OS' resources (kernel) and run as
+isolated processes (not technically) in the user space on the host OS. In
+simple terms, they are lightweight and efficient compared to VMs. They start up
+quickly and use fewer resources because they don't need to boot up a whole OS.
 
 You can run many more containers on the same hardware compared to VMs. This
 makes containers ideal for deploying applications in a microservices
@@ -265,16 +250,16 @@ Pulling images from the internet
 -------------------------------------------------------------------------------
 
 After understanding what containers do and how they're better in comparison to
-VMs, I realised why Docker is so popular among developers. I was already using
-it for my personal projects, but now I had another problem.
+VMs, I realised why Docker is so popular among developers. I started using it
+for my personal projects, but now I had another problem.
 
-I had a messy local machine with multiple Docker containers with the same
+I had a messy local machine, but with multiple Docker containers with the same
 Python versions. I realised I needed to clean up and manage my containers
-better, or follow some best practices. In doing so, I wondered where I had been
-getting all these bloody containers from in the first place.
+better, or follow some best practices.
 
-I knew I was pulling these **containers\*** from the internet, but I had no
-idea from where.
+I wondered where I had been getting all these containers from in the first
+place. I knew I was pulling these **containers\*** from the internet, but I had
+no idea from where.
 
 .. rubric:: That's when I discovered Docker Hub
 .. rubric::
@@ -288,19 +273,15 @@ idea from where.
     Learn more
 
 But what's an image now? With a bit of research, I found out that a Docker
-image is a lightweight, standalone, and executable package that includes
-everything needed to run a piece of software, including the code, runtime,
-libraries, environment variables, and configuration files.
+image is a lightweight executable package that includes it needs to run the
+code, including the runtime, libraries, environment variables, and
+configuration files.
 
-Wait, that sounds a lot like a container to me, but not quite.
+Wait, that sounds a lot like a container to me... But not quite.
 
-An image is a blueprint for creating containers. When you run a Docker image,
-it creates a container based on that image. It is a read-only template that
-contains the instructions for creating a container.
-
-You can think of it as a snapshot of a filesystem and settings to run an
-application. You can have multiple containers running from the same image, each
-with its own isolated environment.
+A Docker image is a blueprint for creating containers. When you run a Docker
+image, it creates a container based on that image. It is a read-only template
+that contains the instructions for creating a container.
 
 .. admonition:: :fas:`sparkles` Quick analogy
     :class: unusual-one hint
@@ -313,10 +294,10 @@ And Docker Hub is where you can find and share these images. You can pull
 images from Docker Hub to run containers on your local machine, or you can push
 your own images to Docker Hub to share them with others.
 
-Docker Hub has a vast library of pre-built images for various applications and
-services, including databases, web servers, programming languages, and more.
-This makes it easy to get started with Docker and quickly set up your
-development environment.
+Docker Hub has loads of pre-built images for various applications and services,
+like databases, web servers, programming languages, and more. This makes it
+easy to get started with Docker and quickly set up your development
+environment.
 
 Yet another reason why Docker is so popular among developers.
 
@@ -326,23 +307,20 @@ Yet another reason why Docker is so popular among developers.
 One week into Docker
 -------------------------------------------------------------------------------
 
-By now, I was a week into using Docker, and I was totally hooked. I had a basic
-understanding of what Docker and containerisation are and roughly how the whole
-ecosystem works. I was excited to explore and experiment even more.
-
-Sure, I was confused in the beginning, but I slowly started to get the hang of
-it. First, it was between containers and virtual machines, then between
-containers and images. I think the biggest culprits were the terminologies
-themselves. They are so similar that it can get really confusing for a
-beginner.
+By now, I was a week into using Docker. I had a basic understanding of what
+Docker and containerisation are and roughly how the whole ecosystem works. I
+was excited to explore and experiment even more. Sure, I was confused in the
+beginning, but I slowly started to get the hang of it. First, it was between
+containers and virtual machines, then between containers and images. I think
+the biggest culprits were the terminologies themselves. They are so similar
+that it can get really confusing for a beginner.
 
 But once I got the hang of it, I realised how powerful the whole concept of
 containerisation is and how it can make my life easier. After a few weeks, I
-realised that even containerisation isn't a new concept.
-
-It's been around and experimented with for decades within the Linux community.
-There are other containerisation implementations like `LXC`_ and `OpenVZ`_, but
-Docker made it easy and accessible for everyone.
+realised that even containerisation isn't a new concept. It's been around and
+experimented with for decades within the Linux community. There are other
+containerisation implementations like `LXC`_ and `OpenVZ`_, but Docker made it
+easy and accessible for everyone.
 
 In the next chapter, I'll share my experiences of running my first container
 and how it changed the way I started working on my local machine.
@@ -358,4 +336,3 @@ and how it changed the way I started working on my local machine.
 .. _VirtualBox: https://www.virtualbox.org/
 .. _LXC: https://linuxcontainers.org/
 .. _OpenVZ: https://openvz.org/
-

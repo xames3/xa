@@ -131,7 +131,7 @@ version using Python's built-in :py:mod:`ctypes` module.
 It worked poorly. But it worked!!
 
 .. code-block:: python
-    :caption: |py| `xsnumpy/_core.py`_
+    :caption: :fab:`python mrl-0` `xsnumpy/_core.py`_
     :linenos:
 
     class ndarray:

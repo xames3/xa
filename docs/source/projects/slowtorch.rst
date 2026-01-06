@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 18 April, 2025
-.. Last updated on: 24 December, 2025
+.. Last updated on: 26 December, 2025
 
 :og:title: PyTorch... but much slower
 :og:description: PyTorch taught me how to build while SlowTorch taught me how
@@ -42,6 +42,7 @@ learning arrays, memory buffers, and `broadcasting`_. As mentioned in
     :link: xsnumpy
     :link-type: doc
     :link-alt: Read story
+    :class-card: right-link-button
 
     An experimental re-implementation of few of the core NumPy features in pure
     Python.
@@ -183,7 +184,7 @@ would have a reference to its parent nodes. This way, I could traverse the
 graph and compute gradients in a more structured way.
 
 .. code-block:: python
-    :caption: |py| `slowtorch/internal/tensor.py`_
+    :caption: :fab:`python mrl-0` `slowtorch/internal/tensor.py`_
     :emphasize-lines: 19-21
     :linenos:
 
@@ -286,7 +287,7 @@ wrapped around classes much like PyTorch.
         its functional form with its backward pass.
 
         .. code-block:: python
-            :caption: |py| `slowtorch/nn/functional/layer.py`_
+            :caption: :fab:`python mrl-0` `slowtorch/nn/functional/layer.py`_
             :emphasize-lines: 2,9-10
             :linenos:
 
@@ -354,7 +355,7 @@ wrapped around classes much like PyTorch.
         with its backward pass.
 
         .. code-block:: python
-            :caption: |py| `slowtorch/nn/functional/pointwise.py`_
+            :caption: :fab:`python mrl-0` `slowtorch/nn/functional/pointwise.py`_
             :emphasize-lines: 10,13,19
             :linenos:
 
@@ -425,7 +426,7 @@ wrapped around classes much like PyTorch.
         error (MSE) loss function with its backward pass.
 
         .. code-block:: python
-            :caption: |py| `slowtorch/nn/functional/loss.py`_
+            :caption: :fab:`python mrl-0` `slowtorch/nn/functional/loss.py`_
             :emphasize-lines: 2,14-16
             :linenos:
 
@@ -490,7 +491,7 @@ wrapped around classes much like PyTorch.
         function with its backward pass.
 
         .. code-block:: python
-            :caption: |py| `slowtorch/nn/functional/mutation.py`_
+            :caption: :fab:`python mrl-0` `slowtorch/nn/functional/mutation.py`_
             :emphasize-lines: 3,7
             :linenos:
 
@@ -513,7 +514,7 @@ wrapped around classes much like PyTorch.
         SlowTorch parameter.
 
         .. code-block:: python
-            :caption: |py| `slowtorch/nn/modules/parameter.py`_
+            :caption: :fab:`python mrl-0` `slowtorch/nn/modules/parameter.py`_
             :linenos:
 
             class Parameter(Tensor):
@@ -574,7 +575,7 @@ class that took a list of parameters and a learning rate, and it had a
 :python:`.step()` method that updated the parameters based on their gradients.
 
 .. code-block:: python
-    :caption: |py| `slowtorch/optim/optimiser.py`_
+    :caption: :fab:`python mrl-0` `slowtorch/optim/optimiser.py`_
     :linenos:
 
     class Optimiser:
