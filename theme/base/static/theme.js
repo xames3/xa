@@ -492,88 +492,90 @@ if (document.readyState === 'loading') {
     }
 })();
 
+// Promote sidebar captions into header nav dropdowns
 (function () {
-    function initTOCScrollSpy() {
-        const tocSidebar = document.getElementById('right-sidebar');
-        if (!tocSidebar) return;
-        const tocLinks = tocSidebar.querySelectorAll('a[href^="#"]');
-        const headings = [];
-        tocLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            if (href && href.startsWith('#')) {
-                const targetId = href.substring(1);
-                const heading = document.getElementById(targetId);
-                if (heading) {
-                    headings.push({
-                        id: targetId,
-                        element: heading,
-                        link: link,
-                        offsetTop: heading.offsetTop
-                    });
+    function buildHeaderNavDropdowns() {
+        const nav = document.querySelector('.site-header__nav-tree');
+        if (!nav) return;
+        const captions = Array.from(nav.querySelectorAll('p.caption'));
+        if (!captions.length) return;
+        let uid = 0;
+
+        captions.forEach((caption) => {
+            const list = caption.nextElementSibling;
+            if (!list || list.tagName !== 'UL') return;
+
+            const wrapper = document.createElement('div');
+            wrapper.className = 'site-header__nav-group';
+            caption.parentNode.insertBefore(wrapper, caption);
+            wrapper.appendChild(caption);
+            wrapper.appendChild(list);
+
+            const listId = list.id || `nav-group-${uid += 1}`;
+            list.id = listId;
+            caption.setAttribute('tabindex', '0');
+            caption.setAttribute('role', 'button');
+            caption.setAttribute('aria-haspopup', 'true');
+            caption.setAttribute('aria-controls', listId);
+            caption.setAttribute('aria-expanded', 'false');
+
+            let openTimer = null;
+            let closeTimer = null;
+
+            const open = () => {
+                clearTimeout(closeTimer);
+                openTimer = setTimeout(() => {
+                    wrapper.classList.add('is-open');
+                    caption.setAttribute('aria-expanded', 'true');
+                }, 40);
+            };
+
+            const close = () => {
+                clearTimeout(openTimer);
+                closeTimer = setTimeout(() => {
+                    wrapper.classList.remove('is-open');
+                    caption.setAttribute('aria-expanded', 'false');
+                }, 140);
+            };
+
+            caption.addEventListener('mouseenter', open, { passive: true });
+            wrapper.addEventListener('mouseenter', open, { passive: true });
+            wrapper.addEventListener('mouseleave', close, { passive: true });
+            caption.addEventListener('focus', open, { passive: true });
+            wrapper.addEventListener('focusout', (e) => {
+                if (!wrapper.contains(e.relatedTarget)) {
+                    close();
                 }
-            }
-        });
-        if (headings.length === 0) return;
-        headings.sort((a, b) => a.offsetTop - b.offsetTop);
-        function updateActiveTOC() {
-            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            const windowHeight = window.innerHeight;
-            const documentHeight = document.documentElement.scrollHeight;
-            const headerOffset = 250;
-            let currentHeading = null;
-            const isNearBottom = scrollTop + windowHeight >= documentHeight - 250;
-            if (isNearBottom && headings.length > 0) {
-                currentHeading = headings[headings.length - 1];
-            } else {
-                for (let i = headings.length - 1; i >= 0; i--) {
-                    const heading = headings[i];
-                    if (scrollTop + headerOffset >= heading.offsetTop - 500) {
-                        currentHeading = heading;
-                        break;
+            });
+
+            caption.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    if (wrapper.classList.contains('is-open')) {
+                        close();
+                    } else {
+                        open();
                     }
                 }
-            }
-            if (scrollTop < 100) {
-                currentHeading = null;
-            }
-            tocLinks.forEach(link => {
-                link.classList.remove('toc-active');
-                link.style.color = '';
+
+                if (e.key === 'Escape') {
+                    close();
+                    caption.blur();
+                }
             });
-            if (currentHeading) {
-                currentHeading.link.classList.add('toc-active');
-                currentHeading.link.style.color = 'hsl(var(--foreground))';
-            }
-        }
-        let ticking = false;
-        function onScroll() {
-            if (!ticking) {
-                requestAnimationFrame(() => {
-                    updateActiveTOC();
-                    ticking = false;
-                });
-                ticking = true;
-            }
-        }
-        window.addEventListener('scroll', onScroll, { passive: true });
-        window.addEventListener('resize', () => {
-            headings.forEach(heading => {
-                heading.offsetTop = heading.element.offsetTop;
-            });
-            updateActiveTOC();
         });
-        updateActiveTOC();
     }
+
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initTOCScrollSpy);
+        document.addEventListener('DOMContentLoaded', buildHeaderNavDropdowns, { once: true });
     } else {
-        initTOCScrollSpy();
+        buildHeaderNavDropdowns();
     }
 })();
 
 (function () {
     function initPlaceholderAnimation() {
-        const input = document.querySelector(".DocSearch-Button-Placeholder");
+        const input = document.querySelector('.DocSearch-Button-Placeholder');
         if (!input) {
             setTimeout(initPlaceholderAnimation, 100);
             return;
@@ -609,10 +611,10 @@ if (document.readyState === 'loading') {
             });
             if (placeholders.length === 0) {
                 return [
-                    "Search for content",
-                    "Find documentation",
-                    "Explore projects",
-                    "Discover guides"
+                    'Search for content',
+                    'Find documentation',
+                    'Explore projects',
+                    'Discover guides'
                 ];
             }
             return placeholders;
@@ -745,7 +747,7 @@ function formatNumber(num) {
         if (!cal.loaded) {
             cal.ns = {};
             cal.q = cal.q || [];
-            d.head.appendChild(d.createElement("script")).src = A;
+            d.head.appendChild(d.createElement('script')).src = A;
             cal.loaded = true;
         } if (ar[0] === L) {
             const api = function () {
@@ -754,20 +756,67 @@ function formatNumber(num) {
             };
             const namespace = ar[1];
             api.q = api.q || [];
-            if (typeof namespace === "string") {
+            if (typeof namespace === 'string') {
                 cal.ns[namespace] = cal.ns[namespace] || api;
                 p(cal.ns[namespace], ar);
-                p(cal, ["initNamespace", namespace]);
+                p(cal, ['initNamespace', namespace]);
 
             } else p(cal, ar);
             return;
         } p(cal, ar);
     };
-})(window, "https://app.cal.com/embed/embed.js", "init");
-Cal("init", "quick-chat", { origin: "https://app.cal.com" });
-Cal.ns["quick-chat"]("ui",
+})(window, 'https://app.cal.com/embed/embed.js', 'init');
+Cal('init', 'quick-chat', { origin: 'https://app.cal.com' });
+Cal.ns['quick-chat']('ui',
     {
-        "hideEventTypeDetails": false,
-        "layout": "month_view"
+        'hideEventTypeDetails': false,
+        'layout': 'month_view'
     });
 
+// Based on this tutorial: https://www.youtube.com/watch?v=W5oawMJaXbU
+const SUPPORTED = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789 ,.';
+/**
+ * Scramble text effect for elements
+ * @param {string | NodeList | HTMLElement[]} target
+ * @param {number} speed
+ */
+function scrambleText(target, speed = 30) {
+    let elements;
+    if (typeof target === 'string') {
+        elements = document.querySelectorAll(target);
+    } else if (target instanceof NodeList || Array.isArray(target)) {
+        elements = target;
+    } else {
+        elements = [target];
+    }
+
+    elements.forEach(element => {
+        const originalText = element.innerText;
+        let iteration = 0;
+
+        const interval = setInterval(() => {
+            element.innerText = originalText
+                .split('')
+                .map((char, index) => {
+                    if (index < iteration) return originalText[index];
+                    if (!SUPPORTED.includes(char)) return char;
+
+                    return SUPPORTED[
+                        Math.floor(Math.random() * SUPPORTED.length)
+                    ];
+                })
+                .join('');
+
+            if (iteration >= originalText.length) {
+                clearInterval(interval);
+                element.innerText = originalText;
+            }
+
+            iteration += 1 / 3;
+        }, speed);
+    });
+}
+// To use this effect:
+// scrambleText('.scramble');
+// scrambleText(document.querySelector('h1'), 20);
+// scrambleText(document.querySelectorAll('.scramble'), 40);

@@ -4,7 +4,7 @@ Akshay's Corner Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 22 February, 2025
-Last updated on: 23 December, 2025
+Last updated on: 27 December, 2025
 
 This file contains the configuration settings for building my static
 website using Sphinx, a popular Python documentation tool. Sphinx is a
@@ -127,6 +127,17 @@ html_context: dict[str, t.Any] = {
         "size_32": "favicons/favicon-32x32.png",
         "size_180": "favicons/apple-touch-icon.png",
     },
+    "header_buttons": {
+        "Check my availability": {
+            "link": "#",
+            "icon": Markup('<i class="far fa-calendar-circle-user"></i>'),
+            "extras": Markup(
+                'data-cal-link="xames3/quick-chat"'
+                'data-cal-namespace="quick-chat" '
+                'data-cal-config=\'{"layout":"month_view"}\''
+            ),
+        },
+    },
     "open_links_in_new_tab": True,
     "project": {
         "author": author,
@@ -143,9 +154,9 @@ html_context: dict[str, t.Any] = {
     "show_sphinx": False,
     "show_toctree": True,
     "sidebar_buttons": {
-        "Quick chat via Zoom": {
+        "Check my availability": {
             "link": "#",
-            "icon": Markup('<i class="fas far fa-video"></i>'),
+            "icon": Markup('<i class="fas far fa-calendar-circle-user"></i>'),
             "extras": Markup(
                 'data-cal-link="xames3/quick-chat"'
                 'data-cal-namespace="quick-chat" '
@@ -194,4 +205,3 @@ copybutton_selector: str = "div:not(.no-copybutton) > div.highlight > pre"
 linkcheck_ignore: list[str] = [r"https://localhost:\d+/"]
 linkcheck_timeout: int = 10
 linkcheck_retries: int = 2
-

@@ -156,4 +156,3 @@ def depart(self: HTMLTranslator, node: node) -> None:
     :param self: The HTML translator instance.
     :param node: The `youtube` node being processed.
     """
-
