@@ -4,7 +4,7 @@ Custom Roles
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 21 February, 2025
-Last updated on: 24 December, 2025
+Last updated on: 29 December, 2025
 
 This module provides custom roles for this sphinx theme that provides a
 way to add features to the document.
@@ -123,11 +123,13 @@ def email(
     options = options or {}
     content = content or []
     titles = inliner.document.traverse(nodes.title)
-    href, rest = text.split("<", 1)
-    href = href.strip()
+    subject = titles[0].children[-1].astext().strip()
+    alt, rest = text.split("<", 1)
+    alt = alt.strip()
     if "|" in rest:
-        href, subject = (t.strip() for t in rest.split("|", 1))
+        href, *subject = rest.split("|", 1)
+        subject = subject[0].strip(">")
     else:
-        subject = titles[0].children[-1].astext().strip()
-    refuri = f"mailto:{rest.rstrip('>').strip()}?subject={subject}"
-    return [nodes.reference(rawtext, href, refuri=refuri, line=lineno)], []
+        href = rest.strip(">")
+    refuri = f"mailto:{href.strip()}?subject={subject}"
+    return [nodes.reference(rawtext, alt, refuri=refuri, line=lineno)], []

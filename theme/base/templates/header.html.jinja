@@ -4,7 +4,7 @@ Header Template
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 21 February, 2025
-Last updated on: 21 December, 2025
+Last updated on: 26 December, 2025
 -->
 <header class="site-header">
     {%- block header_before %}
@@ -41,6 +41,14 @@ Last updated on: 21 December, 2025
                 {%- endblock website_logo %}
             </div>
         {%- endblock header_left %}
+        {%- if show_toctree|tobool %}
+            <nav class="site-header__nav"
+                 aria-label="{{ _('Primary navigation') }}">
+                <div class="site-header__nav-tree">
+                    {{ toctree(titles_only=true, collapse=false, includehidden=true) }}
+                </div>
+            </nav>
+        {%- endif %}
         {%- block mobile_menu %}
             <button class="site-header__menu-toggle"
                     type="button"
@@ -52,9 +60,6 @@ Last updated on: 21 December, 2025
         {%- endblock mobile_menu %}
         {%- block header_right %}
             <div class="site-header__utilities">
-                {%- if show_docsearch or hasdoc('search') %}
-                    <div class="site-header__search">{%- include "searchbox.html.jinja" %}</div>
-                {%- endif %}
                 {%- block header_buttons %}
                     {%- if header_buttons|tobool %}
                         <nav class="site-header__icon-list"
@@ -64,8 +69,9 @@ Last updated on: 21 December, 2025
                                     <a href="{{ url.link }}"
                                        title="{{ text }}"
                                        rel="noopener nofollow"
-                                       target="_blank"
-                                       class="site-header__icon-link">
+                                       target="{{ '' if url.link == '#' else '_blank' }}"
+                                       class="site-header__icon-link"
+                                       {{ url.extras if url.extras else '' }}>
                                         {% if url.icon %}
                                             {{ url.icon }}
                                         {% else %}
@@ -77,6 +83,9 @@ Last updated on: 21 December, 2025
                         </nav>
                     {%- endif %}
                 {%- endblock header_buttons %}
+                {%- if show_docsearch or hasdoc('search') %}
+                    <div class="site-header__search">{%- include "searchbox.html.jinja" %}</div>
+                {%- endif %}
             </div>
         {%- endblock header_right %}
     </div>

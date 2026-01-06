@@ -4,17 +4,17 @@ Theme Utilities
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 21 February, 2025
-Last updated on: 02 November, 2025
+Last updated on: 26 December, 2025
 
 This module defines a collection of utility functions used for
 customising this sphinx theme. These utilities focus on enhancing the
 post-processing of the generated HTML output, as well as providing
 additional support for interactive elements, theme options, and other
-dynamic behaviors.
+dynamic behaviours.
 
 The functionality provided includes handling collapsible table of
-contents (ToC), scrollspy support, removal of unnecessary elements, and
-custom event handling for theme-specific features.
+contents (ToC), removal of unnecessary elements, and custom event
+handling for theme-specific features.
 
 The goal of this module is to ensure that this theme produces clean,
 efficient, and interactive HTML documentation by leveraging Sphinx's
@@ -37,13 +37,11 @@ from subprocess import CalledProcessError
 from subprocess import check_output as co
 
 import bs4
-from docutils import nodes
-from sphinx.environment.adapters.toctree import TocTree
 from sphinx.util.display import status_iterator
-from sphinx.util.docutils import new_document
 
 
 if t.TYPE_CHECKING:
+    from docutils import nodes
     from sphinx.application import Sphinx
     from sphinx.environment import BuildEnvironment
 
@@ -114,79 +112,6 @@ def make_toc_collapsible(tree: bs4.BeautifulSoup) -> None:
         sr.string = "Toggle section"
         button.append(sr)
         link.insert_after(button)
-
-
-def add_scrollspy(tree: bs4.BeautifulSoup) -> None:
-    """Implement a scrollspy feature for the right sidebar to highlight
-    active sections during scrolling.
-
-    Scrollspy is a visual aid that highlights links in the right sidebar
-    corresponding to the current section visible in the viewport. This
-    function leverages Alpine.js to track intersections between section
-    headers and the viewport, updating the `activeSection` variable to
-    reflect which section is currently in view.
-
-    :param tree: The parsed HTML tree, used to attach the necessary
-        attributes for scrollspy behavior.
-    """
-    for link in tree.select("a.headerlink"):
-        if link.parent.name in ["h2", "h3"] or (
-            link.parent.name == "dt" and "sig" in link.parent.get("class", "")
-        ):
-            active_link = link["href"]
-            link["x-intersect.margin.0%.0%.-70%.0%"] = (
-                f"activeSection = '{active_link}'"
-            )
-        for link in tree.select("#right-sidebar a"):
-            active_link = link["href"]
-            link[":data-current"] = f"activeSection === '{active_link}'"
-
-
-def remove_title_from_scrollspy(
-    app: Sphinx,
-    pagename: str,
-    templatename: str,
-    context: dict[str, t.Any],
-    doctree: nodes.Node,
-) -> None:
-    """Remove redundant title nodes from the ToC to prevent duplicate
-    entries in the scrollspy.
-
-    During Sphinx builds, titles may sometimes appear at both the top
-    level of the ToC and nested within their respective sections. This
-    function traverses the ToC tree, removing nodes where the `refuri`
-    attribute points to `#`, indicating a redundant title entry.
-
-    :param app: The Sphinx application instance.
-    :param pagename: The name of the page being processed.
-    :param templatename: The name of the HTML template used for
-        rendering.
-    :param context: Context variables passed to the template.
-    :param doctree: The document tree for the current page.
-    """
-    # NOTE(xames3): The parameters `pagename`, `templatename`, and
-    # `doctree` are currently unused but are included to match the
-    # expected signature for a Sphinx event handler.
-    pagename = pagename or ""
-    templatename = templatename or ""
-    doctree = doctree or new_document("<partial node>")
-    toc = TocTree(app.builder.env).get_toc_for(pagename, app.builder)
-    for node in findall(toc, nodes.reference):
-        if node["refuri"] == "#":
-            node.parent.parent.remove(node.parent)
-    doc = new_document("<partial node>")
-    doc.append(toc)
-    for node in findall(doc, nodes.bullet_list):
-        if (
-            len(node.children) == 1
-            and isinstance(node.next_node(), nodes.list_item)
-            and isinstance(node.next_node().next_node(), nodes.bullet_list)
-        ):
-            doc.replace(node, node.next_node().next_node())
-    if hasattr(app.builder, "_publisher"):
-        app.builder._publisher.set_source(doc)
-        app.builder._publisher.publish()
-        context["toc"] = app.builder._publisher.writer.parts["fragment"]
 
 
 def remove_empty_toctree_divs(tree: bs4.BeautifulSoup) -> None:
@@ -262,10 +187,9 @@ def postprocess(html: str, app: Sphinx) -> None:
     build.
 
     This function reads an HTML file, parses it into a BeautifulSoup
-    tree, applies various transformations — such as adding collapsible
-    navigation, enabling scrollspy, cleaning up empty elements, and
-    removing comments — and finally writes the modified content back to
-    the file.
+    tree, applies various transformations such as adding collapsible
+    navigation, cleaning up empty elements, and removing comments, and
+    finally writes the modified content back to the file.
 
     Post-processing ensures that the generated HTML is not only
     functional but also clean, optimised, and dynamic according to the
@@ -282,7 +206,6 @@ def postprocess(html: str, app: Sphinx) -> None:
     add_copy_to_headerlinks(tree)
     make_toc_collapsible(tree)
     remove_empty_toctree_divs(tree)
-    add_scrollspy(tree)
     remove_comments(tree)
     with open(html, "w", encoding="utf-8") as f:
         f.write(str(tree))

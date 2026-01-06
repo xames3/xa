@@ -4,7 +4,7 @@ Akshay's Corner Sphinx Theme
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 21 February, 2025
-Last updated on: 02 November, 2025
+Last updated on: 26 December, 2025
 
 This module serves as the primary entry point for the Akshay's Corner
 Sphinx Theme. It is responsible for initialising the theme, configuring
@@ -72,7 +72,6 @@ from theme.extensions import roles
 from theme.extensions.utils import build_finished
 from theme.extensions.utils import env_before_read_docs
 from theme.extensions.utils import last_updated_date
-from theme.extensions.utils import remove_title_from_scrollspy
 
 
 if t.TYPE_CHECKING:
@@ -159,8 +158,8 @@ def setup(app: Sphinx) -> dict[str, str | bool]:
         [4] Registers custom roles and directives to extend Sphinx's
             default capabilities.
         [5] Binds event hooks for pre-build and post-build processes,
-            enabling dynamic content transformations like collapsible
-            toctrees and scrollspy.
+            enabling dynamic content transformations such as collapsible
+            toctrees.
 
     :param app: The Sphinx application instance.
     :return: A dictionary indicating the theme's version and its
@@ -192,7 +191,6 @@ def setup(app: Sphinx) -> dict[str, str | bool]:
             app.connect("html-page-context", directive.html_page_context)
     app.connect("env-before-read-docs", env_before_read_docs)
     app.connect("source-read", last_updated_date)
-    app.connect("html-page-context", remove_title_from_scrollspy)
     app.connect("build-finished", build_finished)
     return {
         "version": version,

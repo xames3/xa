@@ -4,7 +4,7 @@ Base Layout Template
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 21 February, 2025
-Last updated on: 21 December, 2025
+Last updated on: 26 December, 2025
 -->
 {%- set lang_attr = "en" if language == None else (language|replace('_','-')) -%}
 <!DOCTYPE html>
@@ -120,7 +120,6 @@ Last updated on: 21 December, 2025
                      class="site-sidebar__backdrop"
                      @click.self="showSidebar = false"></div>
             {%- endif %}
-            <div id="blob"></div>
             <div id="page"
                  class="site-shell">
                 <a href="#content"
@@ -129,36 +128,34 @@ Last updated on: 21 December, 2025
                     {%- include "header.html.jinja" %}
                 {%- endblock header %}
                 <div class="site-shell__main">
-                    <div class="site-layout container site-layout--has-secondary">
+                    <div class="site-layout container {% if show_toctree|tobool %}site-layout--nav-in-header{% endif %}">
                         {%- block left_sidebar %}
                             {%- include "left_sidebar.html.jinja" %}
                         {%- endblock left_sidebar %}
                         {%- block main %}
                             <main class="site-layout__content">
                                 {%- block body %}{%- endblock %}
-                                    {%- if show_previous_next_pages|tobool %}
-                                        {%- include "previous_next_pages.html.jinja" %}
-                                    {%- endif %}
                                 </main>
+                                {%- if show_previous_next_pages|tobool %}
+                                    {%- include "previous_next_pages.html.jinja" %}
+                                {%- endif %}
                             {%- endblock main %}
-                            {%- block right_sidebar %}
-                                {%- include "right_sidebar.html.jinja" %}
-                            {%- endblock right_sidebar %}
+                            {%- block right_sidebar %}{%- endblock right_sidebar %}
+                            </div>
                         </div>
+                        {%- block footer %}
+                            {%- include "footer.html.jinja" %}
+                        {%- endblock footer %}
                     </div>
-                    {%- block footer %}
-                        {%- include "footer.html.jinja" %}
-                    {%- endblock footer %}
-                </div>
-                {% block scripts %}
-                    {%- for js in script_files %}{{ js_tag(js) }}{%- endfor %}
-                        <script>
-                            window.addEventListener('load', function() {
-                                requestAnimationFrame(function() {
-                                    document.documentElement.classList.remove('no-transitions');
+                    {% block scripts %}
+                        {%- for js in script_files %}{{ js_tag(js) }}{%- endfor %}
+                            <script>
+                                window.addEventListener('load', function() {
+                                    requestAnimationFrame(function() {
+                                        document.documentElement.classList.remove('no-transitions');
+                                    });
                                 });
-                            });
-                        </script>
-                    {% endblock scripts %}
-                </body>
-            </html>
+                            </script>
+                        {% endblock scripts %}
+                    </body>
+                </html>
