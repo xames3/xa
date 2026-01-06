@@ -37,7 +37,7 @@ light-hearted or borderline weird content.
 Over the last few years, I've curated a personal playlist of videos that have
 either taught me something valuable or simply made my day better.
 
-.. image:: ../assets/media/best-of-youtube-banner.jpg
+.. figure:: ../assets/media/best-of-youtube-banner.jpg
     :alt: Best of YouTube
 
 This page is a collection of those gems. Think of it as my personal watchlist,
