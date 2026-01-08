@@ -8,3 +8,4 @@ sphinx-design
 sphinx-lint
 sphinx-notfound-page
 sphinxext-opengraph
+urllib3==2.6.3
