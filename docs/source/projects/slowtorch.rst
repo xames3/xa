@@ -1,13 +1,12 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 18 April, 2025
-.. Last updated on: 26 December, 2025
+.. Last updated on: 07 January, 2026
 
 :og:title: PyTorch... but much slower
 :og:description: PyTorch taught me how to build while SlowTorch taught me how
     it's built!!
 :og:type: article
-:og:image: https://raw.githubusercontent.com/xames3/xa/main/docs/source/
-    assets/media/slowtorch-meme.jpg
+:og:image: https://i.imgur.com/HLTLqVl.jpeg
 :prompt: Is slow learning the "key"?
 :promptdesc: I wrote SlowTorch to truly understand the magic behind
     PyTorch. Have you done anything similar?
@@ -125,7 +124,7 @@ I started off by creating various :py:class:`dtypes <torch.dtype>` like
 ``float64``, ``float32``, ``int64``, etc., alongside a simple
 :py:attr:`device <torch.Tensor.device>`.
 
-But my devices were just strings, like *"cpu"* or *"gpu"*, with no actual
+But my devices were just strings, like "cpu" or "gpu", with no actual
 hardware acceleration. The :meth:`__repr__ <object.__repr__>` method was pretty
 similar to what I had in xsNumPy, but I had to add a few more details to
 reflect the tensor's properties like :py:attr:`shape <torch.Tensor.shape>`,
@@ -175,7 +174,7 @@ overcomplicating things, and I reworked my implementation slowly.
 
 By rewatching the video multiple times, I realised that each operation could be
 represented as a node, and each node could carry a cheeky function which would
-know how to compute its own gradient. The *"real"* breakthrough happened when I
+know how to compute its own gradient. The "real" breakthrough happened when I
 stopped thinking of the graph as a static structure and started seeing it as a
 living, breathing thing, growing with every operation.
 
@@ -621,11 +620,11 @@ Every bug I encountered was a lesson, and every unexpected result was an
 opportunity to recuperate and learn. I quite often found myself talking to my
 code, asking it questions, coaxing it to reveal its secrets.
 
-.. figure:: ../assets/media/slowtorch-meme.jpg
+.. figure:: https://i.imgur.com/CI2lvx3.jpeg
     :alt: SlowTorch, embrace the journey, not the race meme
     :figclass: grayscale zoom
 
-    By the end, this was me realising the true meaning of *"slow"* in SlowTorch
+    By the end, this was me realising the true meaning of "slow" in SlowTorch
     and began embracing the slowness for understanding, over speed.
 
 While SlowTorch isn't a replacement for PyTorch (obviously), it's a learning

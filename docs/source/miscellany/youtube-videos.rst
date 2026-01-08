@@ -1,13 +1,12 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 05 September, 2025
-.. Last updated on: 24 December, 2025
+.. Last updated on: 07 January, 2026
 
 :og:title: The best YouTube has to Offer
 :og:description: A curated list of my favourite YouTube videos that I've found
     over the years: good, bad, and weird!!
 :og:type: article
-:og:image: https://raw.githubusercontent.com/xames3/xa/main/docs/source/
-    assets/opengraph/best-of-youtube.jpg
+:og:image: https://i.imgur.com/RLsdjyG.jpeg
 :prompt: Got a cracking video recommendation?
 :promptdesc: Did you enjoy any of them? Or better yet, do you have a
     must-see video I should add to my list?
@@ -29,22 +28,21 @@
     :timestamp: 05 September, 2025
 
 Recently, out of nowhere, I was looking at my phone's screen time stats, and I
-realised that I spend a significant amount of time on YouTube. As I got into
-software engineering back in 2017, it has been my go-to platform for learning
-new things, staying updated with tech trends, and unwinding with some
-light-hearted or borderline weird content.
+realised that I spend shitload of my time on YouTube. I got into tech in 2017.
+Since then, it has been my go-to platform for learning new things, staying
+updated with tech trends, and unwinding with some light-hearted or weird
+content.
 
-Over the last few years, I've curated a personal playlist of videos that have
-either taught me something valuable or simply made my day better.
+Over the years, I curated a personal playlist of videos that have either taught
+me something valuable or I've just watched them for no reason.
 
 .. figure:: ../assets/media/best-of-youtube-banner.jpg
     :alt: Best of YouTube
 
-This page is a collection of those gems. Think of it as my personal watchlist,
-shared with you, so you don't have to sift through the endless noise of the
-algorithm. Whether you're a fellow developer, a student, or just someone
-looking for quality content, I hope you find something here that resonates with
-you.
+This page is a collection of those gems. I wanted to share these, so you don't
+have to sift through the endless noise of the algorithm. Whether you're a
+developer, a student, or just someone looking for quality content, I hope you
+find something here that resonates with you.
 
 .. note::
 

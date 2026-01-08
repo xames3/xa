@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 24 February, 2025
-.. Last updated on: 21 December, 2025
+.. Last updated on: 07 January, 2026
 
 :og:title: Guiding stars
 :og:description: Expressing heartfelt gratitude to the heros who shaped my
@@ -17,6 +17,10 @@
 :fas:`sparkles far` Guiding stars
 ===============================================================================
 
+.. rst-class:: lead
+
+    You all are my stars, because I look up to you.
+
 .. author::
     :name: Akshay Mestry
     :email: xa@mes3.dev
@@ -26,15 +30,17 @@
     :linkedin: https://linkedin.com/in/xames3
     :timestamp: 18 August, 2025
 
-There are always those moments in life when you stop and look back, not merely
-at achievements and your mistakes, but at the constellation of individuals
-who've shaped you and your path.
+In everyone's life, there are always points where you pause and look back. You
+not only reflect on your achievements and/or mistakes, but also the people
+who've played a role in those moments in time.
 
-This article is my tribute to those guiding stars, those individuals whose
-wisdom, encouragement, and friendship have been the bedrock of my growth as a
-teacher, mentor, and a lifelong learner. Each person mentioned here has left a
-significant mark, and it is through their collective influence that I continue
-to strive, share, and inspire.
+This article is that moment, where I'm looking back and paying tribute to those
+people or my "guiding stars", whose wisdom, encouragement, belief, and
+friendship have been a solid foundation of my growth as a teacher/mentor and a
+lifelong learner. Each person mentioned here :abbr:`DOA (dead or alive)` has
+left a significant mark on me.
+
+And from the bottom of my heart, I thank you for that.
 
 .. admonition:: :fas:`heart mrl-0` A note of gratitude
     :class: unusual-one danger
@@ -55,7 +61,7 @@ to `Gaia`_, the earth goddess, because of her uncompromising foundation upon
 which I've built my dreams. Again, like Gaia, she supported and still supports
 me during my highs and lows and helped shape my character.
 
-.. figure:: ../assets/media/me-and-mum.jpg
+.. figure:: https://i.imgur.com/Gn1b6Cs.jpeg
     :alt: Me and Mum celebrating my admission into DePaul University
     :figclass: zoom grayscale
 
@@ -131,7 +137,7 @@ cohort and generously offered me the opportunity to intern under your guidance
 at NASA. You've always been kind, supportive, a father figure, and a teacher
 ready with valuable advice and encouragement.
 
-.. figure:: ../assets/media/dr-tovar-and-my-students.jpg
+.. figure:: https://i.imgur.com/H4LzSiU.jpeg
     :alt: Dr Tovar with my students at NASA Open Science 2025 Workshop on the
         final day
     :figclass: zoom grayscale
@@ -177,7 +183,7 @@ I was still a student at DePaul and you were already teaching at NLU. To me,
 you're more than a colleague; you're a mentor and perhaps my greatest
 well-wisher.
 
-.. figure:: ../assets/media/young-at-our-graduation-1.jpg
+.. figure:: https://i.imgur.com/zNiGX0H.jpeg
     :alt: Fatemeh attending my graduation ceremony, alongside Young
     :figclass: zoom grayscale
 
@@ -261,7 +267,7 @@ Sameer  Mathad
 tease you about your disciplined approach, but beneath the banter lies a
 genuine admiration for your steady commitment to hard work.
 
-.. figure:: ../assets/media/sameer-and-i-graduated.jpg
+.. figure:: https://i.imgur.com/E6bpo9w.jpeg
     :alt: Sameer and I at our graduation ceremony
     :figclass: zoom grayscale
 
@@ -324,7 +330,7 @@ took a class on Discrete Structures. From the outset, your curiosity and
 support stood out, and I'm truly grateful for the friendship we've built since
 then.
 
-.. figure:: ../assets/media/young-at-our-graduation-2.jpg
+.. figure:: https://i.imgur.com/weM4qDW.jpeg
     :alt: Young attending our graduation ceremony in June 2025
     :figclass: zoom grayscale
 

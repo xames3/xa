@@ -1,13 +1,12 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 01 March, 2025
-.. Last updated on: 24 December, 2025
+.. Last updated on: 07 January, 2026
 
 :og:title: Why write xsNumPy?
 :og:description: Journey of building a lightweight, pure-python implementation
     of NumPy's core features
 :og:type: article
-:og:image: https://raw.githubusercontent.com/xames3/xa/main/docs/source/
-    assets/opengraph/matmul-confusion-meme.jpg
+:og:image: https://i.imgur.com/BPxkNzC.jpeg
 :prompt: Have you rebuilt something just to learn?
 :promptdesc: If you've cracked open an industry standard to truly master
     it, I'd love to hear your experiences.
@@ -39,7 +38,7 @@ I was working on an assignment that required me to use
 `NumPy`_.
 
 I multiplied some matrices; NumPy did its thing, as it always does, and made
-all the computations look super easy. But, under this *"simplicity"*, a few
+all the computations look super easy. But, under this "simplicity", a few
 questions began to gnaw at me.
 
 So, I thought of experimenting with a simple code, nothing fancy:
@@ -76,7 +75,7 @@ and science, plus loads of optimisations.
 I couldn't possibly compete with that.
 
 I wanted to stop treating these libraries (starting with NumPy) as black boxes
-and truly understand the *whys* and *hows*. This realisation hit me so hard, I
+and truly understand the "whys" and "hows". This realisation hit me so hard, I
 challenged myself.
 
 Could I build a dinky version of NumPy from scratch? Because if I'm going to
@@ -316,7 +315,7 @@ Then the 3D arrays... It broke again.
 That's when it hit me, this wasn't just about formatting strings. I needed a
 general solution that would work with any number of dimensions. A few days
 later, I found myself neck-deep in recursive logic and multidimensional
-`indexing`_, all for what I believed was an *easy* print function.
+`indexing`_, all for what I believed was an "easy" print function.
 
 What started as a chilled attempt to rework :meth:`__repr__ <object.__repr__>`
 turned out to be a masterclass in designing for generality. This struggle
@@ -331,7 +330,7 @@ And so, I realised, printing a NumPy array from scratch was a rabbit hole.
 
 .. rubric:: More than meets the eye
 
-After wrestling with the *simple* things, I naively believed the hardest part
+After wrestling with the "simple" things, I naively believed the hardest part
 was behind me. I was excited for the fun stuff: element-wise arithmetic,
 `broadcasting`_, transposing, and other random functions. However, I didn't
 realise my journey was about to get even more challenging.
