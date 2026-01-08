@@ -165,3 +165,10 @@ an :email:`email <xa@mes3.dev | Hi Akshay!>`.
     miscellany/guiding-stars
     miscellany/youtube-videos
     miscellany/faq
+
+.. toctree::
+    :caption: Year in review
+    :hidden:
+    :titlesonly:
+
+    miscellany/year-in-review-2025

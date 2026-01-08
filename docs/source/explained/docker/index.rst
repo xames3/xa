@@ -1,12 +1,11 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 August, 2025
-.. Last updated on: 29 December, 2025
+.. Last updated on: 07 January, 2026
 
 :og:title: A week into Docker
 :og:description: Begineer's guide to Docker and containerisation
 :og:type: article
-:og:image: https://raw.githubusercontent.com/xames3/xa/main/docs/source/
-    assets/opengraph/it-works-on-my-machine-meme.jpg
+:og:image: https://i.imgur.com/TL3wLY8.jpeg
 :prompt: But, I'd love to hear from you
 :promptdesc: What was the moment that made you realise you needed a tool
     like Docker? Or if you're new to this, what's the one thing you're hoping
@@ -93,7 +92,7 @@ server in the cloud.
 .. rubric:: But what did Docker do?
 .. rubric::
     Docker was introduced in 2013 and has evolved since then. It solved the
-    classic *"it works on my machine"* problem.
+    classic "it works on my machine" problem.
     :class: subtitle-text
 
 In the spirit of keeping things simple, I'd say there are two main ideas around
