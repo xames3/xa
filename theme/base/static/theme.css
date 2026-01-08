@@ -1130,9 +1130,11 @@ html[data-theme="dark"] .site-sidebar__brand-image--light {
     }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
     #content figure {
-        margin: 4rem -2.5rem !important;
+        margin: 4rem auto !important;
+        transform-origin: center;
+        scale: 1.1;
     }
 
     #content figcaption {
@@ -1521,7 +1523,6 @@ table.docutils caption {
 
 #content figure {
     margin: 4rem 0;
-    width: fit-content;
     position: relative;
 }
 
