@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 October, 2025
-.. Last updated on: 23 December, 2025
+.. Last updated on: 14 January, 2026
 
 :og:title: FAQs
 :og:description: Frequently Asked Questions about me and this website
@@ -8,7 +8,6 @@
 :prompt: Do you've any question for me?
 :promptdesc: Feel free to ask me about things that you're curious about.
 :submitbtn: Send in your question
-:hiderightsidebar: true
 
 .. _miscellany-faq:
 
@@ -52,7 +51,7 @@ to speak...
 .. dropdown:: What the f*ck is XAMES3, and why you use it everywhere?
     :class-container: site-faq
 
-    .. rubric:: November 02, 2025
+    .. rubric:: Asked on November 02, 2025
         :class: date-text
 
     So, *XAMES3* is my alias and username for online profiles. The first part,
@@ -76,7 +75,7 @@ to speak...
 .. dropdown:: How do you pronounce XAMES3 or XA?
     :class-container: site-faq
 
-    .. rubric:: November 02, 2025
+    .. rubric:: Asked on November 02, 2025
         :class: date-text
 
     It's literally pronounced as "X-A" or "X-A-Mes-three".
@@ -84,7 +83,7 @@ to speak...
 .. dropdown:: Why did you transitioned into teaching?
     :class-container: site-faq
 
-    .. rubric:: November 16, 2025
+    .. rubric:: Asked on November 16, 2025
         :class: date-text
 
     I promised :ref:`Charlotte <charlotte-parks>` that I'd teach someday to
@@ -94,7 +93,7 @@ to speak...
 .. dropdown:: What is your role at National Louis University?
     :class-container: site-faq
 
-    .. rubric:: November 16, 2025
+    .. rubric:: Asked on November 16, 2025
         :class: date-text
 
     I'm an Adjunct at `National Louis University`_'s Undergraduate college in
@@ -103,7 +102,7 @@ to speak...
 .. dropdown:: What are your primary interests as IT professional?
     :class-container: site-faq
 
-    .. rubric:: December 02, 2025
+    .. rubric:: Asked on December 02, 2025
         :class: date-text
 
     Looking back, I'd say I've transitioned from a Software Engineer to AI. So,
@@ -125,7 +124,7 @@ to speak...
 .. dropdown:: What is your favourite movie/TV show?
     :class-container: site-faq
 
-    .. rubric:: December 02, 2025
+    .. rubric:: Asked on December 02, 2025
         :class: date-text
 
     I'm a huge `Christopher Nolan`_ fan, and I :fas:`heart mrl-0 red` his
@@ -140,7 +139,7 @@ to speak...
 .. dropdown:: What is your website's tech stack? The GitHub source looks simple
     :class-container: site-faq
 
-    .. rubric:: December 12, 2025
+    .. rubric:: Asked on December 12, 2025
         :class: date-text
 
     Thanks for checking out the source code on GitHub!! I'm no Frontend
@@ -187,4 +186,3 @@ to speak...
 .. _Dark: https://www.netflix.com/title/80100172
 .. _Sphinx: https://www.sphinx-doc.org/en/master/
 .. _Jinja2: https://jinja.palletsprojects.com/en/stable/
-
