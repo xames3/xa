@@ -4,9 +4,9 @@ Searchbox Template
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 21 February, 2025
-Last updated on: 21 December, 2025
+Last updated on: 14 January, 2026
 -->
-<form id="xa-search"
+<form id="search"
       action="{{ pathto('search') }}"
       method="get"
       class="site-search"
@@ -17,8 +17,8 @@ Last updated on: 21 December, 2025
                x-ref="search"
                type="search"
                name="q"
-               autocomplete="off"
-               placeholder="{{ _('Search the documentation') }}" />
+               autocomplete="on"
+               placeholder="{{ _('Search the corner') }}" />
     </label>
     <button class="site-search__submit"
             type="submit">

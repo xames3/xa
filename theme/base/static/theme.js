@@ -21,6 +21,54 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
+// Header search: expand on click/tap
+(function () {
+    const search = document.querySelector('.site-header__search .site-search');
+    if (!search) return;
+    const input = search.querySelector('.site-search__input');
+    const submit = search.querySelector('.site-search__submit');
+
+    function open() {
+        search.classList.add('is-open');
+        if (input) {
+            input.focus();
+            input.setAttribute('aria-expanded', 'true');
+        }
+    }
+    function close() {
+        if (input && input.value.trim()) return;
+        search.classList.remove('is-open');
+        if (input) input.setAttribute('aria-expanded', 'false');
+    }
+    if (submit) {
+        submit.addEventListener('click', (e) => {
+            if (!search.classList.contains('is-open')) {
+                e.preventDefault();
+                open();
+            }
+        });
+    }
+    if (input) {
+        input.addEventListener('focus', () => {
+            search.classList.add('is-open');
+            input.setAttribute('aria-expanded', 'true');
+        });
+        input.addEventListener('blur', () => {
+            setTimeout(close, 0);
+        });
+        input.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') {
+                close();
+                input.blur();
+            }
+        });
+    }
+
+    document.addEventListener('click', (e) => {
+        if (!search.contains(e.target)) close();
+    });
+})();
+
 // Eased anchor scrolling (fast start, slow end)
 (function () {
     function getCssVarRaw(name) {

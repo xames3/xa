@@ -4,7 +4,7 @@ Theme Utilities
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 21 February, 2025
-Last updated on: 09 January, 2026
+Last updated on: 14 January, 2026
 
 This module defines a collection of utility functions used for
 customising this sphinx theme. These utilities focus on enhancing the
@@ -37,11 +37,11 @@ from subprocess import CalledProcessError
 from subprocess import check_output as co
 
 import bs4
+from docutils import nodes
 from sphinx.util.display import status_iterator
 
 
 if t.TYPE_CHECKING:
-    from docutils import nodes
     from sphinx.application import Sphinx
     from sphinx.environment import BuildEnvironment
 
@@ -227,6 +227,23 @@ def env_before_read_docs(
     :param docnames: A list of document names that were modified.
     """
     app.env.theme_htmls = docnames
+
+
+def ensure_classes_on_nodes(
+    app: Sphinx, doctree: BuildEnvironment, docnames: list[str]
+) -> None:
+    """Make sure classes are handled properly on node-tree.
+
+    This patched function fixes the breaking code in sphinx's internal
+    structure when the nodes with no classes are not handled properly.
+
+    :param app: The Sphinx application instance (unused).
+    :param doctree: The current build environment.
+    :param docname: List of document names that are modified (unused).
+    """
+    app = app or docnames  # Just to satisfy type checkers
+    for node in doctree.traverse(nodes.Element):
+        node.setdefault("classes", [])
 
 
 def last_updated_date(app: Sphinx, docname: str, source: list[str]) -> None:

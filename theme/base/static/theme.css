@@ -624,14 +624,11 @@ html[data-theme="dark"] .site-sidebar__brand-image--light {
     position: relative;
     display: flex;
     align-items: center;
-    gap: 0.75rem;
-    width: 100%;
-    max-width: 38rem;
 }
 
 .site-search__label {
     flex: 1 1 auto;
-    width: 100%;
+    width: 0;
 }
 
 .site-search__input {
@@ -640,19 +637,17 @@ html[data-theme="dark"] .site-sidebar__brand-image--light {
     border-radius: var(--radius);
     background-color: hsl(var(--background));
     color: hsl(var(--foreground));
-    font-size: 0.95rem;
-    padding: 0.55rem 0.85rem;
-    transition: border-color var(--duration-fast) var(--ease-in-out), box-shadow var(--duration-fast) var(--ease-in-out);
+    font-size: 0.8rem;
+    font-family: "Geist Mono", monospace;
+    padding: 0.55rem;
+    padding-right: 0;
+    transition: border-color var(--duration-fast) var(--ease-in-out);
 }
 
 .site-search__input::placeholder {
     color: hsl(var(--muted-foreground));
-}
-
-.site-search__input:focus {
-    outline: none;
-    border-color: hsl(var(--accent));
-    box-shadow: 0 0 0 3px color-mix(in srgb, hsl(var(--accent)) 28%, transparent);
+    font-size: 0.8rem;
+    line-height: 1.2;
 }
 
 .site-search__submit {
@@ -680,15 +675,6 @@ html[data-theme="dark"] .site-sidebar__brand-image--light {
     color: hsl(var(--background));
 }
 
-.site-header__search .DocSearch-Button {
-    width: 2rem;
-    height: 2rem;
-}
-
-.site-header__search .DocSearch-Button-Keys {
-    display: none;
-}
-
 @media (max-width: 640px) {
     .site-header__utilities {
         gap: 0.5rem;
@@ -697,12 +683,7 @@ html[data-theme="dark"] .site-sidebar__brand-image--light {
 
     .site-header__search {
         flex: 0 0 auto;
-        width: 2.25rem;
-    }
-
-    .site-search {
         width: auto;
-        gap: 0.25rem;
     }
 
     .site-search__label {
@@ -714,18 +695,67 @@ html[data-theme="dark"] .site-sidebar__brand-image--light {
         height: 2.5rem;
     }
 
-    .site-header__search .DocSearch-Button {
-        padding: 0.65rem;
-        justify-content: center;
+    .site-search__input::placeholder {
+        font-size: 1rem;
     }
+}
 
-    .site-header__search .DocSearch-Button-Placeholder,
-    .site-header__search .DocSearch-Button-Keys {
-        display: none;
-    }
+.site-header__search {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+}
 
-    .site-header__search .DocSearch-Button-Container {
-        gap: 0;
+.site-header__search .site-search {
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid hsl(var(--border));
+    border-radius: 0.5rem;
+    background: hsl(var(--background));
+    overflow: hidden;
+    transition: width var(--duration-normal) var(--ease-in-out), border-color var(--duration-fast) var(--ease-in-out);
+}
+
+.site-header__search .site-search__label {
+    display: flex;
+    align-items: center;
+}
+
+.site-header__search .site-search__input {
+    border: none;
+    pointer-events: none;
+}
+
+.site-header__search .site-search__submit {
+    width: 2rem;
+    height: 2rem;
+    background: transparent;
+    color: hsl(var(--foreground));
+}
+
+.site-header__search .site-search.is-open,
+.site-header__search .site-search:focus-within {
+    width: min(15rem, calc(100vw - 8rem));
+    border-color: hsl(var(--accent));
+}
+
+.site-header__search .site-search.is-open .site-search__input,
+.site-header__search .site-search:focus-within .site-search__input {
+    opacity: 1;
+    height: 2rem;
+    pointer-events: auto;
+}
+
+.site-header__search .site-search.is-open .site-search__submit,
+.site-header__search .site-search:focus-within .site-search__submit {
+    color: hsl(var(--accent-foreground));
+    border: none;
+}
+
+@media (max-width: 640px) {
+    .site-header__search .site-search__input {
+        font-size: 16px;
     }
 }
 
@@ -1960,13 +1990,6 @@ html[data-theme="dark"] .site-header__logo-image--light {
     }
 }
 
-.site-header__search {
-    align-items: center;
-    position: relative;
-    width: 2rem;
-    height: 2rem;
-}
-
 .site-header__theme-toggle {
     position: relative;
     display: inline-flex;
@@ -2265,44 +2288,44 @@ i {
 }
 
 .note:is(.dark *) {
-    background-color: hsl(var(--light-accent), 0.1);
+    background-color: hsl(var(--light-accent));
     color: hsl(var(--accent-foreground));
 }
 
 .seealso {
-    border: 1px solid hsl(var(--seealso-admonition-foreground), 0.1);
-    background-color: hsl(var(--seealso-admonition-background), 0.1);
+    border: 1px solid hsl(var(--seealso-admonition-foreground), 0.2);
+    background-color: hsl(var(--seealso-admonition-background), 0.2);
     color: hsl(var(--seealso-admonition-foreground));
 }
 
 .seealso:is(.dark *) {
-    border: 1px solid hsl(var(--seealso-admonition-foreground), 0.1);
-    background-color: hsl(var(--seealso-admonition-background), 0.1);
+    border: 1px solid hsl(var(--seealso-admonition-foreground), 0.3);
+    background-color: hsl(var(--seealso-admonition-background), 0.5);
     color: hsl(var(--seealso-admonition-foreground));
 }
 
 .tip {
-    border: 1px solid hsl(var(--tip-admonition-foreground), 0.1);
-    background-color: hsl(var(--tip-admonition-background), 0.4);
+    border: 1px solid hsl(var(--tip-admonition-foreground), 0.3);
+    background-color: hsl(var(--tip-admonition-background), 0.3);
     color: hsl(var(--tip-admonition-foreground)) !important;
 }
 
 .tip:is(.dark *) {
-    border: 1px solid hsl(var(--tip-admonition-foreground), 0.1);
-    background-color: hsl(var(--tip-admonition-background), 0.1);
+    border: 1px solid hsl(var(--tip-admonition-foreground), 0.3);
+    background-color: hsl(var(--tip-admonition-background), 0.5);
 }
 
 .important,
 .hint {
-    border: 1px solid hsl(var(--hint-admonition-foreground), 0.1);
-    background-color: hsl(var(--hint-admonition-background), 0.4);
+    border: 1px solid hsl(var(--hint-admonition-foreground), 0.3);
+    background-color: hsl(var(--hint-admonition-background), 0.5);
     color: hsl(var(--hint-admonition-foreground));
 }
 
 .important:is(.dark *),
 .hint:is(.dark *) {
-    border: 1px solid hsl(var(--hint-admonition-foreground), 0.1);
-    background-color: hsl(var(--hint-admonition-background), 0.1);
+    border: 1px solid hsl(var(--hint-admonition-foreground), 0.3);
+    background-color: hsl(var(--hint-admonition-background), 0.5);
     color: hsl(var(--hint-admonition-foreground));
 }
 
@@ -2315,15 +2338,15 @@ i {
 
 .error:is(.dark *),
 .danger:is(.dark *) {
-    border: 1px solid hsl(var(--danger-admonition-foreground), 0.1);
-    background-color: hsl(var(--danger-admonition-background), 0.1);
+    border: 1px solid hsl(var(--danger-admonition-foreground), 0.3);
+    background-color: hsl(var(--danger-admonition-background), 0.5);
     color: hsl(var(--danger-admonition-foreground));
 }
 
 .warning,
 .caution,
 .attention {
-    border: 1px solid hsl(var(--warning-admonition-foreground), 0.1);
+    border: 1px solid hsl(var(--warning-admonition-foreground), 0.3);
     background-color: hsl(var(--warning-admonition-background), 0.5);
     color: hsl(var(--warning-admonition-foreground));
 }
@@ -2331,8 +2354,8 @@ i {
 .warning:is(.dark *),
 .caution:is(.dark *),
 .attention:is(.dark *) {
-    border: 1px solid hsl(var(--warning-admonition-foreground), 0.1);
-    background-color: hsl(var(--warning-admonition-background), 0.1);
+    border: 1px solid hsl(var(--warning-admonition-foreground), 0.3);
+    background-color: hsl(var(--warning-admonition-background), 0.5);
     color: hsl(var(--warning-admonition-foreground));
 }
 
