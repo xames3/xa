@@ -778,8 +778,8 @@ html[data-theme="dark"] .site-sidebar__brand-image--light {
 }
 
 .site-author__avatar {
-    width: 20px;
-    height: 20px;
+    width: 30px;
+    height: 30px;
     border-radius: 100% !important;
     margin: 0 !important;
 }
@@ -3023,6 +3023,10 @@ a[data-tooltip].show-tooltip::after {
 
 .pt-64 {
     padding-top: 4rem;
+}
+
+.margin-0 {
+    margin: 0 0 0 0;
 }
 
 .mb-64 {

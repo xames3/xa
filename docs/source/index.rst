@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 22 February, 2025
-.. Last updated on: 06 January 2026
+.. Last updated on: 15 January, 2026
 
 :orphan:
 :og:title: Akshay's Corner
@@ -19,7 +19,7 @@ Akshay Mestry
 
 .. rst-class:: lead
 
-    Educator and Software Engineer with a passion for storytelling.
+    Educator, software engineer and storyteller.
 
 .. author::
     :name: Akshay Mestry
