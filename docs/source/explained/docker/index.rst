@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 August, 2025
-.. Last updated on: 07 January, 2026
+.. Last updated on: 15 January, 2026
 
 :og:title: A week into Docker
 :og:description: Begineer's guide to Docker and containerisation
@@ -94,6 +94,10 @@ server in the cloud.
     Docker was introduced in 2013 and has evolved since then. It solved the
     classic "it works on my machine" problem.
     :class: subtitle-text
+
+.. figure:: https://i.imgur.com/csI4fZe.png
+    :alt: It works on my machine
+    :figclass: zoom grayscale
 
 In the spirit of keeping things simple, I'd say there are two main ideas around
 Docker: `Docker Engine`_ and `Docker Hub`_, and let's just stick with these two
