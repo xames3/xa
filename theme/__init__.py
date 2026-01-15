@@ -4,7 +4,7 @@ Akshay's Corner Sphinx Theme
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 21 February, 2025
-Last updated on: 26 December, 2025
+Last updated on: 14 January, 2026
 
 This module serves as the primary entry point for the Akshay's Corner
 Sphinx Theme. It is responsible for initialising the theme, configuring
@@ -70,6 +70,7 @@ from sphinx.util.matching import DOTFILES
 from theme.extensions import directives
 from theme.extensions import roles
 from theme.extensions.utils import build_finished
+from theme.extensions.utils import ensure_classes_on_nodes
 from theme.extensions.utils import env_before_read_docs
 from theme.extensions.utils import last_updated_date
 
@@ -82,7 +83,7 @@ if t.TYPE_CHECKING:
 
 logger = logging.getLogger(__name__)
 
-version: str = "02.11.2025"
+version: str = "14.01.2026"
 theme_name: t.Final[str] = "theme"
 theme_path = p.join(p.abspath(p.dirname(__file__)), "base", "templates")
 supported_extensions: t.Sequence[str] = (
@@ -191,6 +192,7 @@ def setup(app: Sphinx) -> dict[str, str | bool]:
             app.connect("html-page-context", directive.html_page_context)
     app.connect("env-before-read-docs", env_before_read_docs)
     app.connect("source-read", last_updated_date)
+    app.connect("doctree-resolved", ensure_classes_on_nodes)
     app.connect("build-finished", build_finished)
     return {
         "version": version,

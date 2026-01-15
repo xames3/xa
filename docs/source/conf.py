@@ -4,7 +4,7 @@ Akshay's Corner Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 22 February, 2025
-Last updated on: 27 December, 2025
+Last updated on: 14 January, 2026
 
 This file contains the configuration settings for building my static
 website using Sphinx, a popular Python documentation tool. Sphinx is a
@@ -69,7 +69,6 @@ be using it as teaching and learning platform.
 
 from __future__ import annotations
 
-import os
 import typing as t
 from datetime import datetime as dt
 
@@ -83,7 +82,7 @@ if t.TYPE_CHECKING:
 
 project: t.Final[str] = "Akshay's Corner"
 author: t.Final[str] = "Akshay Mestry"
-project_copyright: str = f"© {dt.now().year} {author}."
+project_copyright: str = f"© 2025-{dt.now().year} {author}."
 source: t.Final[str] = "https://github.com/xames3/xa"
 email: t.Final[str] = "xa@mes3.dev"
 version: str = theme_version
@@ -95,7 +94,6 @@ extensions: list[str] = [
     "sphinx.ext.intersphinx",
     "sphinx.ext.viewcode",
     "sphinx_copybutton",
-    "sphinx_docsearch",
 ]
 
 gettext_compact: bool = False
@@ -173,6 +171,8 @@ html_favicon: t.Final[str] = "_static/favicons/favicon.ico"
 html_static_path: list[str] = ["_static"]
 html_extra_path: list[str] = ["docutils.conf"]
 html_permalinks_icon: t.Final[str] = ""
+html_use_index = True
+html_search = True
 templates_path: list[str] = ["_templates"]
 
 intersphinx_mapping: dict[str, tuple[str, None]] = {
@@ -190,13 +190,6 @@ ogp_social_cards: dict[str, str | bool] = {
 }
 ogp_type: t.Final[str] = "website"
 ogp_enable_meta_description: bool = True
-
-docsearch_app_id: str = os.getenv("DOCSEARCH_APP_ID", "")
-docsearch_api_key: str = os.getenv("DOCSEARCH_API_KEY", "")
-docsearch_index_name: str = os.getenv("DOCSEARCH_INDEX_NAME", "")
-docsearch_container: t.Final[str] = "#xa-search"
-docsearch_placeholder: t.Final[str] = "Search"
-docsearch_missing_results_url: str = source + "/issues/new?title=${query}"
 
 copybutton_exclude: str = ".linenos, .gp, .go"
 copybutton_line_continuation_character: str = "\\"

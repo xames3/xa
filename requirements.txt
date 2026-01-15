@@ -3,7 +3,6 @@ matplotlib
 sphinx
 sphinx-carousel
 sphinx-copybutton
-sphinx-docsearch
 sphinx-design
 sphinx-lint
 sphinx-notfound-page
