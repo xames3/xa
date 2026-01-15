@@ -4,7 +4,7 @@ Theme Utilities
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 21 February, 2025
-Last updated on: 26 December, 2025
+Last updated on: 09 January, 2026
 
 This module defines a collection of utility functions used for
 customising this sphinx theme. These utilities focus on enhancing the

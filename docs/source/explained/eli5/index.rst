@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 07 November, 2025
-.. Last updated on: 24 December, 2025
+.. Last updated on: 14 January, 2026
 
 :og:title: Explain Like I'm 5
 :og:description: Not exactly short, but simple answers to tricky technical
@@ -10,7 +10,6 @@
 :promptdesc: If you think you've better examples to share, feel free to send it
     my way. I'm always looking for more ideas and suggestions.
 :submitbtn: Share your story
-:hiderightsidebar: true
 
 .. _explained-explain-like-im-five:
 

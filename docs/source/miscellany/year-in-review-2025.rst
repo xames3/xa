@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 23 December, 2025
-.. Last updated on: 26 December, 2025
+.. Last updated on: 14 January, 2026
 
 :og:title: Yearly review: 2025
 :og:description: A quick recap of what happened in 2025.
@@ -9,7 +9,6 @@
 :promptdesc: How was your 2025? Was it better than 2024? What do you anticipate
     for 2026? Let me know.
 :submitbtn: Share your 2026 resolutions
-:hiderightsidebar: true
 
 .. _miscellany-year-in-review-2025:
 
