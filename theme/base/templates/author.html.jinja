@@ -4,55 +4,35 @@ Author Details Template
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 22 February, 2025
-Last updated on: 21 December, 2025
+Last updated on: 15 January, 2026
 -->
 {% block author %}
-    <aside class="site-author">
-        <div class="site-author__profile"
-             id="author">
-            <img class="site-author__avatar"
+    <aside class="site-article">
+        <a href="{{ github|d(project.source) }}"
+           target="_blank"
+           rel="noopener noreferrer"
+           id="author"
+           class="site-article__profile"
+           aria-label="Check out {{ name|d(project.author) |safe }} on GitHub">
+            <img class="site-article__avatar"
                  src="{{ avatar }}"
                  alt="{{ name|d(project.author) }}'s photo">
-            <div class="site-author__details">
-                <a href="mailto:{{ email|d(project.email) }}?subject={{ subject }}"
-                   class="site-author__name"
-                   data-index="0"
-                   aria-label="Ask {{ name|d(project.author) |safe }} via email">{{ name|d(project.author) |safe }}</a>
-                <p class="site-author__bio">{{ about }}</p>
+            <p class="site-article__name">
+            {{ name|d(project.author) |safe }}</a>
+            <div class="site-article__meta">
+                <div class="site-article__meta-group">
+                    <p id="readingTime"
+                       class="site-article__reading-time"></p>
+                    <a class="site-article__copy copy-url"
+                       data-tooltip="Copy article URL to clipboard"
+                       href="#">
+                        <i class="fa-regular fa-link-simple"
+                           aria-hidden="true"></i>
+                        <span>Copy</span>
+                    </a>
+                </div>
+                <p class="site-article__timestamp"
+                   id="calendarIcon">{{ timestamp }}</p>
             </div>
-        </div>
-        <div class="site-author__social">
-            <a href="{{ linkedin|d('#') }}"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="site-author__social-link site-author__social-link--linkedin"
-               aria-label="Check out {{ name|d(project.author) |safe }} on LinkedIn">
-                <i class="fa-brands fa-linkedin"
-                   aria-hidden="true"></i>
-            </a>
-            <a href="{{ github|d(project.source) }}"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="site-author__social-link site-author__social-link--github"
-               aria-label="Check out {{ name|d(project.author) |safe }} on GitHub">
-                <i class="fa-brands fa-github"
-                   aria-hidden="true"></i>
-            </a>
-        </div>
-        <div class="site-author__meta">
-            <div class="site-author__meta-group">
-                <p id="readingTime"
-                   class="site-author__reading-time"></p>
-                <a class="site-author__copy copy-url"
-                   data-tooltip="Copy article URL to clipboard"
-                   href="#">
-                    <i class="fa-regular fa-link-simple"
-                       aria-hidden="true"></i>
-                    <span>Copy</span>
-                </a>
-            </div>
-            <p class="site-author__timestamp"
-               id="calendarIcon">{{ timestamp }}</p>
-        </div>
-    </aside>
-{% endblock author %}
+        </aside>
+    {% endblock author %}

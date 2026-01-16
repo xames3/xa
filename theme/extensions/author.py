@@ -4,7 +4,7 @@ Author Directive
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 22 February, 2025
-Last updated on: 09 January, 2026
+Last updated on: 15 January, 2026
 
 This module defines a custom `author` directive for this sphinx theme.
 The directive allows embedding details directly within the document.
@@ -20,11 +20,8 @@ follows::
 
         .. author::
             :name: Akshay Mestry
-            :email: xa@mes3.dev
             :avatar: https://example.com/avatar.png
-            :about: A passionate software developer.
             :github: https://github.com/xames3
-            :linkedin: https://linkedin.com/in/xames3
             :timestamp: 2025-02-22
 
 The above snippet will be processed and rendered according to the
@@ -38,6 +35,10 @@ theme's Jinja2 template, producing a final HTML output.
 .. deprecated:: 19.10.2025
 
     Removed the custom subject header in favour of page title.
+
+.. deprecated:: 15.01.2026
+
+    Removed usage of Email, Bio, and LinkedIn metadata.
 """
 
 from __future__ import annotations
@@ -82,12 +83,9 @@ class directive(rst.Directive):
 
     The directive supports the following options::
 
-        - `name`: The author's name.
-        - `email`: The author's email.
+        - `name`: The author's GitHub username.
         - `avatar`: A URL to the author's avatar image.
-        - `about`: A brief bio or description about the author.
         - `github`: Link to the author's GitHub profile.
-        - `linkedin`: Link to the author's LinkedIn profile.
         - `timestamp`: An optional timestamp indicating when the
           document was last updated.
 
@@ -100,11 +98,8 @@ class directive(rst.Directive):
     has_content = False
     option_spec = {  # noqa: RUF012
         "name": rst.directives.unchanged,
-        "email": rst.directives.unchanged,
         "github": rst.directives.unchanged,
         "avatar": rst.directives.unchanged_required,
-        "about": rst.directives.unchanged_required,
-        "linkedin": rst.directives.unchanged_required,
         "timestamp": rst.directives.unchanged_required,
     }
 
