@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 October, 2025
-.. Last updated on: 14 January, 2026
+.. Last updated on: 15 January, 2026
 
 :og:title: FAQs
 :og:description: Frequently Asked Questions about me and this website
@@ -16,12 +16,9 @@
 ===============================================================================
 
 .. author::
-    :name: Akshay Mestry
-    :email: xa@mes3.dev
-    :about: National Louis University
+    :name: @xames3
     :avatar: https://avatars.githubusercontent.com/u/90549089?v=4
     :github: https://github.com/xames3
-    :linkedin: https://linkedin.com/in/xames3
     :timestamp: 30 October, 2025
 
 One of the best parts of sharing and writing these articles is the chats that

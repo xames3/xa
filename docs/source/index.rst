@@ -22,12 +22,9 @@ Akshay Mestry
     Educator, software engineer and storyteller.
 
 .. author::
-    :name: Akshay Mestry
-    :email: xa@mes3.dev
-    :about: National Louis University
+    :name: @xames3
     :avatar: https://avatars.githubusercontent.com/u/90549089?v=4
     :github: https://github.com/xames3
-    :linkedin: https://linkedin.com/in/xames3
     :timestamp: 08 August, 2025
 
 -------------------------------------------------------------------------------
