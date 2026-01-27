@@ -128,7 +128,7 @@ html_context: dict[str, t.Any] = {
     "header_buttons": {
         "Check my availability": {
             "link": "#",
-            "icon": Markup('<i class="far fa-calendar-circle-user"></i>'),
+            "icon": Markup('<i class="far fa-video"></i>'),
             "extras": Markup(
                 'data-cal-link="xames3/quick-chat"'
                 'data-cal-namespace="quick-chat" '
@@ -154,7 +154,7 @@ html_context: dict[str, t.Any] = {
     "sidebar_buttons": {
         "Check my availability": {
             "link": "#",
-            "icon": Markup('<i class="fas far fa-calendar-circle-user"></i>'),
+            "icon": Markup('<i class="fas far fa-video"></i>'),
             "extras": Markup(
                 'data-cal-link="xames3/quick-chat"'
                 'data-cal-namespace="quick-chat" '
