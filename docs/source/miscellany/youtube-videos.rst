@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 05 September, 2025
-.. Last updated on: 15 January, 2026
+.. Last updated on: 07 February, 2026
 
 :og:title: The best YouTube has to Offer
 :og:description: A curated list of my favourite YouTube videos that I've found
@@ -33,7 +33,7 @@ content.
 Over the years, I curated a personal playlist of videos that have either taught
 me something valuable or I've just watched them for no reason.
 
-.. figure:: ../assets/media/best-of-youtube-banner.jpg
+.. figure:: https://i.imgur.com/j6ixm8N.jpg
     :alt: Best of YouTube
 
 This page is a collection of those gems. I wanted to share these, so you don't
@@ -51,7 +51,7 @@ find something here that resonates with you.
 .. _technology:
 
 -------------------------------------------------------------------------------
-Technology
+Technology.
 -------------------------------------------------------------------------------
 
 .. rubric::
@@ -788,7 +788,7 @@ talks, education, concepts of computer science, and more.
 .. _comic-relief:
 
 -------------------------------------------------------------------------------
-Comic Relief
+Comic Relief.
 -------------------------------------------------------------------------------
 
 .. rubric:: Because sometimes, we all need a break from the serious stuff.
@@ -1038,7 +1038,7 @@ plain weird and cringe.
 .. _scene-by-scene:
 
 -------------------------------------------------------------------------------
-Scene-by-Scene
+Scene-by-Scene.
 -------------------------------------------------------------------------------
 
 .. rubric::
@@ -1096,7 +1096,7 @@ magical.
 .. _3am-rabbit-hole:
 
 -------------------------------------------------------------------------------
-3 AM Rabbit Hole
+3 AM Rabbit Hole.
 -------------------------------------------------------------------------------
 
 .. rubric::

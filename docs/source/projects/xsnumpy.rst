@@ -60,7 +60,7 @@ and if so, which one's the best?
 .. _building-with-a-purpose:
 
 -------------------------------------------------------------------------------
-Building with a purpose
+Building with a purpose.
 -------------------------------------------------------------------------------
 
 With all these questions in mind, I was motivated enough to learn the actual
@@ -93,7 +93,7 @@ this properly, I needed discipline and some rules to follow.
 .. _writing-my-first-array:
 
 -------------------------------------------------------------------------------
-Writing my first array
+Writing my first array.
 -------------------------------------------------------------------------------
 
 Now that I have set my rules, I started experimenting with NumPy's core APIs,
@@ -178,7 +178,7 @@ It worked poorly. But it worked!!
             else:
                 self._data = Buffer.from_buffer(buffer)
 
-.. rubric:: Keeping things simple
+.. rubric:: Keeping things simple.
 .. rubric::
     I've intentionally removed loads of details to keep things simple. Check
     out the complete implementation of **ndarray** on GitHub.
@@ -187,9 +187,9 @@ It worked poorly. But it worked!!
 .. button-link:: https://github.com/xames3/xsnumpy/blob/main/xsnumpy/_core.py
     :color: primary
 
-    See full implementation
+    :fab:`github` See full implementation
 
-.. rubric:: Making sense of shapes
+.. rubric:: Making sense of shapes.
 .. rubric::
     A shape of an array is a tuple of integers that represents the number of
     elements along **each dimension** (axis) of the array.
@@ -268,7 +268,7 @@ That's a lot of work, innit?
 .. _illusion-of-simplicity:
 
 -------------------------------------------------------------------------------
-Illusion of simplicity
+Illusion of simplicity.
 -------------------------------------------------------------------------------
 
 After all that hard work, I thought of giving myself a break. I remembered
@@ -326,7 +326,7 @@ And so, I realised, printing a NumPy array from scratch was a rabbit hole.
 
     Complete implementation of |xp.ndarray.repr|_ with helper functions.
 
-.. rubric:: More than meets the eye
+.. rubric:: More than meets the eye.
 
 After wrestling with the "simple" things, I naively believed the hardest part
 was behind me. I was excited for the fun stuff: element-wise arithmetic,
@@ -369,7 +369,7 @@ experiments brought new challenges, and I was absolutely frustrated!!
 That's when I realised I wasn't just adding or multiplying numbers, but
 learning and simultaneously recreating NumPy's broadcasting rules.
 
-.. rubric:: Final boss, Matrix Multiplication
+.. rubric:: Final boss, Matrix Multiplication.
 .. rubric:: Matrix multiplication was another **beast** entirely.
     :class: subtitle-text
 
@@ -390,7 +390,7 @@ affects the output shapes.
     Complete implementation of `arithmetic operations
     <https://github.com/xames3/xsnumpy/blob/main/xsnumpy/_core.py>`_ on GitHub.
 
-.. rubric:: Small victories, big lessons
+.. rubric:: Small victories, big lessons.
 .. rubric::
     Here comes December. By now, I wasn't just rebuilding a scrappy numerical
     computing **doppelganger** like I thought I was.
@@ -712,7 +712,7 @@ does quite well.
               array([True, True])
 
 
-.. rubric:: Sharing notes with the community
+.. rubric:: Sharing notes with the community.
 .. rubric::
     I gave a talk at `ChiPy`_ titled **"xsNumPy: Curiosity to Code"**, walking
     through the decisions, the missteps, and the insights that stayed with me.
@@ -727,7 +727,7 @@ does quite well.
 .. _looking-back-moving-forward:
 
 -------------------------------------------------------------------------------
-Looking back, moving forward
+Looking back, moving forward.
 -------------------------------------------------------------------------------
 
 xsNumPy didn't aim for performance; that wasn't the plan anyway. It was to

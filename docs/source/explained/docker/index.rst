@@ -52,7 +52,7 @@ option.
 
 So, I decided to give it a try.
 
-.. rubric:: And here I'm today, talking about Docker
+.. rubric:: And here I'm today, talking about Docker.
 .. rubric:: Think of this as the start of a journey we can take together.
     :class: subtitle-text
 
@@ -65,7 +65,7 @@ own projects.
 .. _docker-enters-the-chat:
 
 -------------------------------------------------------------------------------
-Docker enters the chat
+Docker enters the chat.
 -------------------------------------------------------------------------------
 
 Learning and exploring Docker wasn't initially on my bingo list, but I'm glad I
@@ -115,7 +115,7 @@ for now.
    your local machine, or you can push your own images to Docker Hub to share
    them with others.
 
-.. rubric:: Magic of Docker Engine
+.. rubric:: Magic of Docker Engine.
 
 When I first started using Docker, I'll be honest, I really didn't understand
 what was going on. Almost every tutorial I watched started with using the
@@ -136,7 +136,7 @@ These environments are what we call **containers**.
 .. _idea-behind-containers:
 
 -------------------------------------------------------------------------------
-Idea behind Containers
+Idea behind Containers.
 -------------------------------------------------------------------------------
 
 In the 1950s, `Malcolm McLean`_ came up with the concept of "containerisation"
@@ -212,7 +212,7 @@ makes containers ideal for deploying applications in a microservices
 architecture where you have multiple small, independent services running
 together.
 
-.. rubric:: Containers and VMs, summarised
+.. rubric:: Containers and VMs, summarised.
 .. rubric::
     The below table can paint a rough picture why containers are better in some
     scenarios.
@@ -249,7 +249,7 @@ together.
 .. _pulling-images-from-the-internet:
 
 -------------------------------------------------------------------------------
-Pulling images from the internet
+Pulling images from the internet.
 -------------------------------------------------------------------------------
 
 After understanding what containers do and how they're better in comparison to
@@ -264,7 +264,7 @@ I wondered where I had been getting all these containers from in the first
 place. I knew I was pulling these **containers\*** from the internet, but I had
 no idea from where.
 
-.. rubric:: That's when I discovered Docker Hub
+.. rubric:: That's when I discovered Docker Hub.
 .. rubric::
     Docker Hub is a cloud-based registry service where you can find and share
     **container images**, not containers.
@@ -273,7 +273,7 @@ no idea from where.
 .. button-link:: https://hub.docker.com/
     :color: primary
 
-    Learn more
+    :fas:`book-open far` Learn more
 
 But what's an image now? With a bit of research, I found out that a Docker
 image is a lightweight executable package that includes it needs to run the
@@ -307,7 +307,7 @@ Yet another reason why Docker is so popular among developers.
 .. _one-week-into-docker:
 
 -------------------------------------------------------------------------------
-One week into Docker
+One week into Docker.
 -------------------------------------------------------------------------------
 
 By now, I was a week into using Docker. I had a basic understanding of what

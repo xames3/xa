@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 24 February, 2025
-.. Last updated on: 15 January, 2026
+.. Last updated on: 07 February, 2026
 
 :og:title: Guiding stars
 :og:description: Expressing heartfelt gratitude to the heros who shaped my
@@ -95,7 +95,7 @@ reminding me of our last chat...
 
     -- Charlotte Parks, *14 Apr 2020*
 
-.. rubric:: Roll credits, my supporting cast
+.. rubric:: Roll credits, my supporting cast.
 .. rubric::
     I believe that life, much like a cinema, is **never** a solo act, but in
     the collective effort of those who work behind the scenes.
