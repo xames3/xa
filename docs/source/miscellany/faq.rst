@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 October, 2025
-.. Last updated on: 15 January, 2026
+.. Last updated on: 07 February, 2026
 
 :og:title: FAQs
 :og:description: Frequently Asked Questions about me and this website
@@ -43,7 +43,11 @@ questions.
 This isn't just a list, but it's an extension of my story. Some easter eggs, so
 to speak...
 
-.. rubric:: Frequently asked questions
+.. _faq:
+
+-------------------------------------------------------------------------------
+Frequently asked questions
+-------------------------------------------------------------------------------
 
 .. dropdown:: What the f*ck is XAMES3, and why you use it everywhere?
     :class-container: site-faq

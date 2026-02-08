@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 18 April, 2025
-.. Last updated on: 15 January, 2026
+.. Last updated on: 07 February, 2026
 
 :og:title: PyTorch... but much slower
 :og:description: PyTorch taught me how to build while SlowTorch taught me how
@@ -73,6 +73,7 @@ I wanted to build it slowly, understanding each component and appreciating the
 complexity of the system. I had the same three rules.
 
 .. admonition:: :fas:`badge-check green` Rules of engagement
+    :class: unusual-one note
 
     - No use of LLMs or any AI usage of anything.
     - Every line of code and every solution had to come from my own

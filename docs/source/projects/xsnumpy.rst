@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 01 March, 2025
-.. Last updated on: 15 January, 2026
+.. Last updated on: 07 February, 2026
 
 :og:title: Why write xsNumPy?
 :og:description: Journey of building a lightweight, pure-python implementation
@@ -80,6 +80,7 @@ teach these concepts one day, I have to go **deeper**. If I were going to learn
 this properly, I needed discipline and some rules to follow.
 
 .. admonition:: :fas:`badge-check green` Rules of engagement
+    :class: unusual-one note
 
     - No use of LLMs or any AI usage of anything.
     - Every line of code and every solution had to come from my own

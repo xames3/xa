@@ -4,7 +4,7 @@ Akshay's Corner Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 22 February, 2025
-Last updated on: 14 January, 2026
+Last updated on: 07 February, 2026
 
 This file contains the configuration settings for building my static
 website using Sphinx, a popular Python documentation tool. Sphinx is a
@@ -88,7 +88,6 @@ email: t.Final[str] = "xa@mes3.dev"
 version: str = theme_version
 
 extensions: list[str] = [
-    "notfound.extension",
     "sphinx.ext.autodoc",
     "sphinx.ext.extlinks",
     "sphinx.ext.intersphinx",
