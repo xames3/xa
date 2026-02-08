@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 22 February, 2025
-.. Last updated on: 15 January, 2026
+.. Last updated on: 07 February, 2026
 
 :orphan:
 :og:title: Akshay's Corner
@@ -28,7 +28,7 @@ Akshay Mestry
     :timestamp: 08 August, 2025
 
 -------------------------------------------------------------------------------
-About me
+About me.
 -------------------------------------------------------------------------------
 
 Hi, I'm Akshay, an educator, engineer, and currently a CS Adjunct Faculty at
@@ -46,7 +46,7 @@ I'm learning `Rust`_ this year.
 .. _open-source:
 
 -------------------------------------------------------------------------------
-Open source
+Open source.
 -------------------------------------------------------------------------------
 
 I :fas:`heart mrl-0 red` Open source!!
@@ -92,7 +92,7 @@ had a passion for teaching.
 .. _teaching-philosophy:
 
 -------------------------------------------------------------------------------
-Teaching philosophy
+Teaching philosophy.
 -------------------------------------------------------------------------------
 
 I believe that "true" mastery of something comes from sharing learnings from
@@ -122,7 +122,7 @@ and my position, when asked for any help.
 .. _lets-connect:
 
 -------------------------------------------------------------------------------
-Let's connect
+Let's connect.
 -------------------------------------------------------------------------------
 
 I'm not on any social media besides `LinkedIn`_, but I'm always open to having
@@ -162,10 +162,3 @@ an :email:`email <xa@mes3.dev | Hi Akshay!>`.
     miscellany/guiding-stars
     miscellany/youtube-videos
     miscellany/faq
-
-.. toctree::
-    :caption: Year in review
-    :hidden:
-    :titlesonly:
-
-    miscellany/year-in-review-2025

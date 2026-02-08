@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 August, 2025
-.. Last updated on: 15 January, 2026
+.. Last updated on: 07 February, 2026
 
 :og:title: A week into Docker
 :og:description: Begineer's guide to Docker and containerisation
@@ -28,6 +28,9 @@
     :avatar: https://avatars.githubusercontent.com/u/90549089?v=4
     :github: https://github.com/xames3
     :timestamp: 30 August, 2025
+
+.. role:: console(code)
+    :language: console
 
 This is my story from September 2020, roughly five years ago, as of writing
 this article. It was in the middle of the pandemic. I was switching jobs. I

@@ -234,8 +234,29 @@ samp {
 }
 
 .site-layout__content {
+    --outline-offset: 1rem;
     position: relative;
     margin-top: 3rem;
+    outline: 1px solid hsl(var(--border));
+    outline-offset: var(--outline-offset);
+}
+
+.site-layout__content::before,
+.site-layout__content::after {
+    content: "";
+    position: absolute;
+    top: -1rem;
+    height: calc(100% + 2rem);
+    border-left: 1px dashed hsl(var(--border));
+    z-index: -999;
+}
+
+.site-layout__content::before {
+  left: 33.333%;
+}
+
+.site-layout__content::after {
+  left: 66.666%;
 }
 
 @media (min-width: 768px) {
@@ -246,13 +267,9 @@ samp {
     }
 
     .site-layout__content {
-        outline: 1px solid hsl(var(--border));
-        outline-offset: 1rem;
         padding-top: 3rem;
     }
-}
 
-@media (min-width: 768px) {
     .site-layout--nav-in-header {
         grid-template-columns: minmax(0, 1fr);
     }
@@ -287,8 +304,6 @@ samp {
 
 @media (max-width: 768px) {
     .site-layout__content {
-        outline: 1px solid hsl(var(--border));
-        outline-offset: 1rem;
         margin-bottom: 2rem;
     }
 
@@ -1472,6 +1487,26 @@ html[data-theme="dark"] .site-sidebar__brand-image--light {
     letter-spacing: -2.18px;
 }
 
+.site-feedback-shell__title::before,
+#content h2::before {
+    content: "";
+    display: block;
+    border-top: 1px solid hsl(var(--border));
+    width: calc(100% + 11rem);
+    margin-inline: -5.5rem;
+    margin-block-end: 3rem;
+}
+
+@media (max-width: 768px) {
+
+    .site-feedback-shell__title::before,
+    #content h2::before {
+        width: calc(100% + 2rem);
+        margin-inline: -1rem;
+    }
+
+}
+
 #content h3 {
     line-height: 1.625rem;
     letter-spacing: -0.4px;
@@ -1920,8 +1955,32 @@ html[data-theme="dark"] .site-header__logo-image--light {
     background-color: hsl(var(--background));
     gap: 0.25rem;
     flex-direction: column;
-    overflow: auto;
+    overflow: visible;
     z-index: 2000;
+}
+
+.site-header__nav-group > ul::before,
+.site-header__nav-group > ul::after {
+    content: "";
+    position: absolute;
+    left: 1.5rem;
+    width: 0.85rem;
+    height: 0.85rem;
+    transform: rotate(45deg);
+    z-index: -1;
+    border-radius: 2px;
+}
+
+.site-header__nav-group > ul::before {
+    background: linear-gradient(to bottom right, hsl(var(--border)) 54%, hsl(var(--background)) 50%);
+    top: -8px;
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.site-header__nav-group > ul::after {
+    top: -6px;
+    background: hsl(var(--background));
 }
 
 .site-header__nav-group:hover>ul,
