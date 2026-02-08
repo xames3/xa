@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 07 November, 2025
-.. Last updated on: 15 January, 2026
+.. Last updated on: 07 February, 2026
 
 :og:title: Explain Like I'm 5
 :og:description: Not exactly short, but simple answers to tricky technical
@@ -64,7 +64,7 @@ examples or their ways of understanding the same concepts.
 You never know what simple example or idea might be the one that finally
 clicks!!
 
-.. rubric:: The big idea
+.. rubric:: The big idea.
 
 Each page here will focus on a single concept, and I'll explain it simply,
 using practical examples that we encounter every day. For me, the best examples
@@ -77,4 +77,3 @@ independent. So feel free to jump in and explore whichever topic you fancy.
 These pages are designed to give you that **aha!!** moment. They are short\*,
 sharp bits of knowledge with relatable examples to make technical understanding
 click instantly.
-

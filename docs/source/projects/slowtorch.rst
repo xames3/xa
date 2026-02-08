@@ -56,7 +56,7 @@ inner workings.
 I mean, I've used PyTorch for years, but I had never really understood how it
 worked under the hood, so why not? Thus, it all began.
 
-.. rubric:: Lessons from xsNumPy
+.. rubric:: Lessons from xsNumPy.
 .. rubric::
     Before starting off with SlowTorch, I took a moment to reflect on the
     lessons I learnt while writing **xsNumPy**.
@@ -86,7 +86,7 @@ complexity of the system. I had the same three rules.
 .. _from-arrays-to-tensors:
 
 -------------------------------------------------------------------------------
-From arrays to tensors
+From arrays to tensors.
 -------------------------------------------------------------------------------
 
 So, I started off by building SlowTorch. The first step was to understand the
@@ -116,7 +116,7 @@ operations, gradients, and compute them efficiently.
 .. button-link:: https://docs.pytorch.org/docs/stable/
     :color: primary
 
-    Checkout docs
+    :fas:`file-lines far` Checkout docs
 
 I started off by creating various :py:class:`dtypes <torch.dtype>` like
 ``float64``, ``float32``, ``int64``, etc., alongside a simple
@@ -137,7 +137,7 @@ whether it :py:attr:`requires gradients <torch.Tensor.requires_grad>` or not.
 .. _walking-backwards:
 
 -------------------------------------------------------------------------------
-Walking backwards
+Walking backwards.
 -------------------------------------------------------------------------------
 
 I was happy with my minimal implementation of the |storch.tensor|_ class, but
@@ -236,7 +236,7 @@ with respect to a loss function.
 .. _building-the-building-blocks:
 
 -------------------------------------------------------------------------------
-Building the building blocks
+Building the building blocks.
 -------------------------------------------------------------------------------
 
 Once my tensor with autodiff support was in place, I started on the neural
@@ -557,7 +557,7 @@ ride a bicycle without training wheels. I fell off a ton. But each time I
 got back on, I understood a little more. I was, in a way, backpropagating my
 mistakes, learning from them, and adjusting my gradients.
 
-.. rubric:: Joy of manual optimisation
+.. rubric:: Joy of manual optimisation.
 .. rubric::
     PyTorch's optimisers are **elegant** and **efficient**, but wanted to
     understand their mechanics.
@@ -605,7 +605,7 @@ their gradients.
 .. _embracing-slowness-as-a-virtue:
 
 -------------------------------------------------------------------------------
-Embracing slowness as a virtue
+Embracing slowness as a virtue.
 -------------------------------------------------------------------------------
 
 As more time passed while building SlowTorch, I realised the hardest part
