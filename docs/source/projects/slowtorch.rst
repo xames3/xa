@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 18 April, 2025
-.. Last updated on: 07 February, 2026
+.. Last updated on: 09 February, 2026
 
 :og:title: PyTorch... but much slower
 :og:description: PyTorch taught me how to build while SlowTorch taught me how
@@ -37,7 +37,7 @@ learning arrays, memory buffers, and `broadcasting`_. As mentioned in
 .. card:: :fas:`at far` Why write xsNumPy?
     :link: xsnumpy
     :link-type: doc
-    :link-alt: Read story
+    :link-alt: Read
     :class-card: right-link-button
 
     An experimental re-implementation of few of the core NumPy features in pure
@@ -181,7 +181,7 @@ would have a reference to its parent nodes. This way, I could traverse the
 graph and compute gradients in a more structured way.
 
 .. code-block:: python
-    :caption: :fab:`python mrl-0` `slowtorch/internal/tensor.py`_
+    :caption: :fas:`file far` `slowtorch/internal/tensor.py`_
     :emphasize-lines: 19-21
     :linenos:
 
@@ -255,7 +255,7 @@ wrapped around classes much like PyTorch.
 
 .. tab-set::
 
-    .. tab-item:: Layers
+    .. tab-item:: :fas:`circle-nodes far` Layers
 
         `Layers`_ were implemented as functions that took tensors as ``input``
         and returned new tensors with the layer transformation applied (forward
@@ -284,7 +284,7 @@ wrapped around classes much like PyTorch.
         its functional form with its backward pass.
 
         .. code-block:: python
-            :caption: :fab:`python mrl-0` `slowtorch/nn/functional/layer.py`_
+            :caption: :fas:`file far` `slowtorch/nn/functional/layer.py`_
             :emphasize-lines: 2,9-10
             :linenos:
 
@@ -305,7 +305,7 @@ wrapped around classes much like PyTorch.
                 new_tensor.grad_fn.inputs = (input, weight, bias)
                 return new_tensor
 
-    .. tab-item:: Activations
+    .. tab-item:: :fas:`bolt far` Activations
 
         `Activation functions`_ were implemented as simple functions that took
         a tensor as ``input`` and returned a new tensor with the activation
@@ -352,7 +352,7 @@ wrapped around classes much like PyTorch.
         with its backward pass.
 
         .. code-block:: python
-            :caption: :fab:`python mrl-0` `slowtorch/nn/functional/pointwise.py`_
+            :caption: :fas:`file far` `slowtorch/nn/functional/pointwise.py`_
             :emphasize-lines: 10,13,19
             :linenos:
 
@@ -380,7 +380,7 @@ wrapped around classes much like PyTorch.
                 new_tensor.grad_fn.inputs = (input,)
                 return new_tensor
 
-    .. tab-item:: Losses
+    .. tab-item:: :fas:`chart-line-down far` Losses
 
         `Loss functions`_ were implemented as functions that took two tensors,
         ``input`` and ``target``, and returned a new tensor representing the
@@ -423,7 +423,7 @@ wrapped around classes much like PyTorch.
         error (MSE) loss function with its backward pass.
 
         .. code-block:: python
-            :caption: :fab:`python mrl-0` `slowtorch/nn/functional/loss.py`_
+            :caption: :fas:`file far` `slowtorch/nn/functional/loss.py`_
             :emphasize-lines: 2,14-16
             :linenos:
 
@@ -448,7 +448,7 @@ wrapped around classes much like PyTorch.
                 new_tensor.grad_fn.inputs = (input, target)
                 return new_tensor
 
-    .. tab-item:: Transforms
+    .. tab-item:: :fas:`diagram-predecessor far` Transforms
 
         `Transformations`_ were implemented as functions that took a tensor as
         ``input`` and returned a new tensor with the transformation applied
@@ -488,7 +488,7 @@ wrapped around classes much like PyTorch.
         function with its backward pass.
 
         .. code-block:: python
-            :caption: :fab:`python mrl-0` `slowtorch/nn/functional/mutation.py`_
+            :caption: :fas:`file far` `slowtorch/nn/functional/mutation.py`_
             :emphasize-lines: 3,7
             :linenos:
 
@@ -504,14 +504,14 @@ wrapped around classes much like PyTorch.
                 new_tensor.grad_fn.inputs = (input,)
                 return new_tensor
 
-    .. tab-item:: Parameter
+    .. tab-item:: :fas:`atom-simple far` Parameter
 
         `Parameters`_ were just tensors with a flag indicating whether they
         required gradients. For example, below is a minimal implementation of a
         SlowTorch parameter.
 
         .. code-block:: python
-            :caption: :fab:`python mrl-0` `slowtorch/nn/modules/parameter.py`_
+            :caption: :fas:`file far` `slowtorch/nn/modules/parameter.py`_
             :linenos:
 
             class Parameter(Tensor):
@@ -572,7 +572,7 @@ class that took a list of parameters and a learning rate, and it had a
 :python:`.step()` method that updated the parameters based on their gradients.
 
 .. code-block:: python
-    :caption: :fab:`python mrl-0` `slowtorch/optim/optimiser.py`_
+    :caption: :fas:`file far` `slowtorch/optim/optimiser.py`_
     :linenos:
 
     class Optimiser:

@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 24 February, 2025
-.. Last updated on: 07 February, 2026
+.. Last updated on: 09 February, 2026
 
 :og:title: Guiding stars
 :og:description: Expressing heartfelt gratitude to the heros who shaped my
@@ -10,6 +10,7 @@
 :promptdesc: We all have mentors and friends who guide us. Reading this,
     did anyone come to your mind? I'd be honoured to hear about them.
 :submitbtn: Share your reflections
+:faicon: sparkles
 
 .. _miscellany-guiding-stars:
 

@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 05 September, 2025
-.. Last updated on: 07 February, 2026
+.. Last updated on: 09 February, 2026
 
 :og:title: The best YouTube has to Offer
 :og:description: A curated list of my favourite YouTube videos that I've found
@@ -68,7 +68,7 @@ talks, education, concepts of computer science, and more.
 
     .. tab-set::
 
-        .. tab-item:: Programming
+        .. tab-item:: :fas:`code far` Programming
 
             Collection of my favourite videos related to general programming or
             software engineering concepts. These videos have been instrumental
@@ -453,7 +453,7 @@ talks, education, concepts of computer science, and more.
 
                     .. thumbnail:: https://www.youtube.com/watch?v=Lakz2MoHy6o
 
-        .. tab-item:: Talks & Interviews
+        .. tab-item:: :fas:`comments far` Talks & Interviews
 
             The below collections are some of my favourite talks and interviews
             with some of the most influential people in the tech industry.
@@ -598,7 +598,7 @@ talks, education, concepts of computer science, and more.
 
                     .. thumbnail:: https://www.youtube.com/watch?v=MYP56QJpDr4
 
-        .. tab-item:: Science & Education
+        .. tab-item:: :fas:`flask far` Science & Education
 
             Here, the videos are related to general science concepts, physics,
             mathematics, space, and more. I've always been fascinated by
@@ -804,7 +804,7 @@ plain weird and cringe.
 
     .. tab-set::
 
-        .. tab-item:: Light-hearted
+        .. tab-item:: :fas:`face-smile-halo far` Light-hearted
 
             An ever-growing collection of some of my favourite light-hearted
             comedy videos that I've found over the years. These videos are a
@@ -933,21 +933,15 @@ plain weird and cringe.
 
                     .. thumbnail:: https://www.youtube.com/watch?v=Y1IjX5TsKv8
 
-        .. tab-item:: Diabolical & Dark
+        .. tab-item:: :fas:`face-swear far` Diabolical & Dark
 
             And there's this side of YouTube that I absolutely love the
             absolutely weird, the delightfully strange, the content that makes
-            you tilt your head and think, *"how did I even get here?"*. This is
-            a collection of those *"gems"*.
+            you tilt your head and think, "how did I even get here?". This is
+            a collection of those "gems".
 
             These videos are a mix of surreal comedy, absurdist sketches, and
             just plain weird stuff. They never fail to cease to amuse.
-
-            .. danger::
-
-                These videos are a bit out there and might not be everyone's
-                cup of tea. They're paired with dark-edgy humour. Viewer
-                discretion is advised.
 
             .. grid:: 3
 
@@ -1055,7 +1049,7 @@ magical.
 
     .. tab-set::
 
-        .. tab-item:: Movie magic
+        .. tab-item:: :fas:`wand-magic-sparkles` Movie magic
 
             A collection of some of my favourite behind-the-scenes videos from
             some of the most iconic movies and TV shows. These videos give you

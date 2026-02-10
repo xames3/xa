@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 30 October, 2025
-.. Last updated on: 07 February, 2026
+.. Last updated on: 09 February, 2026
 
 :og:title: FAQs
 :og:description: Frequently Asked Questions about me and this website
@@ -49,7 +49,7 @@ to speak...
 Frequently asked questions
 -------------------------------------------------------------------------------
 
-.. dropdown:: What the f*ck is XAMES3, and why you use it everywhere?
+.. dropdown:: What the f*ck is XAMES3, and why you use it everywhere? |pop|
     :class-container: site-faq
 
     .. rubric:: Asked on November 02, 2025
