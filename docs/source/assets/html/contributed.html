@@ -4,7 +4,7 @@ Previously contributed at widget
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 01 October, 2025
-Last updated on: 04 February, 2026
+Last updated on: 09 February, 2026
 -->
 <div class="contributed-at__container">
     <p class="contributed-at__title">Contributed at</p>
@@ -150,6 +150,11 @@ Last updated on: 04 February, 2026
         clip: rect(0, 0, 0, 0);
         white-space: nowrap;
         border: 0;
+    }
+
+    .contributed-at-scroller[data-animated="true"]
+    .contributed-at-scroller__list:hover {
+        animation-play-state: paused;
     }
 
     @keyframes contributed-at-scroll {

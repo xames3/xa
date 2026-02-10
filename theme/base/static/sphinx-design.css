@@ -306,18 +306,15 @@ nav a svg .sd-material-icon {
 
 .sd-btn {
     border-radius: 50px;
-    font-size: 1rem;
+    font-size: 0.9rem;
     line-height: 1.5rem;
-    padding: 0.5rem 1.25rem;
+    padding: 0.5rem 1rem;
     background-color: hsl(var(--code-background)) !important;
     color: hsl(var(--foreground)) !important;
     border: 1px solid hsl(var(--border)) !important;
 }
 
 @media (max-width: 768px) {
-    .sd-btn {
-        padding: 0.5rem 0.85rem;
-    }
 
     details .sd-card-header {
         margin-top: 0 !important;

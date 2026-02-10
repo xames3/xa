@@ -53,6 +53,17 @@ span.linenos.special {
 .highlight .hll {
     background-color: hsl(var(--highlight));
     position: relative;
+    display: block;
+    width: calc(100% + 1rem);
+}
+
+@media (max-width: 768px) {
+
+    .highlight .hll {
+        padding-right: 100vw;
+        margin-right: -100vw;
+        display: inline;
+    }
 }
 
 .highlight .hll::before {
@@ -60,8 +71,7 @@ span.linenos.special {
     position: absolute;
     left: -1rem;
     width: 1rem;
-    margin-top: 1px;
-    height: 17px;
+    height: 20px;
     background: -webkit-linear-gradient(to right, #47a8ff, rgb(92, 174, 255) 16.81%, hsl(var(--highlight)) 16.81%);
     background: -o-linear-gradient(to right, #47a8ff, rgb(92, 174, 255) 16.81%, hsl(var(--highlight)) 16.81%);
     background: -moz-linear-gradient(to right, #47a8ff, rgb(92, 174, 255) 16.81%, hsl(var(--highlight)) 16.81%);
@@ -496,4 +506,3 @@ span.linenos.special {
 .highlight .il {
     color: hsl(var(--comment-foreground));
 }
-
