@@ -1,6 +1,6 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 01 March, 2025
-.. Last updated on: 07 February, 2026
+.. Last updated on: 09 February, 2026
 
 :og:title: Why write xsNumPy?
 :og:description: Journey of building a lightweight, pure-python implementation
@@ -128,7 +128,7 @@ version using Python's built-in :py:mod:`ctypes` module.
 It worked poorly. But it worked!!
 
 .. code-block:: python
-    :caption: :fab:`python mrl-0` `xsnumpy/_core.py`_
+    :caption: :fas:`file far` `xsnumpy/_core.py`_
     :linenos:
 
     class ndarray:
@@ -403,9 +403,9 @@ right.
 
 They were about thinking like NumPy:
 
-- :fas:`layer-minus red far` How can I minimise unnecessary data duplication?
-- :fas:`object-intersect yellow far` How can I broadcast arrays?
-- :fas:`shapes green far` How can I infer the correct output shape?
+- How can I minimise unnecessary data duplication?
+- How can I broadcast arrays?
+- How can I infer the correct output shape?
 
 I was creating a flexible and extensible system that could handle both
 intuitive and weird edge cases. With each iteration, every commit I made, I
@@ -435,7 +435,7 @@ does quite well.
 
 .. tab-set::
 
-    .. tab-item:: Creations
+    .. tab-item:: :fas:`empty-set far` Creations
 
         xsNumPy provides familiar ways to create arrays. These creation
         routines are consistent, predictable, and designed to slot neatly into
@@ -494,7 +494,7 @@ does quite well.
             xsnumpy?tab=readme-ov-file#array-creation-routines>`_ methods
             supported by xsNumPy on GitHub.
 
-    .. tab-item:: Operations
+    .. tab-item:: :fas:`plus-minus far` Operations
 
         xsNumPy provides a range of arithmetic operations, carefully adhering
         to NumPy's rules for broadcasting and type coercion. The emphasis is on
@@ -560,7 +560,7 @@ does quite well.
             tab=readme-ov-file#linear-algebra>`_ supported by xsNumPy on
             GitHub.
 
-    .. tab-item:: Transforms
+    .. tab-item:: :fas:`diagram-predecessor far` Transforms
 
         xsNumPy provides essential shape manipulation APIs that are predictable
         and memory-aware. The emphasis is on clarity of intent and avoiding
@@ -607,7 +607,7 @@ does quite well.
               >>> a.flatten()
               array([1, 2, 3, 4, 5, 6])
 
-    .. tab-item:: Indexing
+    .. tab-item:: :fas:`brackets-square far` Indexing
 
         Indexing is expressive and disciplined in xsNumPy, just like NumPy. The
         goal is to provide intuitive access to elements and subarrays while
@@ -666,7 +666,7 @@ does quite well.
             69c302ccdd594f1d8f0c51dbe16346232c39047f/xsnumpy/_core.py>`_
             on GitHub.
 
-    .. tab-item:: Reductions
+    .. tab-item:: :fas:`sigma far` Reductions
 
         Reductions condense information carefully, preserving the essence of
         the data. xsNumPy provides a few key reduction operations that are

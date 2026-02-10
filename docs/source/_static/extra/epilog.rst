@@ -13,6 +13,7 @@
 
 .. |exp| replace:: :html:`<span class="badge beta">Experimental</span>`
 .. |new| replace:: :html:`<span class="badge new">New</span>`
+.. |pop| replace:: :html:`<span class="badge popular">Popular</span>`
 
 .. |>| replace:: :html:`<i class="fa-solid fa-chevron-right fa-2xs"></i>`
 
