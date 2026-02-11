@@ -17,7 +17,7 @@
     border: 1px solid hsl(var(--border));
     color: hsl(var(--foreground));
     margin: 2rem 0 !important;
-    background-color: hsl(var(--background));
+    background-color: hsl(var(--code-background));
 }
 
 .sd-card-body {

@@ -57,15 +57,6 @@ span.linenos.special {
     width: calc(100% + 1rem);
 }
 
-@media (max-width: 768px) {
-
-    .highlight .hll {
-        padding-right: 100vw;
-        margin-right: -100vw;
-        display: inline;
-    }
-}
-
 .highlight .hll::before {
     content: " ";
     position: absolute;
@@ -76,6 +67,20 @@ span.linenos.special {
     background: -o-linear-gradient(to right, #47a8ff, rgb(92, 174, 255) 16.81%, hsl(var(--highlight)) 16.81%);
     background: -moz-linear-gradient(to right, #47a8ff, rgb(92, 174, 255) 16.81%, hsl(var(--highlight)) 16.81%);
     background: linear-gradient(to right, #47a8ff, rgb(92, 174, 255) 16.81%, hsl(var(--highlight)) 16.81%);
+}
+
+@media (max-width: 768px) {
+
+    .highlight .hll {
+        padding-right: 100vw;
+        margin-right: -100vw;
+        display: inline;
+    }
+
+    .highlight .hll::before {
+        height: 17px !important;
+        top: 0;
+    }
 }
 
 .highlight {

@@ -4,7 +4,7 @@ Akshay's Corner Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 22 February, 2025
-Last updated on: 07 February, 2026
+Last updated on: 10 February, 2026
 
 This file contains the configuration settings for building my static
 website using Sphinx, a popular Python documentation tool. Sphinx is a
@@ -105,7 +105,7 @@ exclude_patterns: Sequence[str] = ["_build"]
 smartquotes: bool = False
 
 html_theme: t.Final[str] = "theme"
-html_title: str = ""
+html_title: str = "amestry"
 html_baseurl: t.Final[str] = "https://xa.mes3.dev/"
 html_context: dict[str, t.Any] = {
     "add_copy_to_headerlinks": True,

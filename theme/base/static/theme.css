@@ -356,7 +356,7 @@ samp {
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
     transform: translateX(-100%);
     transition: transform var(--duration-fast) var(--ease-in-out);
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     overscroll-behavior: contain;
@@ -1808,6 +1808,8 @@ html[data-theme="dark"] .site-header {
     min-height: 3.5rem;
     gap: 1rem;
     padding-inline: 1rem;
+    max-width: 1180px;
+    margin-inline: auto;
 }
 
 .site-header__primary {
@@ -1823,8 +1825,6 @@ html[data-theme="dark"] .site-header {
 
 .site-header__logo {
     display: inline-flex;
-    border: 1px solid hsl(var(--border));
-    border-radius: 0.5rem;
     cursor: pointer;
 }
 
@@ -1860,29 +1860,27 @@ html[data-theme="dark"] .site-header__logo-image--light {
     display: none;
 }
 
+/* Desktop view */
 .site-sidebar__brand-title,
 .site-header__title {
-    font-size: 0.85rem;
-    font-family: "Geist Mono", monospace;
-    width: 2rem;
-    height: 2rem;
-    position: relative;
-    font: var(--fa-font-regular);
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: -2.36px;
+    margin-bottom: 0.5rem;
 }
 
-.site-sidebar__brand-title::before,
-.site-header__title::before {
-    content: "\f015";
+.site-sidebar__brand-title::after,
+.site-header__title::after {
+    content: "\f336";
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
-    display: inline-block;
-    visibility: visible;
-    position: absolute;
-    transform: translate(-50%, -50%);
-    left: 50%;
-    top: 50%;
+    font: var(--fa-font-solid);
+    font-size: 1rem;
+    color: hsl(var(--green-color));
+    margin-left: 0.25rem;
 }
 
+/* Mobile view */
 @media (max-width: 768px) {
 
     .site-sidebar__brand-title::before,
@@ -1897,6 +1895,11 @@ html[data-theme="dark"] .site-header__logo-image--light {
         margin-left: 0.5rem;
         border-radius: 0.5rem;
     }
+    .site-sidebar__brand-title,
+    .site-header__title {
+        margin-bottom: 1rem;
+    }
+
 }
 
 .site-header__title {
@@ -2045,13 +2048,9 @@ html[data-theme="dark"] .site-header__logo-image--light {
 
 .site-header__menu-toggle {
     display: inline-flex;
-    border: none;
     background-color: transparent;
-    border: 1px solid hsl(var(--border));
-    border-radius: 0.5rem;
-    margin: 0;
     cursor: pointer;
-    cursor: pointer;
+    margin-top: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -2999,17 +2998,13 @@ a[data-tooltip].show-tooltip::after {
 }
 
 .site-github-repository__name {
-    color: hsl(var(--muted-foreground)) !important;
-}
-
-.site-github-repository__name:hover {
     color: hsl(var(--foreground)) !important;
 }
 
 .site-github-repository__name::before {
     content: "\f09b";
     text-rendering: auto;
-    color: hsl(var(--muted-foreground)) !important;
+    color: hsl(var(--foreground)) !important;
     -webkit-font-smoothing: antialiased;
     font: var(--fa-font-brands);
     margin-right: 0.5rem;
@@ -3246,4 +3241,12 @@ a[data-tooltip].show-tooltip::after {
 .strikethrough {
     text-decoration: line-through;
     text-decoration-thickness: 1px;
+}
+
+.accent-bg {
+    background-color: hsl(var(--accent));
+}
+
+.code-bg {
+    background-color: hsl(var(--code-background));
 }
