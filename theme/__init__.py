@@ -4,7 +4,7 @@ Akshay's Corner Sphinx Theme
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 21 February, 2025
-Last updated on: 14 January, 2026
+Last updated on: 13 February, 2026
 
 This module serves as the primary entry point for the Akshay's Corner
 Sphinx Theme. It is responsible for initialising the theme, configuring
@@ -33,8 +33,8 @@ hooks for post-processing and dynamic content handling.
 
     [1] Added support for `tagged` directive to overlay clickable
         face tags on images.
-    [2] Added native support for injecting `last_updated` date just above
-        the footer.
+    [2] Added native support for injecting `last_updated` date just
+        above the footer.
 
 .. deprecated:: 19.10.2025
 
