@@ -25,7 +25,6 @@ from . import thumbnail
 from . import video
 from . import youtube
 
-
 if t.TYPE_CHECKING:
     import types
 
