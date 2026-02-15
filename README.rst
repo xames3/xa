@@ -1,13 +1,14 @@
 .. Author: Akshay Mestry <xa@mes3.dev>
 .. Created on: 21 February, 2025
-.. Last updated on: 14 January, 2026
+.. Last updated on: 15 February, 2026
 
-Akshay's Corner (Website + Sphinx Theme)
+Akshay's Corner (Website + Kaamiki Sphinx Theme)
 ===============================================================================
 
-This repository holds the code (custom
-`Sphinx <https://www.sphinx-doc.org/en/master/index.html>`_ Theme) and content
-for my personal portfolio website, `Akshay's Corner <https://xa.mes3.dev>`_,
+This repository holds the code for custom
+`Sphinx <https://www.sphinx-doc.org/en/master/index.html>`_ Theme, Kaamiki and
+the content for my personal portfolio website,
+`Akshay's Corner <https://xa.mes3.dev>`_,
 which I intend to use as my primary source of teaching and sharing thoughts and
 experiments.
 
@@ -23,9 +24,9 @@ To learn more about this, visit `here <https://xa.mes3.dev>`_.
 Contributions
 -------------------------------------------------------------------------------
 
-Contributions and/or suggestions are welcome! If you find a bug, have a
-feature request, or want to contribute improvements, please open an issue or
-submit a pull request on GitHub.
+Contributions and/or suggestions for improving Kaamiki (theme) and content are
+welcomed! If you find a bug, or want to contribute/suggest improvements,
+please open an issue or submit a pull request on GitHub.
 
 License
 -------------------------------------------------------------------------------
@@ -35,6 +36,5 @@ This project is dual-licensed under:
 - `MIT License`_ for source code and the
 - `CC BY 4.0`_ for all the educational content and blog posts.
 
-.. _MIT License: https://github.com/xames3/xa/blob/main/LICENSE-CODE
-.. _CC BY 4.0: https://github.com/xames3/xa/blob/main/LICENSE
-
+.. _MIT License: https://github.com/xames3/website/blob/main/LICENSE-CODE
+.. _CC BY 4.0: https://github.com/xames3/website/blob/main/LICENSE

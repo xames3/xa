@@ -83,7 +83,7 @@ Last updated on: 10 February, 2026
                         </nav>
                     {%- endif %}
                 {%- endblock header_buttons %}
-                {%- if show_docsearch or hasdoc('search') %}
+                {%- if hasdoc('search') %}
                     <div class="site-header__search">{%- include "searchbox.html.jinja" %}</div>
                 {%- endif %}
             </div>

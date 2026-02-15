@@ -40,7 +40,6 @@ import bs4
 from docutils import nodes
 from sphinx.util.display import status_iterator
 
-
 if t.TYPE_CHECKING:
     from sphinx.application import Sphinx
     from sphinx.environment import BuildEnvironment
@@ -90,9 +89,7 @@ def make_toc_collapsible(tree: bs4.BeautifulSoup) -> None:
         if not parent or parent.name != "li":
             continue
         if not children.get("id"):
-            children["id"] = (  # type: ignore
-                f"nav-branch-{abs(hash(str(children))) % (10**8)}"
-            )
+            children["id"] = f"nav-branch-{abs(hash(str(children))) % (10**8)}"
         current = (
             "current" in (parent.get("class") or [])
             or "current" in (link.get("class") or [])
@@ -107,7 +104,7 @@ def make_toc_collapsible(tree: bs4.BeautifulSoup) -> None:
             parent["aria-expanded"] = "false"
         button = tree.new_tag("button", type="button")
         button["class"] = "nav-toggle"
-        button["aria-controls"] = children["id"]  # type: ignore
+        button["aria-controls"] = children["id"]
         sr = tree.new_tag("span", attrs={"class": "sr-only"})
         sr.string = "Toggle section"
         button.append(sr)
@@ -332,8 +329,6 @@ def build_finished(app: Sphinx, exc: Exception | None) -> None:
         if the build was successful.
     """
     if exc or app.builder.name not in {"html", "dirhtml"}:
-        return
-    if app.builder is not None and app.builder.name not in ["html", "dirhtml"]:
         return
     htmls = [app.builder.get_outfilename(html) for html in app.env.theme_htmls]
     if not htmls:
