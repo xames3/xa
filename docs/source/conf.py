@@ -4,7 +4,7 @@ Akshay's Corner Configuration
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 22 February, 2025
-Last updated on: 10 February, 2026
+Last updated on: 14 February, 2026
 
 This file contains the configuration settings for building my static
 website using Sphinx, a popular Python documentation tool. Sphinx is a
@@ -76,14 +76,13 @@ from markupsafe import Markup
 
 from theme import version as theme_version
 
-
 if t.TYPE_CHECKING:
     from collections.abc import Sequence
 
 project: t.Final[str] = "Akshay's Corner"
 author: t.Final[str] = "Akshay Mestry"
 project_copyright: str = f"© 2025-{dt.now().year} {author}."
-source: t.Final[str] = "https://github.com/xames3/xa"
+source: t.Final[str] = "https://github.com/xames3/website"
 email: t.Final[str] = "xa@mes3.dev"
 version: str = theme_version
 
@@ -104,7 +103,7 @@ nitpicky: bool = True
 exclude_patterns: Sequence[str] = ["_build"]
 smartquotes: bool = False
 
-html_theme: t.Final[str] = "theme"
+html_theme: t.Final[str] = "kaamiki"
 html_title: str = "amestry"
 html_baseurl: t.Final[str] = "https://xa.mes3.dev/"
 html_context: dict[str, t.Any] = {
@@ -143,7 +142,6 @@ html_context: dict[str, t.Any] = {
     },
     "secondary_toctree_title": "On this page",
     "show_breadcrumbs": True,
-    "show_docsearch": True,
     "show_feedback": True,
     "show_last_updated_on": True,
     "show_previous_next_pages": True,
@@ -153,7 +151,7 @@ html_context: dict[str, t.Any] = {
     "sidebar_buttons": {
         "Check my availability": {
             "link": "#",
-            "icon": Markup('<i class="fas far fa-video"></i>'),
+            "icon": Markup('<i class="far fa-video"></i>'),
             "extras": Markup(
                 'data-cal-link="xames3/quick-chat"'
                 'data-cal-namespace="quick-chat" '
@@ -162,7 +160,7 @@ html_context: dict[str, t.Any] = {
         },
         "Sponsor on GitHub": {
             "link": "https://github.com/sponsors/xames3",
-            "icon": Markup('<i class="fas far fa-heart"></i>'),
+            "icon": Markup('<i class="far fa-heart"></i>'),
         },
     },
 }
