@@ -35,7 +35,6 @@ import docutils.nodes as nodes
 import docutils.parsers.rst as rst
 import jinja2
 
-
 if t.TYPE_CHECKING:
     from sphinx.writers.html import HTMLTranslator
 

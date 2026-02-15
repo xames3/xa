@@ -45,12 +45,10 @@ from __future__ import annotations
 
 import os.path as p
 import typing as t
-from xml.dom import minidom
 
 import docutils.nodes as nodes
 import docutils.parsers.rst as rst
 import jinja2
-
 
 if t.TYPE_CHECKING:
     from sphinx.writers.html import HTMLTranslator
@@ -137,29 +135,15 @@ def visit(self: HTMLTranslator, node: node) -> None:
     generation.
 
     This method is called when the HTML translator encounters the
-    `video` node in the document tree. It retrieves the relevant
+    `author` node in the document tree. It retrieves the relevant
     attributes from the node (if any) and uses Jinja2 templating to
-    produce the final HTML output. Since the `video` node does not
-    require any actions, the method currently acts as a placeholder.
+    produce the final HTML output.
 
     :param self: The HTML translator instance responsible for rendering
         nodes into HTML.
     :param node: The `author` node containing parsed attributes.
 
-    .. deprecated:: 19.10.2025
-
-        Removed the custom subject header in favour of page title.
     """
-    title = (
-        dom.asdom().getElementsByTagName("title")
-        if (dom := node.document)
-        else ["Article"]
-    )
-    child = title[0].firstChild
-    while child and child.nodeType != minidom.Node.TEXT_NODE:
-        child = child.nextSibling
-    if child:
-        node.attributes["subject"] = child.data.strip()
     self.body.append(template.render(**node.attributes))
 
 
