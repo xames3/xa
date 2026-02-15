@@ -12,12 +12,11 @@ Last updated on: 09 February, 2026
             <p class="site-feedback-shell__title">{{ meta.prompt }}</p>
             <p class="site-feedback-shell__subtitle">{{ meta.promptdesc }}</p>
         </div>
-        <a href="mailto:{{ project.email }}?subject=Feedback about {{ title|striptags|e }}"
-           class="site-feedback-shell__button"
-           data-index="0"
-           aria-label="{{ fb_submit }}"><span class="fas fa-{{ meta.faicon or
-           'paper-plane' }} far"></span>
-           {{ meta.submitbtn }}
-        </a>
-    </div>
+    <a href="mailto:{{ project.email }}?subject=Feedback about {{ title|striptags|e }}"
+       class="site-feedback-shell__button"
+       data-index="0"
+       aria-label="{{ fb_submit }}"><span class="far fa-{{ meta.faicon or 'paper-plane' }}"></span>
+    {{ meta.submitbtn }}
+</a>
+</div>
 {% endblock feedback %}

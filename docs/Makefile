@@ -69,7 +69,7 @@ help: ## Show this help and list available targets.
 		sort | \
 		awk 'BEGIN {FS = ":.*## *"} {printf "  $(COLOUR_BLUE)%-$(TARGET_PADDING)s$(COLOUR_RESET) %s\n", $$1, $$2}'
 	@echo "\n$(COLOUR_DIM)For executing a particular target, run 'make <target>'.$(COLOUR_RESET)"
-	@echo "$(COLOUR_DIM)Read complete documentation at: https://github.com/xames3/xa.$(COLOUR_RESET)"
+	@echo "$(COLOUR_DIM)Read complete documentation at: https://github.com/xames3/website.$(COLOUR_RESET)"
 
 clean: ## Remove build artifacts and temporary directories.
 	@printf "$(COLOUR_YELLOW)[CLEAN]$(COLOUR_RESET) Removing $(OUTPUT_DIR) directory... "
@@ -78,7 +78,6 @@ clean: ## Remove build artifacts and temporary directories.
 		(printf "$(COLOUR_RED)FAILED!$(COLOUR_RESET)\n" && exit 1)
 
 check: ## Perform linting checks and report issues, if any.
-	@$(MAKE) loadenv --no-print-directory
 	@printf "$(COLOUR_ORANGE)[CHECK]$(COLOUR_RESET) Running linter... "
 	@$(SPHINX_LINT) $(SPHINX_LINT_FLAGS) $(SOURCE_DIR) >/dev/null && \
 		printf "$(COLOUR_GREEN)OK!$(COLOUR_RESET)\n" || \
@@ -121,11 +120,3 @@ devserver:
 		echo "Open $(PROTOCOL)://$(LOCALHOST):$(PORT) in your browser.") && \
 		printf "$(COLOUR_GREEN)OK!$(COLOUR_RESET)\n" || \
 		(printf "$(COLOUR_RED)FAILED!$(COLOUR_RESET)\n" && exit 1)
-
-loadenv:
-	@printf "$(COLOUR_DIM)[VALUE]$(COLOUR_RESET) Loading environment variables... " && \
-		printf "$(COLOUR_GREEN)OK!$(COLOUR_RESET)\n" || \
-		(printf "$(COLOUR_RED)FAILED!$(COLOUR_RESET)\n" && exit 1)
-  -include ../env.bak
-  export
-

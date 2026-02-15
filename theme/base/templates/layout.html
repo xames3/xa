@@ -12,7 +12,7 @@ Last updated on: 07 February, 2026
       {% if sphinx_version_tuple>= (7, 2) %}data-content_root="{{ content_root }}"{% endif %}
       :data-theme="darkMode"
       x-data="{darkMode: localStorage.getItem('darkMode') ?? 'dark'}"
-      x-init="if (!localStorage.getItem('darkMode')) localStorage.setItem('darkMode', darkMode); $watch('darkMode', val => { if (window.simpleApplyTheme) simpleApplyTheme(val); else { document.documentElement.classList.add('theme-transition'); requestAnimationFrame(()=>{ document.documentElement.setAttribute('data-theme', val); setTimeout(()=>document.documentElement.classList.remove('theme-transition'), 700); }); } localStorage.setItem('darkMode', val); })"
+      x-init="if (!localStorage.getItem('darkMode')) { localStorage.setItem('darkMode', darkMode); } const applyTheme = window.simpleApplyTheme ?? ((val) => { document.documentElement.classList.add('theme-transition'); requestAnimationFrame(() => { document.documentElement.setAttribute('data-theme', val); setTimeout(() => document.documentElement.classList.remove('theme-transition'), 700); }); }); $watch('darkMode', val => { applyTheme(val); localStorage.setItem('darkMode', val); });"
       class="scroll-smooth"
       :class="{'dark': darkMode === 'dark' || (darkMode === 'system' && window.matchMedia('(prefers-color-scheme: dark)').matches)}"
       x-effect="document.documentElement.setAttribute('data-theme', darkMode)">
@@ -59,11 +59,6 @@ Last updated on: 07 February, 2026
                       href="{{ pathto(css, 1) |e }}" />
             {%- endif %}
         {%- endfor %}
-        {%- if docsearch %}
-            <link rel="preconnect"
-                  href="https://{{ docsearch_app_id }}-dsn.algolia.net"
-                  crossorigin="anonymous" />
-        {% endif %}
         {%- set _favicon_ico_url = favicon_url | default(pathto('_static/' + (favicon or ""), 1)) %}
         {%- set _favicon_16_url = pathto('_static/' + favicons.size_16, 1) %}
         {%- set _favicon_32_url = pathto('_static/' + favicons.size_32, 1) %}
@@ -87,7 +82,7 @@ Last updated on: 07 February, 2026
                   href="{{ _favicon_manifest_url }}">
         {%- endif %}
         {%- block linktags %}
-            {%- if hasdoc('search') and not docsearch %}
+            {%- if hasdoc('search') %}
                 <link rel="search"
                       title="{{ _('Search') }}"
                       href="{{ pathto('search') }}" />

@@ -45,7 +45,6 @@ import jinja2
 from docutils.parsers import rst
 from docutils.parsers.rst.directives import images
 
-
 if t.TYPE_CHECKING:
     from sphinx.writers.html import HTMLTranslator
 

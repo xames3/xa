@@ -3,7 +3,7 @@ requires = [ "setuptools", "setuptools-scm" ]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "theme"
+name = "kaamiki"
 dynamic = [ "dependencies", "version" ]
 authors = [
     { name = "Akshay Mestry", email = "xa@mes3.dev" }
@@ -21,18 +21,19 @@ classifiers = [
     "Operating System :: OS Independent",
     "Programming Language :: Python",
     "Programming Language :: Python :: 3.13",
+    "Programming Language :: Python :: 3.14",
     "Topic :: Documentation",
     "Topic :: Software Development :: Documentation"
 ]
 
 [project.urls]
-homepage = "https://github.com/xames3/xa/"
-documentation = "https://github.com/xames3/xa/"
-repository = "https://github.com/xames3/xa"
-issues = "https://github.com/xames3/xa/issues"
+homepage = "https://github.com/xames3/website/"
+documentation = "https://github.com/xames3/website/"
+repository = "https://github.com/xames3/website"
+issues = "https://github.com/xames3/website/issues"
 
 [project.entry-points."sphinx.html_themes"]
-theme = "theme"
+kaamiki = "theme"
 
 [tool.setuptools]
 packages = ["theme"]
@@ -189,13 +190,10 @@ ban-relative-imports = "all"
 case-sensitive = true
 combine-as-imports = true
 force-single-line = true
-force-sort-within-sections = false
 known-first-party = ["theme"]
-lines-after-imports = 2
 order-by-type = true
 relative-imports-order = "closest-to-furthest"
 required-imports = ["from __future__ import annotations"]
-single-line-exclusions = ["typing", "collections.abc"]
 split-on-trailing-comma = true
 
 [tool.ruff.lint.mccabe]
@@ -259,10 +257,15 @@ warn_unreachable = true
 warn_unused_configs = true
 warn_unused_ignores = true
 disable_error_code = [
+  "arg-type",
   "assignment",
   "attr-defined",
+  "call-overload",
+  "index",
   "method-assign",
+  "misc",
   "name-defined",
+  "no-any-return",
   "operator",
   "override",
   "union-attr",

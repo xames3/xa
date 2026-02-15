@@ -4,7 +4,7 @@ Akshay's Corner Sphinx Theme
 
 Author: Akshay Mestry <xa@mes3.dev>
 Created on: 21 February, 2025
-Last updated on: 13 February, 2026
+Last updated on: 14 February, 2026
 
 This module serves as the primary entry point for the Akshay's Corner
 Sphinx Theme. It is responsible for initialising the theme, configuring
@@ -27,7 +27,7 @@ hooks for post-processing and dynamic content handling.
     [1] Override styles for `sphinx_design` extension by using a
         custom CSS.
     [2] Override styles for `sphinx_docsearch` extension by using a
-        custom CSS.
+        custom CSS (deprecated, removed in February 2026).
 
 .. versionchanged:: 27.8.2025
 
@@ -51,6 +51,10 @@ hooks for post-processing and dynamic content handling.
         instead of `base`, like before. This allows to make the
         development simple and easy to follow by keeping the templates
         (html/jinja2 templates) separate then the styling components.
+.. versionchanged:: 14.2.2026
+
+    [1] This theme now has a name, `Kaamiki`.
+    [2] Officially dropped support for `DocSearch`.
 """
 
 from __future__ import annotations
@@ -74,7 +78,6 @@ from theme.extensions.utils import ensure_classes_on_nodes
 from theme.extensions.utils import env_before_read_docs
 from theme.extensions.utils import last_updated_date
 
-
 if t.TYPE_CHECKING:
     import types
 
@@ -83,15 +86,14 @@ if t.TYPE_CHECKING:
 
 logger = logging.getLogger(__name__)
 
-version: str = "14.01.2026"
-theme_name: t.Final[str] = "theme"
+version: str = "14.02.2026"
+theme_name: t.Final[str] = "kaamiki"
 theme_path = p.join(p.abspath(p.dirname(__file__)), "base", "templates")
 supported_extensions: t.Sequence[str] = (
     "sphinx_carousel.carousel",
     "sphinx_design",
     "sphinxext.opengraph",
 )
-
 
 unmodified = StandaloneHTMLBuilder.copy_theme_static_files
 
@@ -180,7 +182,6 @@ def setup(app: Sphinx) -> dict[str, str | bool]:
         app.setup_extension(extension)
     app.add_html_theme(theme_name, theme_path)
     app.add_css_file("sphinx-design.css", priority=800)
-    app.add_css_file("doc-search.css", priority=800)
     app.add_js_file("base.js", loading_method="defer")
     app.add_js_file("theme.js", loading_method="defer")
     for role in inspect.getmembers(roles, inspect.isfunction):
